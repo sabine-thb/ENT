@@ -1,1 +1,1 @@
-<h1>Bienvenue sur l'accueil de l'ENT</h1>
+<h1>Bienvenue sur l'accueil de l'ENT </h1>
