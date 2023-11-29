@@ -26,7 +26,7 @@ header{
 	 position: relative;
 	 vertical-align: middle;
 }
- .main-menu > li a {
+ .main-menu > li div {
 	 display: block;
 }
  .main-menu > li.active .sub-menu {
@@ -48,7 +48,11 @@ header{
 	 height:55px;
 	 margin-right:auto;
 }
- @media only screen and (min-width: 1221px) {
+
+.navFirstLevel{
+	cursor:pointer;
+}
+ @media only screen and (min-width: 621px) {
 	 .main-menu > li:hover .sub-menu {
 		 opacity: 1;
 		 pointer-events: auto;
@@ -75,6 +79,8 @@ header{
 	 .main-menu li {
 		 display: block;
 	}
+
+
 	 .main-menu .expand {
 		 display: block;
 		 position: absolute;
@@ -146,7 +152,7 @@ header{
 	 box-sizing: border-box;
 	 width: 85%;
 }
- @media only screen and (min-width: 1221px) {
+ @media only screen and (min-width: 621px) {
 	 nav {
 		 text-align: right;
 	}
@@ -177,11 +183,18 @@ header{
 .sub-menu  a{
 	border-bottom: 0.5px solid white;
 }
- .main-menu li a, .sub-menu li a {
+ .main-menu li div, .sub-menu li a {
 	 padding: 1rem 1rem;
 	 color: #fff;
 	 text-decoration: none;
+	 transition:background-color 0.2s ease-in-out;
 }
+
+.sub-menu li a:hover {
+	background-color: rgb(79, 79, 79);
+}
+
+
  .main-menu .expand, .sub-menu .expand {
 	 color: #fff;
 	 font-size: 1.5rem;
@@ -198,5 +211,6 @@ header{
 	.sub-menu  a{
 		border-bottom: 0.5px solid white;
 	}
+	
 }
  
