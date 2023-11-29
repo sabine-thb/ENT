@@ -1,0 +1,55 @@
+*::after,*::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: "inter", sans-serif;
+    font-size:1rem;
+}
+
+.section1{
+    padding:20px;
+}
+
+/* nav{
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    background-color: #7175D4;
+    padding-right:50px;
+    padding-left:20px;
+} */
+
+/* .logo{
+    background-image:url(./img/logoENT.svg);
+    background-size: cover;
+    width:55px;
+    height:55px;
+    margin-right:auto;
+    border-radius:50%;
+} */
+
+/* section{
+    margin:20px;
+} */
+
+h1{
+    font-family:"secular", sans-serif;
+    font-size:1.2rem;
+    text-transform: uppercase;
+}
+
+.navItem{
+    text-decoration:none;
+    color:white;
+}
+
+
+
+.deco{
+    width:30px;
+    height:30px;
+}
