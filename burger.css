@@ -59,7 +59,7 @@ header{
  .main-menu .expand {
 	 display: none;
 }
- @media only screen and (max-width: 1220px) {
+ @media only screen and (max-width:620px) {
 	 .main-menu {
 		 opacity: 0;
 		 pointer-events: none;
@@ -84,12 +84,13 @@ header{
 		 z-index: 15;
 		 transform-origin: 50%;
 		 transition: 200ms all;
+		 cursor:pointer;
 	}
 	 .main-menu .expand.active {
 		 transform: rotate(45deg);
 	}
 }
- @media only screen and (max-width: 1220px) {
+ @media only screen and (max-width: 620px) {
 	 .main-menu.active {
 		 opacity: 1;
 		 pointer-events: auto;
@@ -111,7 +112,7 @@ header{
 	 right: auto;
 	 min-width: 200px;
 }
- @media only screen and (max-width: 1220px) {
+ @media only screen and (max-width: 620px) {
 	 .sub-menu {
 		 display: block;
 		 z-index: 20;
@@ -124,7 +125,7 @@ header{
  .toggle-menu {
 	 display: none;
 }
- @media only screen and (max-width: 1220px) {
+ @media only screen and (max-width: 620px) {
 	 .toggle-menu {
 		 display: inline-block;
 	}
@@ -185,7 +186,7 @@ header{
 	 color: #fff;
 	 font-size: 1.5rem;
 }
- @media only screen and (max-width: 1220px) {
+ @media only screen and (max-width: 620px) {
 	 .sub-menu {
 		 background: #333;
 	}
