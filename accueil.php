@@ -8,7 +8,8 @@ $utilisateur=$_SESSION['utilisateur'];
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">   
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="burger.css">
    <link rel="stylesheet" href="styleAccueil.css">
@@ -77,7 +78,7 @@ $utilisateur=$_SESSION['utilisateur'];
 </header>
     <section class="section1">
         <?php
-        echo"<h1>Bonjour {$utilisateur ['prenom']}</h1> "
+        echo"<h1>Bonjour {$utilisateur ['prenom']}.</h1> "
         ?>
         <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
 </section>
