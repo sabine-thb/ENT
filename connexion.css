@@ -2,14 +2,24 @@
     box-sizing: border-box;
 }
 
+body{
+    
+    
+}
+
 section{
+    width:100%;
     height:calc(100vh - 86px);
+    background:linear-gradient(180deg, #CDC4FD 0%, #A6CDF4 100%);
+    background-repeat: no-repeat;
     display:flex;
     flex-direction:column;
     justify-content: flex-start;
     align-items:center;
     padding-top:150px;
     box-sizing: border-box; /*Pourquoi je dois le mettre alors que mis au dessus*/
+    overflow: hidden;
+    position: absolute;
 }
 
 h1{
@@ -78,6 +88,19 @@ nav{
     transform: translate(-50%,-50%);
 }
 
+.imgConnexion{
+    width:250px;
+    position:relative;
+    bottom:-50px;
+}
+
+@media(min-width:500px){
+    .imgConnexion{
+        right:-140px;
+        bottom:-60px;
+    }
+}
+
 @media(min-width:600px){
     body{
         font-size:1.4rem;
@@ -85,5 +108,26 @@ nav{
 
     .connexionButton{
         font-size:1.2rem;
+    }
+
+    .imgConnexion{
+        width:300px;
+        right:-180px;
+        bottom:35px;
+    }
+}
+
+@media(min-width:800px){
+    body{
+        font-size:1.4rem;
+    }
+
+    .connexionButton{
+        font-size:1.2rem;
+    }
+
+    .imgConnexion{
+        right:-270px;
+
     }
 }

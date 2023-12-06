@@ -53,6 +53,7 @@
             </div>
         
         </form>
+        <img src="./img/bonhommes/dameConnexion.png" class="imgConnexion" alt="">
     </section>
 
 </body>

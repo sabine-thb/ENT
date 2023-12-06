@@ -23,6 +23,7 @@ if ($stmt->rowCount()) {
     if (password_verify($mdp, $result["mdp"])) {
 
         $_SESSION["utilisateur"]=$result;
+        unset($result["mdp"]);
 
         // Comparaison du mot de passe rentré avec le mot de passe haché stocké dans la BDD
 
