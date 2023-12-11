@@ -67,7 +67,7 @@ $utilisateur=$_SESSION['utilisateur'];
         <li>
             <div class="navFirstLevel">
                 <a href="deconnexion.php" class="navItem">
-                <img src="./img/deco.svg"  class="deco" alt="se déconnecter">
+                <img src="./style/img/deco.svg"  class="deco" alt="se déconnecter">
                 </a> 
            </div>
             

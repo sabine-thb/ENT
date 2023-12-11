@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body{
-    
-    
-}
 
 section{
     width:100%;
@@ -53,10 +49,6 @@ nav{
     margin:20px;
     border-radius:20px;
     position:relative;
-    /* display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 .labelStatut{
