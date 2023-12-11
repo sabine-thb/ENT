@@ -9,10 +9,10 @@ $utilisateur=$_SESSION['utilisateur'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link rel="stylesheet" href="style.css">   
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="burger.css">
-   <link rel="stylesheet" href="styleAccueil.css">
+    <link rel="stylesheet" href="style/style.css">   
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/burger.css">
+   <link rel="stylesheet" href="style/styleAccueil.css">
    
     
     <title>Accueil ENT</title>

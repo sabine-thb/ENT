@@ -7,9 +7,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="style.css">    
-    <link rel="stylesheet" href="fonts.css">    
-    <link rel="stylesheet" href="connexion.css">   
+    <link rel="stylesheet" href="style/style.css">    
+    <link rel="stylesheet" href="style/fonts.css">    
+    <link rel="stylesheet" href="style/connexion.css">   
     <title>Connexion ENT</title>
 <head>
 	<meta charset="UTF-8">
@@ -53,7 +53,7 @@
             </div>
         
         </form>
-        <img src="./img/bonhommes/dameConnexion.png" class="imgConnexion" alt="">
+        <img src="./style/img/bonhommes/dameConnexion.png" class="imgConnexion" alt="">
     </section>
 
 </body>
