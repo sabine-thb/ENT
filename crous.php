@@ -31,27 +31,35 @@
     <section class="secForm">
         <h1 class="titreForm">Restauration de l'université</h1>
         <p class="descrForm">Veuillez ajouter les 2 plats principaux de demain ainsi qu'une image correspondante afin de les soumettre aux votes des étudiants.</p>
+
+        <?php
+        if (isset($_GET["repas"] )){  
+            echo "<p class=\"formValid\">Vos propositions ont bien été ajoutées à l'interface des étudiants, afin qu'ils votent le repas de demain.</p>";
+        }
+        
+        ?>
         
         <div class="formulaire">
 
             <form action="traiteCrous.php">
                 <img src="./style/img/bonhommes/vote.png" class="img" alt="">
                 <label for="plat1">Nom du premier plat : </label>
-                <input class="inputForm" type="text" id="plat1">
+                <input class="inputForm" type="text" id="plat1" name="plat1" required>
                 <br>
                 <br>
                 <label for="img1">Lien de la première image : </label>
-                <input class="inputForm" type="text" id="img1">
+                <input class="inputForm" type="text" id="img1" name="image1" required>
                 <br>
                 <br>
                 <label for="plat2">Nom du deuxième plat : </label>
-                <input class="inputForm" type="text" id="plat2">
+                <input class="inputForm" type="text" id="plat2" name="plat2" required>
                 <br>
                 <br>
                 <label for="img2">Lien de la deuxième image : </label>
-                <input class="inputForm" type="text" id="img2">
+                <input class="inputForm" type="text" id="img2" name="image2" required>
                 <br>
                 <br>
+                <input type="hidden" name="date">
                 <input class="envoyer" type="submit" value="Valider">
             </form>
 

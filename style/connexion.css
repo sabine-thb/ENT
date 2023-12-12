@@ -6,7 +6,7 @@
 section{
     width:100%;
     height:calc(100vh - 86px);
-    background:linear-gradient(180deg, #CDC4FD 0%, #A6CDF4 100%);
+    background:var(--degrade);
     background-repeat: no-repeat;
     display:flex;
     flex-direction:column;
@@ -23,7 +23,7 @@ h1{
 }
 
 nav{
-    background-color: #7175D4;
+    background-color: var(--violetFonce);
     width:100%;
     height:86px;
     display:flex;
@@ -44,7 +44,7 @@ nav{
 .idMdp{
     width:fit-content;
     color:white;
-    background-color: #7175D4;
+    background-color: var(--violetFonce);
     padding:20px 20px 50px 20px;
     margin:20px;
     border-radius:20px;
@@ -60,7 +60,7 @@ nav{
 }
 
 .inputIdMdp{
-    background-color: #7175D4;
+    background-color: var(--violetFonce);
     border:0px;
     border-bottom:2px white solid;
     color:white;
@@ -78,6 +78,11 @@ nav{
     bottom:2px;
     left: 50%;
     transform: translate(-50%,-50%);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.connexionButton:hover{
+    background-color: rgb(66, 66, 66);
 }
 
 .imgConnexion{

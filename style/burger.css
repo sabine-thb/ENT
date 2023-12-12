@@ -1,8 +1,28 @@
+*::after,*::before {
+    box-sizing: border-box;
+}
+
 header{
+	position: fixed;
+	z-index:1000;
+	top:0;
+	width:100%;
+	height:60px;
 	display: flex;
 	justify-content:flex-end;
 	align-items: center;
-	padding:10px 20px 10px 20px;
+	padding:10px 0px 10px 0px;
+}
+
+.navItem{
+    text-decoration:none;
+    color:white;
+}
+
+.deco{
+    width:30px;
+    height:30px;
+	margin-right:15px;
 }
 .responsive-menu {
 	 position: relative;
@@ -18,6 +38,11 @@ header{
 	 padding: 0;
 	 font-size: 0;
 }
+
+.main-menu{
+	height:60px;
+}
+
  .main-menu li, .sub-menu li {
 	 font-size: 1rem;
 }
@@ -47,6 +72,7 @@ header{
 	 width:55px;
 	 height:55px;
 	 margin-right:auto;
+	 margin-left:1rem;
 }
 
 .navFirstLevel{
@@ -140,14 +166,15 @@ header{
 	 font-family: sans-serif;
 }
  header {
-	 background-color: #7175D4;
+	 background-color: var(--violetFonce);
 	 font-size: 0;
 }
- nav {
+
+nav {
 	 display: inline-block;
 	 vertical-align: middle;
 	 position: relative;
-	 background-color: #7175D4;
+	 background-color: var(--violetFonce);
 	 font-size: 1rem;
 	 box-sizing: border-box;
 	 width: 85%;
@@ -173,7 +200,7 @@ header{
 }
 
  .main-menu{
-	 background-color: #7175D4;
+	 background-color: var(--violetFonce);
 }
 
 .sub-menu {

@@ -1,6 +1,7 @@
+
 <?php
 session_start();
-$utilisateur=$_SESSION['utilisateur'];
+include("connexion.php");
 ?>
 
 
@@ -12,23 +13,9 @@ $utilisateur=$_SESSION['utilisateur'];
     <link rel="stylesheet" href="style/style.css">   
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
-   <link rel="stylesheet" href="style/styleAccueil.css">
-   
-    
-    <title>Accueil ENT</title>
-</head>
-<body>
-    <!-- <nav>
-        <a href="accueil.php" class="logo"></a>
-        <a href="monProfil.php" class="navItem">Mon profil</a>
-        <a href="scolarité.php" class="navItem">Scolarité</a>
-        <a href="services.php" class="navItem">Services</a>
-        <a href="informations.php" class="navItem">informations</a>
-        <a href="deconnexion.php" class="navItem">
-            <img src="./img/deco.svg"  class="deco" alt="se déconnecter">
-        </a>
-    </nav> -->
-    
+    <link rel="stylesheet" href="style/styleRestauration.css">
+       
+    <title>Restauration</title>
 </head>
 <body>
 <header>
@@ -76,13 +63,57 @@ $utilisateur=$_SESSION['utilisateur'];
 </nav>
 	
 </header>
-    <section class="section1">
-        <?php
-        echo"<h1>Bonjour {$utilisateur ['prenom']}.</h1> "
-        ?>
-        <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
+<?php
+$requete =" SELECT * FROM repas  ORDER BY date DESC LIMIT 1";
+    $stmt=$db->prepare($requete);
+    $stmt->execute(); 
+    $result = $stmt->fetchall(PDO::FETCH_ASSOC); 
+?>
+<?php foreach ($result as $row): ?>
+<section class="sec1">
+    <div class="vote">
+        <h1>Votez pour votre repas de demain.</h1>
+        <p class="descrVote">Pour cela, cliquez sur votre plat favori.</p>
+
+
+        <div class="imgVote">
+            <img src="./style/img/bonhommes/vote.png" class="imgDeco" alt="">
+            <a href="traiteVote.php" class="linkVote one">
+                <div style="background-image:url(<?php echo $row["img1"] ?>);" class="imgPlat"></div>
+                <p class="nomPlat"><?php echo $row["plat1"] ?></p>
+            </a>
+            <a href="traiteVote.php" class="linkVote two">
+                <div style="background-image:url(<?php echo $row["img2"] ?>);" class="imgPlat"></div>
+                <p class="nomPlat"><?php echo $row["plat2"] ?></p>
+            </a>
+        </div>
+        
+    </div>
+    <?php endforeach;?>
+    <div class="queue">
+        <h1 class="titreTemps">Temps d'attente de vos CROUS : </h1> 
+        <div class="compteurs">
+            <div class="temps">
+                <p class="nomCrous">ESSIE</p>
+                <div class="compteur c1">25 mn</div>
+            </div>
+            <div class="temps">
+                <p class="nomCrous">Copernic</p>
+                <div class="compteur c2">14 mn</div>
+            </div>
+        </div>   
+        
+        
+        
+    </div>
 </section>
-    
+<section class="sec2">
+    <h1>Menu cantine du jour</h1>
+</section>
+
+
+<script src="./script/compteur.js"></script>
 <script src="./script/burger.js"></script>
+
+    
 </body>
-</html>

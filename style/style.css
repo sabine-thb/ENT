@@ -1,10 +1,25 @@
-*::after,*::before {
-    box-sizing: border-box;
+/*Je définis ici les couleurs principales que je vais utiliser dans mon site*/
+
+:root {
+    --violetFonce: #7175D4; 
+    --violetClair: #E2E3FB; 
+    --vert: #D8F5DF;
+    --rose: #FFEDEB;
+    --bleu:#C7EAFD;
+    --degrade:linear-gradient(180deg, #CDC4FD 0%, #A6CDF4 100%);
 }
 
 
 body{
+    padding-top:80px;
     margin:0;
     font-family: "inter", sans-serif;
     font-size:1rem;
+}
+
+
+
+
+section{
+    padding:20px;
 }

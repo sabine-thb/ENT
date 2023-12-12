@@ -29,7 +29,7 @@ if ($stmt->rowCount()) {
 
          // Redirigez en fonction de la valeur sélectionnée
         if ($role == "professeur") {
-            header("Location: accueil.php");
+            header("Location: prof.php");
             exit();
         } 
 
