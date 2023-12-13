@@ -18,16 +18,6 @@ $utilisateur=$_SESSION['utilisateur'];
     <title>Accueil ENT</title>
 </head>
 <body>
-    <!-- <nav>
-        <a href="accueil.php" class="logo"></a>
-        <a href="monProfil.php" class="navItem">Mon profil</a>
-        <a href="scolarité.php" class="navItem">Scolarité</a>
-        <a href="services.php" class="navItem">Services</a>
-        <a href="informations.php" class="navItem">informations</a>
-        <a href="deconnexion.php" class="navItem">
-            <img src="./img/deco.svg"  class="deco" alt="se déconnecter">
-        </a>
-    </nav> -->
     
 </head>
 <body>

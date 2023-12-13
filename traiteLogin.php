@@ -17,7 +17,6 @@ var_dump($stmt);
 
 //On fait des requêtes préparées pour éviter les insertions malveillantes
 
-
 if ($stmt->rowCount()) {
     $result = $stmt->fetch();
     if (password_verify($mdp, $result["mdp"])) {
@@ -29,7 +28,7 @@ if ($stmt->rowCount()) {
 
          // Redirigez en fonction de la valeur sélectionnée
         if ($role == "professeur") {
-            header("Location: prof.php");
+            header("Location: accueil.php");
             exit();
         } 
 
@@ -42,10 +41,7 @@ if ($stmt->rowCount()) {
             header("Location: crous.php");
             exit();
         } 
-        
-        
-
-        
+               
 
         var_dump($_SESSION);
 

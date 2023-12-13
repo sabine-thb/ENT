@@ -67,29 +67,39 @@ include("connexion.php");
 $requete =" SELECT * FROM repas  ORDER BY date DESC LIMIT 1";
     $stmt=$db->prepare($requete);
     $stmt->execute(); 
-    $result = $stmt->fetchall(PDO::FETCH_ASSOC); 
+    $result = $stmt->fetch(PDO::FETCH_ASSOC); 
+        $id_choix1=$result["id_choix1_ext"];
+        $id_choix2=$result["id_choix2_ext"];
+    
+
+$requete =" SELECT * FROM choix WHERE id_choix = $id_choix1 OR id_choix = $id_choix2";
+$stmt=$db->query($requete);
+$result=$stmt -> fetchall(PDO::FETCH_ASSOC);
 ?>
-<?php foreach ($result as $row): ?>
+
 <section class="sec1">
     <div class="vote">
         <h1>Votez pour votre repas de demain.</h1>
-        <p class="descrVote">Pour cela, cliquez sur votre plat favori.</p>
-
-
+        <p class="descrVote">Pour cela, cliquez sur votre plat favori.</p> 
+        <?php if (isset($_GET["err"] )){  
+            echo "<p>Vous avez déjà voté aujourd'hui.</p>";
+        } 
+        ?> 
+        <?php if (isset($_GET["vote"] )){  
+            echo "<p>Votre vote a bien été pris en compte !</p>";
+        } 
+        ?> 
         <div class="imgVote">
+        <?php foreach ($result as $row){ ?>
             <img src="./style/img/bonhommes/vote.png" class="imgDeco" alt="">
-            <a href="traiteVote.php" class="linkVote one">
-                <div style="background-image:url(<?php echo $row["img1"] ?>);" class="imgPlat"></div>
-                <p class="nomPlat"><?php echo $row["plat1"] ?></p>
+            <a href="traiteVote.php?id=<?php echo $row["id_choix"] ?>" class="linkVote two">
+                <div style="background-image:url(<?php echo $row["image"] ?>);" class="imgPlat"></div>
+                <p class="nomPlat"><?php echo $row["nom"] ?></p>
             </a>
-            <a href="traiteVote.php" class="linkVote two">
-                <div style="background-image:url(<?php echo $row["img2"] ?>);" class="imgPlat"></div>
-                <p class="nomPlat"><?php echo $row["plat2"] ?></p>
-            </a>
-        </div>
-        
+            <?php } ?>
+        </div>        
     </div>
-    <?php endforeach;?>
+    
     <div class="queue">
         <h1 class="titreTemps">Temps d'attente de vos CROUS : </h1> 
         <div class="compteurs">
@@ -117,3 +127,5 @@ $requete =" SELECT * FROM repas  ORDER BY date DESC LIMIT 1";
 
     
 </body>
+
+</html>

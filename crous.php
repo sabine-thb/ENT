@@ -30,33 +30,24 @@
     </section>
     <section class="secForm">
         <h1 class="titreForm">Restauration de l'université</h1>
-        <p class="descrForm">Veuillez ajouter les 2 plats principaux de demain ainsi qu'une image correspondante afin de les soumettre aux votes des étudiants.</p>
+        <p class="descrForm">Si vous souhaitez ajouter de nouveaux plats à la liste des propositions, veuillez les ajouter ici.</p>
 
         <?php
-        if (isset($_GET["repas"] )){  
-            echo "<p class=\"formValid\">Vos propositions ont bien été ajoutées à l'interface des étudiants, afin qu'ils votent le repas de demain.</p>";
+        if (isset($_GET["nvplat"] )){  
+            echo "<p class=\"formValid\">Votre plat a bien été ajouté à la liste des propositions de chaque jour.</p>";
         }
         
         ?>
         
         <div class="formulaire">
-
-            <form action="traiteCrous.php">
+            <form action="traiteNvPlat.php" class="ajtPlat">
                 <img src="./style/img/bonhommes/vote.png" class="img" alt="">
-                <label for="plat1">Nom du premier plat : </label>
-                <input class="inputForm" type="text" id="plat1" name="plat1" required>
+                <label for="plat" class="lab1">Nom du plat : </label>
+                <input class="inputForm" type="text" id="plat" name="nom" required>
                 <br>
                 <br>
-                <label for="img1">Lien de la première image : </label>
-                <input class="inputForm" type="text" id="img1" name="image1" required>
-                <br>
-                <br>
-                <label for="plat2">Nom du deuxième plat : </label>
-                <input class="inputForm" type="text" id="plat2" name="plat2" required>
-                <br>
-                <br>
-                <label for="img2">Lien de la deuxième image : </label>
-                <input class="inputForm" type="text" id="img2" name="image2" required>
+                <label for="img" class="lab1">Lien d'une image descriptive : </label>
+                <input class="inputForm" type="text" id="img" name="image" required>
                 <br>
                 <br>
                 <input type="hidden" name="date">
@@ -64,9 +55,73 @@
             </form>
 
         </div>
-        
 
     </section>
+    <section class="secPropositions">
+    <h1>Propositions de plats pour demain.</h1>
+    <?php 
+    if (isset($_GET["operation"] )){  
+            echo "<p class=\"reinitOK\">Vous avez bien réinitialisé les votes.</p>";
+        } 
+
+    if (isset($_GET["propositions"] )){  
+            echo "<p class=\"formValid\">Vos deux propositions pour le repas de demain ont bien été enregistrées.</p>";
+    }
+    ?>
+    <div class="actions">
+        <div class="reinit">
+            <div class="caseReinit">
+                <div class="explReinit">Avant de faire de nouvelles propositions de choix pour le menu de demain, veuillez réinitialiser les votes en cliquant sur le bouton ci-dessous.</div>
+                <a href="reinitVote.php" class="lienReinit">Réinitialisation</a>
+            </div>
+            
+        </div>
+        <div class="choixPlats">
+            
+            <form action="traitePropositionsChoix.php" class="formPropositions">
+                <p>
+                    <label for="choix1" class="lab2">Proposition 1 :</label>
+                    <select name="choix1" id="choix1">
+                        <?php
+                        include("connexion.php");
+                        $requete =" SELECT * FROM choix  ORDER BY date DESC ";
+                        $stmt=$db->prepare($requete);
+                        $stmt->execute(); 
+                        $result = $stmt->fetchall(PDO::FETCH_ASSOC);
+                        foreach ($result as $row): ?>
+
+                        <option value="<?php echo $row["id_choix"] ?>"><?php echo $row["nom"] ?></option>
+                        <?php endforeach;?>
+
+                    </select>
+                </p>
+                <p>
+                    <label for="choix2" class="lab2">Proposition 2 :</label>
+                    <select name="choix2" id="choix2">
+                        <?php
+                        foreach ($result as $row): ?>
+                        <option value="<?php echo $row["id_choix"] ?>"><?php echo $row["nom"] ?></option>
+                        <?php endforeach;?>
+
+                    </select>
+
+                </p>
+                <input type="submit" value="Valider" class="envoyer second">
+                
+            </form>
+
+        </div>
+    </div>
+    
+   
+
+    </section>
+        
+        
+
+        
+
+    
         
 
     
