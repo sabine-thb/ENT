@@ -46,10 +46,14 @@
                 <input class="inputForm" type="text" id="plat" name="nom" required>
                 <br>
                 <br>
-                <label for="img" class="lab1">Lien d'une image descriptive : </label>
+                <label for="img" class="lab1">Lien d'une image : </label>
                 <input class="inputForm" type="text" id="img" name="image" required>
                 <br>
-                <br>
+                <br>  
+                <label for="descr" class="lab1">Description : </label>
+                <br><br>
+                <textarea class="textArea" type="text" id="descr" name="descr" required> </textarea>            
+                
                 <input type="hidden" name="date">
                 <input class="envoyer" type="submit" value="Valider">
             </form>

@@ -19,7 +19,6 @@ h1,.nomCrous{
 /*Je mets en place la rubrique de vote pour la cantine*/
 .descrVote{
     margin-top:0;
-    margin-bottom:40px;
 }
 
 .vote, .queue{
@@ -80,6 +79,13 @@ h1,.nomCrous{
     background-repeat: no-repeat;
 }
 
+.voteOk{
+    margin-top:0;
+    margin-bottom:30px;
+    color:rgb(141, 0, 0);
+    font-weight: 600;
+}
+
 /*Je mets en place la rubrique de temps d'attente pour la cantine*/
 
 .temps{
@@ -102,8 +108,62 @@ h1,.nomCrous{
 /*Je mets en place la section du menu du jour*/
 
 .sec2{
-    height:300px;
     background:var(--degrade);
+}
+
+
+.platJour{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:35px;
+    border-radius:15px;
+    background-color: beige;
+    padding:15px;
+    max-width: 800px;
+}
+
+.imgPlatJour{
+    width:250px;
+    height:250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+
+}
+
+.titreEtDescr{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+
+
+}
+
+.nomPlatJour{
+    font-family: "interSemiBold", sans-serif;
+    font-size:1.5rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCrous{
+    height:300px;
+    margin:0px 10px 0px 10px;
+    /* position:absolute;
+    bottom:-55px;
+    right:-6px; */
 }
 
 
@@ -133,6 +193,17 @@ h1,.nomCrous{
         height:150px;
     }
 }
+
+@media(max-width:900px){
+
+    .imgContainer{
+        display: none;
+    }
+
+    .titreEtDescr{
+        gap:15px;
+    }
+}
 @media(max-width:730px){
     .sec1{
         flex-direction: column;
@@ -160,12 +231,26 @@ h1,.nomCrous{
     .imgDeco{
         height:100px;
         top:-55px;
-        right:-37px;
+        right:-28px;
     }
 
 
     .titreTemps{
         margin-top:40px;
+    }
+}
+
+@media(max-width:600px){
+    .platJour{
+        flex-direction: column;
+    }
+
+    .imgPlatJour{
+        width:100%;
+    }
+
+    .queue{
+        width:100%;
     }
 }
 @media(max-width:560px){
@@ -189,7 +274,7 @@ h1,.nomCrous{
 }
 
 @media(max-width:460px){
-    .compteurs, .imgVote{
+     .imgVote{
         flex-direction: column;
         gap:30px;
     }

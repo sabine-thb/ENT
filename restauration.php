@@ -82,11 +82,11 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
         <h1>Votez pour votre repas de demain.</h1>
         <p class="descrVote">Pour cela, cliquez sur votre plat favori.</p> 
         <?php if (isset($_GET["err"] )){  
-            echo "<p>Vous avez déjà voté aujourd'hui.</p>";
+            echo "<p class=\"voteOk\">Vous avez déjà voté aujourd'hui.</p>";
         } 
         ?> 
         <?php if (isset($_GET["vote"] )){  
-            echo "<p>Votre vote a bien été pris en compte !</p>";
+            echo "<p class=\"voteOk\">Votre vote a bien été pris en compte !</p>";
         } 
         ?> 
         <div class="imgVote">
@@ -118,12 +118,36 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
     </div>
 </section>
 <section class="sec2">
-    <h1>Menu cantine du jour</h1>
+    <h1>Le plat que vous avez voté pour aujourd'hui : </h1>
+    <div class="flex">
+        <?php $requete =" SELECT * FROM choix WHERE choixEnTete = 1";
+        $stmt=$db->query($requete);
+        $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
+        foreach ($result as $row){ ?>
+        <div class="platJour">
+            <div class="imgPlatJour" style="background-image:url(<?php echo $row["image"] ?>);"></div>
+            <div class="titreEtDescr">           
+                <div class="nomPlatJour"><?php echo $row["nom"] ?></div>
+                <div class="descrPlatJour"><?php echo $row["description"] ?></div>
+            </div>        
+            
+        <?php } ?>
+        </div>
+        <div class="imgContainer">
+            <img src="./style/img/bonhommes/crous.png" alt="" class="imgCrous">
+        </div>
+        
+
+    </div>
+    
+   
+
 </section>
 
 
 <script src="./script/compteur.js"></script>
 <script src="./script/burger.js"></script>
+<script src="./script/restauration.js"></script>
 
     
 </body>

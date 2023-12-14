@@ -31,13 +31,13 @@
     <section>
         <h1>Connexion à l'ENT</h1>
         <form action="traiteLogin.php" method="get" class="formulaire">
-            <label for="statut" class="labelStatut">Statut : </label>
+            <!-- <label for="statut" class="labelStatut">Statut : </label>
             <select name="role" id="statut">
                 <option value="élève">élève</option>
                 <option value="professeur">professeur</option>
                 <option value="personnel du CROUS">personnel du CROUS</option>
             </select>
-            <br><br>
+            <br><br> -->
             <div class="idMdp">
                 <label for="login" class="labelForm">Identifiant :</label>
                 <input id="login" type="text" name="login" class="inputIdMdp">

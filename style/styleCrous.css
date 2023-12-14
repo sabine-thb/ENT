@@ -102,6 +102,11 @@ label{
     border-bottom:1px black solid;
 }
 
+.textArea{
+    width:100%;
+    height:100px;
+}
+
 .envoyer{
     font-family: "inter", sans-serif;
     font-size:1.1rem;

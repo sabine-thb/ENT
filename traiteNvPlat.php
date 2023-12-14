@@ -9,16 +9,19 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Récupérer le contenu du formulaire
     $nom=$_GET["nom"];
     $image=$_GET["image"];
+    $descr=$_GET["descr"];
+    
 
 
 
     //j'insère ensuite les infos dans ma table commentaire pour pouvoir les afficher ensuite
 
-    $requete ="INSERT INTO choix VALUES ( NULL, :nom, :image, NOW(), 0, 0)";
+    $requete ="INSERT INTO choix VALUES ( NULL, :nom, :descr, :image, NOW(), 0, 0)";
     $stmt=$db->prepare($requete);
 
     $stmt->bindValue(':nom',$nom,PDO::PARAM_STR);
     $stmt->bindValue(':image',$image,PDO::PARAM_STR);
+    $stmt->bindValue(':descr',$descr,PDO::PARAM_STR);   
     $stmt->execute();
     $result = $stmt->fetchall(PDO::FETCH_ASSOC); 
 
