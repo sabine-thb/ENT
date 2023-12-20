@@ -8,7 +8,7 @@ $id_user=$utilisateur ['id'];
 // Je récupère l'ID du plat choisi depuis l'URL
 $idPlatChoisi = $_GET['id'];
 
-var_dump($id_user);
+
 
 if(isset($_GET['id'])) { 
 
@@ -38,8 +38,10 @@ if(isset($_GET['id'])) {
     $stmt->bindValue(':id_user_ext',$id_user,PDO::PARAM_INT);
     $stmt->execute();
 
+        
+    
+
     header('Location:restauration.php?vote=ok');
-    }
 
 
 
@@ -48,5 +50,5 @@ if(isset($_GET['id'])) {
     
 
 
-} 
+} }
 ?>

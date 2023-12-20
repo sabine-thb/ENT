@@ -64,7 +64,7 @@ include("connexion.php");
 	
 </header>
 <?php
-$requete =" SELECT * FROM repas  ORDER BY date DESC LIMIT 1";
+$requete =" SELECT * FROM repas  ORDER BY date_repas DESC LIMIT 1";
     $stmt=$db->prepare($requete);
     $stmt->execute(); 
     $result = $stmt->fetch(PDO::FETCH_ASSOC); 
@@ -72,7 +72,7 @@ $requete =" SELECT * FROM repas  ORDER BY date DESC LIMIT 1";
         $id_choix2=$result["id_choix2_ext"];
     
 
-$requete =" SELECT * FROM choix WHERE id_choix = $id_choix1 OR id_choix = $id_choix2";
+$requete =" SELECT * FROM choix WHERE id_choix = $id_choix1 OR id_choix = $id_choix2 ";
 $stmt=$db->query($requete);
 $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
 ?>
@@ -89,6 +89,8 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
             echo "<p class=\"voteOk\">Votre vote a bien été pris en compte !</p>";
         } 
         ?> 
+        
+
         <div class="imgVote">
         <?php foreach ($result as $row){ ?>
             <img src="./style/img/bonhommes/vote.png" class="imgDeco" alt="">
@@ -97,11 +99,55 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
                 <p class="nomPlat"><?php echo $row["nom"] ?></p>
             </a>
             <?php } ?>
-        </div>   
-        <div class="barre">
-            <div></div>
-            <div></div>
-        </div>   
+        </div>
+        
+        <?php $requete2 = "SELECT nb_votes, nom
+            FROM choix
+            JOIN repas ON (choix.id_choix = repas.id_choix1_ext OR choix.id_choix = repas.id_choix2_ext)
+            WHERE repas.id_repas = (
+                SELECT id_repas
+                FROM repas
+                ORDER BY date_repas DESC
+                LIMIT 1
+            )"; //ici je récupère le nombre de vote de chaque choix proposés dans le repas le plus récent ( celui du jour)
+            $stmt=$db->query($requete2);
+            $result2=$stmt -> fetchall(PDO::FETCH_ASSOC);
+
+                  
+            // Initialiser la variable pour le nombre total de votes
+            $totalVotes=0;
+            
+            foreach ($result2 as $row) {    
+                $totalVotes += $row["nb_votes"]; // je récup le nb total de votes
+            }
+            // Initialiser un tableau pour stocker les pourcentages
+            $percentages = array();
+
+            // Je parcours les résultats pour calculer le pourcentage pour chaque choix
+            foreach ($result2 as $row) {
+                $nbVotesChoix = $row["nb_votes"];
+
+                // Je calcule le pourcentage pour chaque choix
+                $percentage = ($totalVotes > 0) ? ($nbVotesChoix / $totalVotes) * 100 : 0;
+
+                // Je stocke le pourcentage dans le tableau associatif
+                $percentages[$row["nom"]] = $percentage;
+
+                // J'afiche le pourcentage (facultatif)
+                echo "<p class=\"percent\">Pourcentage de votes pour " . $row["nom"] . " : " . $percentage . "%</p>";
+            }?>
+
+            <div class="barre">
+            <?php
+            // Boucle pour afficher chaque choix avec la largeur correspondante
+            foreach ($percentages as $nomChoix => $pourcentage) {
+                echo '<div class="choix"' . strtolower(str_replace(' ', '', $nomChoix)) . '" style="width: ' . $pourcentage . '%;"></div>';
+            }
+            ?>
+            </div>
+
+        
+
     </div>
     
     <div class="queue">

@@ -52,6 +52,7 @@ h1,.nomCrous{
     position: relative;
     display:flex;
     gap:10px;
+    margin-bottom:25px;
 }
 
 .linkVote{
@@ -84,6 +85,33 @@ h1,.nomCrous{
     margin-bottom:30px;
     color:rgb(141, 0, 0);
     font-weight: 600;
+}
+
+.barre{
+    width:100%;
+    height:15px;
+    display: flex;
+
+}
+
+.choix{
+    width:0;
+    height:100%;
+    transition: width 0.5s ease;
+}
+
+.percent{
+    margin-top:0;
+}
+
+.choix:first-of-type{
+    background-color: var(--violetFonce);
+    border-radius:20px 0px 0px 20px;
+}
+
+.choix:last-of-type{
+    background-color: rgb(157, 249, 145);
+    border-radius:0px 20px 20px 0px; 
 }
 
 /*Je mets en place la rubrique de temps d'attente pour la cantine*/
