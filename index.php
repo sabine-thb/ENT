@@ -20,7 +20,7 @@
     </nav>
     <?php
         if (isset($_GET["err"] )){  
-            echo "Vous n'avez pas entré le bon login/mdp, ou le rôle que vous avez sélectionné n'est pas attribué.";
+            echo "Vous n'avez pas entré le bon login/mdp.";
         }
         //SCRIPT POUR ASHER LE MDP POUR LE RETRER ENSUITE DANS LA BDD
         // $mot_de_passe="bebou";
@@ -31,13 +31,7 @@
     <section>
         <h1>Connexion à l'ENT</h1>
         <form action="traiteLogin.php" method="get" class="formulaire">
-            <!-- <label for="statut" class="labelStatut">Statut : </label>
-            <select name="role" id="statut">
-                <option value="élève">élève</option>
-                <option value="professeur">professeur</option>
-                <option value="personnel du CROUS">personnel du CROUS</option>
-            </select>
-            <br><br> -->
+            
             <div class="idMdp">
                 <label for="login" class="labelForm">Identifiant :</label>
                 <input id="login" type="text" name="login" class="inputIdMdp">

@@ -97,7 +97,11 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
                 <p class="nomPlat"><?php echo $row["nom"] ?></p>
             </a>
             <?php } ?>
-        </div>        
+        </div>   
+        <div class="barre">
+            <div></div>
+            <div></div>
+        </div>   
     </div>
     
     <div class="queue">
