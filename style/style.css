@@ -17,7 +17,11 @@ body{
     font-size:1rem;
 }
 
-
 section{
     padding:20px;
+}
+
+.txtRouge{
+    color:rgb(141, 0, 0);
+    font-weight: 600;
 }
