@@ -129,11 +129,16 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
                 // Je calcule le pourcentage pour chaque choix
                 $percentage = ($totalVotes > 0) ? ($nbVotesChoix / $totalVotes) * 100 : 0;
 
+                //Je fais en sorte que mon % n'ait pas de chiffre après la virgule
+                $formattedPercentage = number_format($percentage, 1);
+
                 // Je stocke le pourcentage dans le tableau associatif
-                $percentages[$row["nom"]] = $percentage;
+                $percentages[$row["nom"]] = $formattedPercentage;
+
+
 
                 // J'afiche le pourcentage (facultatif)
-                echo "<p class=\"percent\">Pourcentage de votes pour " . $row["nom"] . " : " . $percentage . "%</p>";
+                echo "<p class=\"percent\">Pourcentage de votes pour " . $row["nom"] . " : " . $formattedPercentage . "%</p>";
             }?>
 
             <div class="barre">

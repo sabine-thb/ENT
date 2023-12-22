@@ -84,6 +84,10 @@ $id_user=$utilisateur['id'];
             echo "<p class=\"noteOk\">Votre note a bien été insérée.</p>";
         } 
         ?> 
+        <?php if (isset($_GET["err"] )){  
+            echo "<p class=\"noteOk\">Votre valeur de note doit être supérieure ou égale à 20.</p>";
+        } 
+        ?> 
         <div class="formContainer">
             <form action="traiteNote.php">
                     <?php
@@ -111,26 +115,28 @@ $id_user=$utilisateur['id'];
                 
                 <p class="pForm">
                     <label for="title">Titre de la note : </label>
-                    <input type="text" id="title" name="titleNote">
+                    <input type="text" id="title" name="titleNote" required>
                 </p>
                 
                 <p class="pForm">   
                     <label for="value">Valeur de la note sur 20 : </label>
-                    <input type="text" id="value" name="valueNote">
+                    <input type="text" id="value" name="valueNote" required>
                 </p>
 
                 <p class="pForm">
                     <label for="coeff">Coefficient : </label>
-                    <input type="text" id="coeff" name="coeffNote">
+                    <input type="text" id="coeff" name="coeffNote" required>
                 </p>
                 <p>
                     <input type="submit" value="valider" class="valid">
                 </p>
+                <img src="./style/img/bonhommes/fusee.png"  class="imgProf"alt="">
 
                 
                 
 
             </form>
+
         </div>
         
     </section>

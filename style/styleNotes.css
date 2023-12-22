@@ -111,6 +111,7 @@ form{
     display:flex;
     flex-direction: column;
     gap:20px;
+    position: relative;
 }
 
 .votreMat{
@@ -149,6 +150,13 @@ label{
     color:rgb(141, 0, 0);
 }
 
+.imgProf{
+    height:190px;
+    position:absolute;
+    bottom:-30px;
+    left:-80px;
+}
+
 
 @media(max-width:900px){
     .accordeonContainer{
@@ -167,6 +175,11 @@ label{
     .noteCoeff{
         border-radius:0px 0px 5px 5px;
     }
+
+    .imgProf{
+        height:160px;
+        left:-40px;
+    }
 }
 @media(max-width:650px){
     .matiere, .titreDev{
@@ -181,6 +194,11 @@ label{
         height:140px;
         left:-42px;
         bottom:-50px;
+    }
+
+    .imgProf{
+        bottom:-80px;
+        left:-35px;
     }
 
     form{
@@ -208,6 +226,10 @@ label{
 
     .img{
         bottom:-74px;
+    }
+
+    .imgProf{
+        display: none;
     }
     
 }

@@ -23,7 +23,7 @@
             echo "Vous n'avez pas entré le bon login/mdp.";
         }
         //SCRIPT POUR ASHER LE MDP POUR LE RETRER ENSUITE DANS LA BDD
-        // $mot_de_passe="dallet";
+        // $mot_de_passe="bister";
         // $passwordHash=password_hash($mot_de_passe, PASSWORD_DEFAULT);
         // var_dump($passwordHash);
     ?>
