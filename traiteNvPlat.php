@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 
 
-    //j'insère ensuite les infos dans ma table commentaire pour pouvoir les afficher ensuite
+    //j'insère ensuite les infos dans ma table choix pour pouvoir les afficher ensuite dans la liste déroulante
 
     $requete ="INSERT INTO choix VALUES ( NULL, :nom, :descr, :image, NOW(), 0, 0)";
     $stmt=$db->prepare($requete);
