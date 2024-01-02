@@ -221,9 +221,14 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetch(PDO::FETCH_ASSOC); 
 
             $totalDuree = $result['total_duree'];
-
-            echo"<p class=\"num\"> $totalDuree</p>"
-            ?>  
+            if ($totalDuree === null) {
+                // Si le total des absences est vide, afficher "0"
+                $totalDuree = 0;
+            }
+            
+            echo "<p class=\"num\">$totalDuree</p>";
+            ?>
+  
         </div>
         <div class="number absNnJust">
         <h2 class="titleOne">Absences</h2>
@@ -233,6 +238,10 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetch(PDO::FETCH_ASSOC); 
 
             $totalDuree = $result['total_duree'];
+            if ($totalDuree === null) {
+                // Si le total des absences est vide, afficher "0"
+                $totalDuree = 0;
+            }
 
             echo"<p class=\"num\"> $totalDuree</p>"
             ?>  
@@ -245,6 +254,10 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetch(PDO::FETCH_ASSOC); 
 
             $totalDuree = $result['total_duree'];
+            if ($totalDuree === null) {
+                // Si le total des retards est vide, afficher "0"
+                $totalDuree = 0;
+            }
 
             echo"<p class=\"num\"> $totalDuree </p>"
             ?>  
@@ -257,6 +270,10 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetch(PDO::FETCH_ASSOC); 
 
             $totalDuree = $result['total_duree'];
+            if ($totalDuree === null) {
+                // Si le total des retards est vide, afficher "0"
+                $totalDuree = 0.00;
+            }
 
             echo"<p class=\"num\"> $totalDuree</p>"
             ?>  
@@ -298,6 +315,11 @@ $id_user=$utilisateur['id'];
                 </div>";
             //On affiche le nombre total d'heures injustifiées
             // echo "<p class=\"total\"> <span class=\"surligne\">Total d'absences et retards non justifiés :</span> $totalDuree heures.</p>";
+        }else{
+            echo "<div class=\"pointsMoins\">
+                    <h2 class=\"titleOne white\">Nombre de points en moins</h2>
+                    <div class=\"nbPtsMoins\">0.00</div>
+                </div>";
         }
         ?>
     </div>
