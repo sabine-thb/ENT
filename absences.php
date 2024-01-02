@@ -278,27 +278,40 @@ $id_user=$utilisateur['id'];
 
         $totalDuree = $result['total_duree'];
 
-        echo "<p> Total d'absences et retards non justifiés : $totalDuree heures.</p>";
+        
 
         // Si le total des heures est supérieur à 10
         if ($totalDuree > 10) {
-            // Calculer le nombre d'heures excédentaires
+            // On calcule le nombre d'heures excédentaires
             $heuresExcedentaires = $totalDuree - 10;
 
-            // Calculer le nombre de points à enlever sur la moyenne
+            // On calcule le nombre de points à enlever sur la moyenne
             $pointsEnleves = $heuresExcedentaires * 0.025;
 
-            // Arrondir le nombre de points à deux chiffres après la virgule
+            // On arrondit le nombre de points à deux chiffres après la virgule
             $pointsEnlevesArrondis = round($pointsEnleves, 2);
 
-            // Afficher le nombre de points enlevés arrondis
-            echo "<p>Points enlevés : $pointsEnlevesArrondis</p>";
+            // On affiche le nombre de points enlevés arrondis
+            echo "<div class=\"pointsMoins\">
+                    <h2 class=\"titleOne white\">Nombre de points en moins</h2>
+                    <div class=\"nbPtsMoins\">$pointsEnlevesArrondis</div>
+                </div>";
+            //On affiche le nombre total d'heures injustifiées
+            // echo "<p class=\"total\"> <span class=\"surligne\">Total d'absences et retards non justifiés :</span> $totalDuree heures.</p>";
         }
         ?>
     </div>
-    <?php }?> 
+    
+    <div class="titlExplication">Comment ça marche ?</div>
+    <p class="expl">Au delàs de 10h d'absences/retards non justifiés, chaque heure supplémentaire vous enlève 0.025 points sur votre moyenne générale.</p>
+    <p class="expl"> En cas de problème, veuillez contacter la secrétaire gérant votre promotion ou formation, ou l’enseignant en chef de votre département.</p>
+    <img src="./style/img/bonhommes/damePC.png" alt="" class="img">
+   
+    
+
 
 </section>
+<?php }?> 
 
     
 
