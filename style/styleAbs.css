@@ -1,0 +1,157 @@
+h1 {
+    font-family: "secular", sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/*Je stylise ce qui apparaitra sur l'interface prof*/
+
+.titleForm {
+    background-color: var(--bleu);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formAbs,
+.formRet {
+    width: fit-content;
+    padding: 50px 100px 75px 100px;
+    border-radius: 20px;
+    box-shadow: 25px 24px 19.4px 1px rgba(0, 0, 0, 0.15);
+    font-family: "inter", sans-serif;
+    position: relative;
+}
+
+label,
+legend {
+    padding: 5px;
+}
+
+input,
+select {
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.label1 {
+    background-color: var(--violetClair);
+}
+
+.label2 {
+    background-color: var(--vert);
+}
+
+.valider {
+    font-family: "inter", sans-serif;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    transition: padding 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%, 0);
+}
+
+.valider:hover {
+    padding: 5px 20px 5px 20px;
+}
+
+.allForm {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.form1,
+.form2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleForm {
+    font-size: 1.2rem;
+
+}
+
+.formAbs {
+    background-color: var(--vert);
+}
+
+.formRet {
+    background-color: var(--violetClair);
+}
+
+fieldset {
+    border: 2px white solid;
+}
+
+/*Je stylise désormais ce qui apprait sur l'interface élève*/
+
+.allAbsAndRet{
+    display:flex;
+    justify-content: space-around;
+    font-size:2rem;
+    font-family: "interSemiBold",sans-serif;
+}
+
+.titleOne{
+    font-size:1.3rem;
+    text-transform: uppercase;
+    font-family:"secular", sans-serif;
+    margin:25px 0px 0px 0px;
+
+}
+
+.titleTwo{
+    font-size:0.9rem;
+    text-transform: uppercase;
+    margin:10px 0px 0px 0px;
+}
+
+.number{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num{
+    width:100px;
+    background-color: var(--violetClair);
+    padding:20px 25px 20px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width:1050px) {
+
+    .formRet,
+    .formAbs {
+        padding: 50px 50px 75px 50px;
+    }
+
+    .allForm {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
+
+@media(max-width:460px) {
+    p {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    input,
+    select {
+        margin-left: 0px;
+        padding: 5px;
+    }
+}

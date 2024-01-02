@@ -19,7 +19,7 @@ $id_user=$utilisateur['id'];
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleResa.css">
        
-    <title>Réservations</title>
+    <title>ENT - Réservations</title>
 </head>
 <body>
 <header>
@@ -148,7 +148,8 @@ $id_user=$utilisateur['id'];
 
         if (isset($_GET["err"] )){  
             echo "<p class=\"txtRouge\">La date de rendu que vous avez sélectionnée est déjà passée..</p>";
-    }
+            
+        }
         ?> 
         
         <form action="traiteResa.php" method="get" class="formResa">

@@ -1,5 +1,6 @@
 <?php
 session_start();
+include("connexion.php");
 $utilisateur=$_SESSION['utilisateur'];
 ?>
 
@@ -15,7 +16,7 @@ $utilisateur=$_SESSION['utilisateur'];
    <link rel="stylesheet" href="style/styleAccueil.css">
    
     
-    <title>Accueil ENT</title>
+    <title>ENT - Accueil</title>
 </head>
 <body>
     

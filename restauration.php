@@ -14,7 +14,7 @@ include("connexion.php");
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleRestauration.css">
        
-    <title>Restauration</title>
+    <title>ENT - Restauration</title>
 </head>
 <body>
 <header>

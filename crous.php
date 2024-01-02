@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css">    
     <link rel="stylesheet" href="style/styleCrous.css">    
     <link rel="stylesheet" href="style/fonts.css">     
-    <title>Interface CROUS</title>
+    <title>ENT - CROUS</title>
 <head>
 	<meta charset="UTF-8">
 </head>
