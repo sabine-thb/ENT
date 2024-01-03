@@ -33,7 +33,7 @@ $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
    <link rel="stylesheet" href="style/styleChat.css">
-    <title>Chat ENT</title>
+    <title>Chat - ENT</title>
 </head>
 
 <body>
@@ -86,7 +86,7 @@ $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </header>
 
     <section class="section1">
-        <h1>Votre messagerie :</h1>
+        <h1>Messagerie</h1>
         <br>
 
         <!-- Affichage des messages -->
