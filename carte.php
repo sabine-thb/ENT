@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/style.css">   
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
+    <link rel="stylesheet" href="style/styleCarte.css">
     <title>Carte du Campus</title>
 </head>
 
@@ -61,8 +62,7 @@
 
     <section class="section1">
         <h1>Carte du Campus :</h1>
-        <br>
-        <iframe width="50%" height="500px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/carte-du-campus-de-luniversite-gustave-eiifel_1005155?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/carte-du-campus-de-luniversite-gustave-eiifel_1005155?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true" target="_blank">Voir en plein écran</a></p>
+        <iframe frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/carte-du-campus-de-luniversite-gustave-eiifel_1005155?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/carte-du-campus-de-luniversite-gustave-eiifel_1005155?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true" target="_blank">Voir en plein écran</a></p>
 
     </section>
 </body>

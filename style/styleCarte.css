@@ -1,0 +1,36 @@
+iframe {
+    width: 60%;
+    height: 30rem;
+}
+
+@media(max-width:1000px){
+    
+    iframe {
+        width: 70%;
+    }
+
+}
+
+@media(max-width:900px){
+    
+    iframe {
+        width: 80%;
+    }
+
+}
+
+@media(max-width:800px){
+    
+    iframe {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:700px){
+    
+    iframe {
+        width: 100%;
+    }
+
+}
