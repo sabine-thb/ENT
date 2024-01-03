@@ -75,5 +75,7 @@ $utilisateur=$_SESSION['utilisateur'];
 </section>
     
 <script src="./script/burger.js"></script>
+
+<a href="messagerie.php"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset=""></a>
 </body>
 </html>
