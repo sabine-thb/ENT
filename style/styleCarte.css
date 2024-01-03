@@ -1,36 +1,47 @@
+.title{
+    font-family:"secular", sans-serif;
+    font-size:1.3rem;
+    text-transform: uppercase;
+}
+
+.section1{
+    position:relative;
+}
+
+.lienPleinEcran{
+    text-decoration:none;
+    color:white;
+    background-color: gray;
+    padding:5px 10px 5px 10px;
+    border-radius:5px;
+    position:absolute;
+    right:80px;
+    transition: padding 0.2s ease-in-out;
+
+}
+
+.lienPleinEcran:hover{
+    padding:5px 15px 5px 15px;
+}
+
 iframe {
-    width: 60%;
-    height: 30rem;
+    width: 90%;
+    height: 600px;
 }
 
-@media(max-width:1000px){
+.cardContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media(max-width:500px){
     
     iframe {
-        width: 70%;
+        height:400px;
     }
 
-}
-
-@media(max-width:900px){
-    
-    iframe {
-        width: 80%;
-    }
-
-}
-
-@media(max-width:800px){
-    
-    iframe {
-        width: 90%;
-    }
-
-}
-
-@media(max-width:700px){
-    
-    iframe {
-        width: 100%;
-    }
-
-}
+} 
