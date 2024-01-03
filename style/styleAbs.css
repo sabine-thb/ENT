@@ -134,7 +134,6 @@ fieldset {
 
 .sec2{
     background: var(--degrade);
-    padding-bottom:100px;
     position: relative;
 }
 
@@ -142,6 +141,7 @@ fieldset {
     font-size:2rem;
     color:white;
     margin:20px;
+    text-align: center;
 }
 
 .pointsMoins{
@@ -149,7 +149,7 @@ fieldset {
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding-bottom:50px;
+
 }
 
 .total{
@@ -184,12 +184,29 @@ fieldset {
     max-width:600px;
     margin: 10px 0px 10px 0px;
 }
+
+.baSection{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px;
+}
+
 .img{
+    margin-right:60px;
     width:400px;
-    position:absolute;
     bottom:0px;
     right:50px;
 }
+
+@media(max-width:1100px){
+    .img{
+        width:300px;
+        bottom:80px;
+        margin-right:0px;
+    }
+}
+
 @media(max-width:1050px) {
 
     .formRet,
@@ -200,6 +217,30 @@ fieldset {
     .allForm {
         flex-wrap: wrap;
         gap: 25px;
+    }
+}
+
+@media(max-width:700px){
+    .allAbsAndRet{
+        font-size:1.5rem;
+    }
+
+    .num{
+        padding:10px;
+    }
+
+    .pointsMoins{
+        margin-bottom:20px;
+    }
+}
+
+@media(max-width:600px){
+    .allAbsAndRet{
+        flex-wrap:wrap;
+    }
+
+    .baSection{
+        flex-direction:column;
     }
 }
 
