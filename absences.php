@@ -343,7 +343,7 @@ $id_user=$utilisateur['id'];
 </section>
 <?php }?> 
 
-    
+<a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>   
 
     
 <script src="./script/burger.js"></script>

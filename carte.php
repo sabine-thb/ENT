@@ -70,5 +70,6 @@
         
 
     </section>
+    <a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
 </body>
 </html>
