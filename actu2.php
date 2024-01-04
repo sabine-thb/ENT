@@ -68,11 +68,11 @@
             <h1 class="titlePage">Actu de la semaine</h1>
         </div>   
         
-        <img src="./style/img/actus/actu1.jpg" alt="Image Actualité de la semaine" srcset="" class="actuPrincipale">
+        <img src="./style/img/actus/actu2.jpg" alt="Image Actualité de la semaine" srcset="" class="actuPrincipale">
 
-        <h2 class="titleActuPrincipale">Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
+        <h2 class="titleActuPrincipale">Classement de Shanghai : l’Université Gustave Eiffel se distingue dans le classement par thématique</h2>
 
-        <p class="descrPrincipale">Lundi 13 novembre 2023, l'Observatoire National des Discriminations et de l'Égalité dans le Supérieur (ONDES) et la Conférence Permanente des chargé.e.s de mission Égalité et Diversité (CPED) ont présenté les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité), réalisée par Yannick L’Horty (Université Gustave Eiffel Et ONDES), Philippe Liotard (Université Lyon 1 Et CPED), Romane Masternak (CPED) et Aude Stheneur (CPED). Une table ronde s’est tenue suite à la divulgation des résultats de l’enquête afin de commenter et compléter le propos.</p>
+        <p class="descrPrincipale">Le classement de Shanghai est un classement annuel des universités du monde entier. Pour la troisième année consécutive, l'Université Gustave Eiffel se distingue sur 9 des 54 classements thématique.</p>
 
     </section>
 
@@ -84,9 +84,9 @@
 
         <div class="actus">
             <div class="actuContainer">
-                <a href="actu2.php"><img src="./style/img/actus/actu2.jpg" alt="Image Actualité 2" srcset="" class=" actu actu2"></a>
-                <h2>Classement de Shanghai : l’Université Gustave Eiffel se distingue dans le classement par thématique</h2>
-                <p class="descr">Le classement de Shanghai est un classement annuel des universités du monde entier. Pour la troisième année consécutive, l'Université Gustave Eiffel se distingue sur 9 des 54 classements thématique.</p>
+                <a href="actus.php"><img src="./style/img/actus/actu1.jpg" alt="Image Actualité 1" srcset="" class=" actu actu2"></a>
+                <h2>Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
+                <p class="descr">Lundi 13 novembre 2023, les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité) ont été présenté.</p>
             </div>
 
             <div class="actuContainer">
