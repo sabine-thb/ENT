@@ -3,7 +3,7 @@ session_start();
 include("connexion.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer le contenu du formulaire
+    $nomCours=$_POST["nomCours"];
     $file = $_FILES["file"];
     $id_mat_ext = $_POST["matiere"];
 
@@ -14,23 +14,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         move_uploaded_file($file["tmp_name"], $destination);
 
         // Lire le contenu du fichier
-        
-        $contenuFichier = file_get_contents($file["tmp_name"]);
+        $contenuFichier = file_get_contents($destination);
 
-        // Insérer les informations dans la table cours avec une requête préparée
-        $requete = "INSERT INTO cours VALUES (NULL, :fichier, :id_matiere)";
+        // Insérer les informations dans la table cours
+        $requete = "INSERT INTO cours  VALUES (NULL, :nomCours, :fichier, :id_matiere)";
         $stmt = $db->prepare($requete);
-        $stmt->bindParam(':id_matiere', $id_mat_ext, PDO::PARAM_INT);
+        $stmt->bindParam(':nomCours', $nomCours, PDO::PARAM_STR);
         $stmt->bindParam(':fichier', $contenuFichier, PDO::PARAM_LOB);
+        $stmt->bindParam(':id_matiere', $id_mat_ext, PDO::PARAM_INT);
         $stmt->execute();
 
         // Rediriger avec un message de succès
         header('Location: cours.php?insertion=ok');
         exit;
+
     } else {
         // Il y a eu une erreur lors du téléchargement du fichier
         echo "Erreur lors du téléchargement du fichier.";
     }
 }
 ?>
-
