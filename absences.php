@@ -335,13 +335,28 @@ $id_user=$utilisateur['id'];
         
     </div>
    
-    
-   
-    
-
 
 </section>
 <?php }?> 
+
+<footer>
+    <div class="logoFooter">
+        <a href="accueil.php">
+            <img src="./style/img/logoFooter.svg" alt="retour à l'accueil">
+        </a>
+    </div>
+    <div class="ML">
+        <p>Mentions Légales</p>
+        <p>Editeur</p>
+        <p>Contributeurs</p>
+        <p>Hébergeur</p>
+        <p>Cookies</p>
+        <p>RGPD</p>
+    </div>
+    <div class="contact">
+        <p>Contact</p>
+    </div>
+</footer>
 
 <a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>   
 
