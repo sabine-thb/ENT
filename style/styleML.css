@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.section1 {
+    text-align: center;
+    padding-bottom:60px;
+}
+
+.titleContainer{
+    position: relative;
+    width:fit-content;
+    display: flex;
+    margin:auto;
+}
+
+.titlePage {
+    font-family:"secular", sans-serif;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin:40px 0px 40px 0px;
+}
+
+.img1{
+    position:absolute;
+    width:125px;
+    top:0px;
+    left:175px;
+}
+
+.contentsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contentContainer {
+    width: 40%;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+h2 {
+    font-family:"secular", sans-serif;
+    font-size:1rem;
+    text-transform: uppercase;
+    margin:auto;
+}
+
+p {
+    font-size:1rem;
+    margin:auto;
+}
+    
+.pFooterTitle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
