@@ -20,6 +20,7 @@ $id_user=$utilisateur['id'];
     <link rel="stylesheet" href="style/styleResa.css">
        
     <title>ENT - Réservations</title>
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
 <header>

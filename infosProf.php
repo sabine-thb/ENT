@@ -15,6 +15,7 @@ include("connexion.php");
     <link rel="stylesheet" href="style/styleProf.css">
        
     <title>ENT - Infos profs</title>
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
 <header>

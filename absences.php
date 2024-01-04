@@ -21,6 +21,8 @@ $id_user=$utilisateur['id'];
    
     
     <title>ENT - Absences/retards</title>
+    
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
     

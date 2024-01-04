@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleActus.css">
-    <title>Emploi du Temps</title>
+    <title>Actualités</title>
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
     

@@ -17,6 +17,8 @@ $utilisateur=$_SESSION['utilisateur'];
    
     
     <title>ENT - Accueil</title>
+    
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
     

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/fonts.css">    
     <link rel="stylesheet" href="style/connexion.css">   
     <title>Connexion ENT</title>
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 <head>
 	<meta charset="UTF-8">
 </head>

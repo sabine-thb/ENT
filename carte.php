@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleCarte.css">
     <title>ENT - Carte du Campus</title>
+    
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 
 <body>
