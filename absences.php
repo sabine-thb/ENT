@@ -340,21 +340,26 @@ $id_user=$utilisateur['id'];
 <?php }?> 
 
 <footer>
-    <div class="logoFooter">
+    <div class="logoFooterContainer">
         <a href="accueil.php">
-            <img src="./style/img/logoFooter.svg" alt="retour à l'accueil">
+            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
         </a>
     </div>
     <div class="ML">
-        <p>Mentions Légales</p>
-        <p>Editeur</p>
-        <p>Contributeurs</p>
-        <p>Hébergeur</p>
-        <p>Cookies</p>
-        <p>RGPD</p>
+        <p class="pFooterTitle">Mentions Légales</p>
+        <p class="pFooter">Editeur</p>
+        <p class="pFooter">Contributeurs</p>
+        <p class="pFooter">Hébergeur</p>
+        <p class="pFooter">Cookies</p>
+        <p class="pFooter">RGPD</p>
     </div>
     <div class="contact">
         <p>Contact</p>
+        <div class="reseaux">
+            <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
+            <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
+            <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
+        </div>
     </div>
 </footer>
 

@@ -36,3 +36,34 @@ section{
     color:rgb(141, 0, 0);
     font-weight: 600;
 }
+
+/*Je stylise le footer*/
+
+footer{
+    background-color: var(--violetFonce);
+    display:flex;
+    justify-content: flex-end;
+    align-items:flex-start ;
+    gap:100px;
+    color:white;
+    padding:25px 50px 25px 50px;
+    text-transform: uppercase;
+}
+
+.logoFooter{
+    width:300px;
+}
+
+.ML{
+    margin-left:auto;
+}
+
+
+
+.pFooter{
+    margin:2px;
+}
+
+.reseau{
+    width:50px;
+}
