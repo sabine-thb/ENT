@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(to top, #DFD9FF, #D9ECFF);
+}
+
 .section1 {
     text-align: center;
     padding-bottom:60px;
