@@ -77,8 +77,15 @@ include("connexion.php");
         <h1>Votre messagerie :</h1>
         <br>
 
-        <a href="chat.php?canal_id=1">Canal 1</a>
-        <a href="chat.php?canal_id=2">Canal 2</a>
+        <div class=canal-description>
+            <p>Rejoingnez votre canal public et discutez avec l'ensemble de votre IUT</p>
+                 <a href="chat.php?canal_id=1">Canal 1</a>
+        </div>
+
+        <div class=canal-description>
+             <p>Rejoingez votre canal privé et consultez votre messagerie privée </p>
+                 <a href="chat.php?canal_id=2">Canal 2</a>
+         </div>
 
     </section>
     
