@@ -85,6 +85,7 @@ include("connexion.php");
             <?php }?>
         
     </div>
+    <img src="./style/img/bonhommes/damePlanning.png" class="img" alt="">
 </section>
 
 <footer>

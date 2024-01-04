@@ -42,3 +42,15 @@ iframe{
     }
 
 } 
+
+@media(max-width:460px){
+    .titlePage{
+        font-size:1.1rem;
+    }
+
+    .img{
+        width:50px;
+        right:152px;
+        top:20px;
+    }
+}
