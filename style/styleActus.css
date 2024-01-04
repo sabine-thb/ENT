@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.section1 {
+    max-width: 50vw;
+    text-align: center;
+    margin: auto;
+}
+
+.section2 {
+    text-align: center;
+}
+
+h1 {
+    font-family:"secular", sans-serif;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.actus {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.actu {
+    width: 20rem;
+    margin: 10px;
+    text-align: left;
+}
+
+.actu1, .actu2, .actu3, .actu4 {
+    border-radius: 30px;
+}
+
+.actu1 {
+    width: 28.125rem;
+}
+
+.actu2, .actu3, .actu4 {
+    width: 20rem;
+}
+
+h2 {
+    font-family:"secular", sans-serif;
+    font-size:1rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+p {
+    font-size:1rem;
+    text-align: left;
+}
