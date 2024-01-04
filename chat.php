@@ -87,7 +87,7 @@ $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </header>
 
     <section class="section1">
-        <h1>Messagerie</h1>
+        <h1>Ma messagerie</h1>
         <br>
 
         <!-- Affichage des messages -->
