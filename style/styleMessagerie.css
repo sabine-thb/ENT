@@ -1,0 +1,18 @@
+.section1 a{
+    display: inline-block; 
+    margin: 10px; 
+    padding: 20px 30px; 
+    text-decoration: none; 
+    color: #fff; 
+    background-color: var(--violetFonce); 
+    border-radius: 5px; 
+    }
+    
+.section1 a:hover{
+     background-color: #8184d2;
+    }
+    
+ .canal-description {
+    text-align: center; 
+    margin-bottom: 20px; 
+    }
