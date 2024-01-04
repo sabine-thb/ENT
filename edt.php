@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleEDT.css">
     <title>Emploi du Temps</title>
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
     
@@ -67,7 +68,7 @@
 
         </div>
         
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showPrint=0&showTabs=1&showCalendars=0&mode=WEEK&showDate=1&showNav=1&src=dW5kNXE3ZDczbW1nbWkybjZra2Vub2RjaTVtbGhqOGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234549ae" height="600" frameborder="0" scrolling="no" class="week"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showPrint=0&showCalendars=0&showTz=0&mode=WEEK&src=dW5kNXE3ZDczbW1nbWkybjZra2Vub2RjaTVtbGhqOGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237a7cc8" height="600" frameborder="0" scrolling="no" class="week"></iframe>
 
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showPrint=0&showCalendars=0&showTz=0&mode=AGENDA&src=dW5kNXE3ZDczbW1nbWkybjZra2Vub2RjaTVtbGhqOGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237a7cc8" height="600" frameborder="0" scrolling="no" class="agenda"></iframe>
     </section>

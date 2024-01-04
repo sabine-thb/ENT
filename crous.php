@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/styleCrous.css">    
     <link rel="stylesheet" href="style/fonts.css">     
     <title>ENT - CROUS</title>
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 <head>
 	<meta charset="UTF-8">
 </head>

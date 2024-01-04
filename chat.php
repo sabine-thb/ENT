@@ -34,6 +34,7 @@ $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style/burger.css">
    <link rel="stylesheet" href="style/styleChat.css">
     <title>Chat - ENT</title>
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 
 <body>

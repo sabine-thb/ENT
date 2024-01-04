@@ -15,6 +15,7 @@ include("connexion.php");
     <link rel="stylesheet" href="style/styleRestauration.css">
        
     <title>ENT - Restauration</title>
+    <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
 <header>
