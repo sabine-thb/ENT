@@ -346,15 +346,15 @@ $id_user=$utilisateur['id'];
         </a>
     </div>
     <div class="ML">
-        <p class="pFooterTitle">Mentions Légales</p>
-        <p class="pFooter">Editeur</p>
-        <p class="pFooter">Contributeurs</p>
-        <p class="pFooter">Hébergeur</p>
-        <p class="pFooter">Cookies</p>
-        <p class="pFooter">RGPD</p>
+        <a href="ML.html" class="lienFooter"><p class="pFooterTitle">Mentions Légales</p></a>
+        <a href="ML.html#editeur" class="lienFooter"><p class="pFooter">éditeur</p></a>
+        <a href="ML.html#contributeurs" class="lienFooter"><p class="pFooter">Contributeurs</p></a>
+        <a href="ML.html#hebergeur" class="lienFooter"><p class="pFooter">Hébergeur</p></a>
+        <a href="ML.html#cookies" class="lienFooter"><p class="pFooter">Cookies</p></a>
+        <a href="ML.html#RGPD" class="lienFooter"><p class="pFooter">RGPD</p></a>
     </div>
     <div class="contact">
-        <p>Contact</p>
+        <p class="pFooterTitle">Contact</p>
         <div class="reseaux">
             <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
             <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">

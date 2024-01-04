@@ -199,6 +199,10 @@ fieldset {
     right:50px;
 }
 
+footer{
+    margin-top:0;
+}
+
 @media(max-width:1100px){
     .img{
         width:300px;

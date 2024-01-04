@@ -96,6 +96,29 @@
         </div>
         
     </section>
+    <footer>
+    <div class="logoFooterContainer">
+        <a href="accueil.php">
+            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
+        </a>
+    </div>
+    <div class="ML">
+        <a href="ML.html" class="lienFooter"><p class="pFooterTitle">Mentions Légales</p></a>
+        <a href="ML.html#editeur" class="lienFooter"><p class="pFooter">éditeur</p></a>
+        <a href="ML.html#contributeurs" class="lienFooter"><p class="pFooter">Contributeurs</p></a>
+        <a href="ML.html#hebergeur" class="lienFooter"><p class="pFooter">Hébergeur</p></a>
+        <a href="ML.html#cookies" class="lienFooter"><p class="pFooter">Cookies</p></a>
+        <a href="ML.html#RGPD" class="lienFooter"><p class="pFooter">RGPD</p></a>
+    </div>
+    <div class="contact">
+        <p class="pFooterTitle">Contact</p>
+        <div class="reseaux">
+            <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
+            <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
+            <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
+        </div>
+    </div>
+</footer>
         
     <script src="./script/burger.js"></script>
 
