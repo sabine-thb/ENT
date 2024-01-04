@@ -72,7 +72,27 @@
 
         <h2 class="titleActuPrincipale">Plastic Odyssey : un tour du monde engagé dans la lutte contre la pollution plastique</h2>
 
-        <p class="descrPrincipale">Focus sur le projet Recityplast porté par l’Université Gustave Eiffel, présenté à l’occasion de la première escale de l’expédition à Dakar, au Sénégal.</p>
+        <p class="descrPrincipale">La problématique de la pollution plastique s'est imposée comme l'une des urgences environnementales les plus criantes de notre époque. Année après année, des millions de tonnes de plastique envahissent nos océans, mettant en péril la faune marine et l'équilibre de notre planète. La grande expédition Plastic Odyssey, portée par Simon Bernard, parcourt le monde à la recherche de solutions pour construire un monde sans plastique.</p>
+
+        <p class="descrPrincipale"><strong>Focus sur le projet Recityplast porté par l’Université Gustave Eiffel, présenté à l’occasion de la première escale de l’expédition à Dakar, au Sénégal.</strong></p>
+
+        <p class="descrPrincipale">L'expédition Plastic Odyssey incarne la transformation des déchets plastiques en une ressource précieuse. Cette initiative audacieuse mobilise un navire de recherche et de démonstration, qui devient un laboratoire flottant, sillonnant les océans à la recherche de solutions novatrices pour donner une nouvelle vie au plastique. Le principal objectif de cette expédition est de sensibiliser le public aux conséquences alarmantes de la pollution plastique tout en démontrant que ces déchets peuvent être valorisés de différentes manières.</p>
+
+        <p class="descrPrincipale">Lors de la première escale à Dakar, au Sénégal, l'Université Gustave Eiffel a contribué de manière significative à cette mission en présentant le projet Recityplast. À chaque étape du voyage, c’est tout le navire qui se transforme en un véritable laboratoire en plein air, accueillant des chercheurs, des entrepreneurs et des experts dans le domaine de la gestion des déchets plastiques.</p>
+
+        <p class="descrPrincipale">Parmi les acteurs impliqués, Lamine Dieng, directeur de recherche au Laboratoire Structure Métalliques et Câbles (SMC) de l'Université Gustave Eiffel, déclare : « Quand on arrive à Dakar, on voit du plastique partout. L'un des principaux objectifs de ce projet est d’éveiller la conscience de la population sur les risques associés à cette forme de pollution en démontrant qu'il s'agit d'un déchet pouvant être transformé en ressource précieuse. »</p>
+
+        <p class="descrPrincipale">Car si le recyclage des déchets plastiques au Sénégal répond à une nécessité environnementale qui impose, en premier lieu, la mise au point de nouvelles technologies, il peut également s’inscrire dans une démarche économique et sociale. C’est tout le pari du projet Recytiplast, initié en 2020 et soutenu par l’I-SITE FUTURE en tant que projet « Impulsion ».</p>
+
+        <p class="descrPrincipale">Fruit d’un partenariat franco-sénégalais, Recytiplast vise à étudier la faisabilité technique et sociale de la valorisation des déchets plastiques afin d’améliorer le bâti dans les zones rurales. Concrètement, il s’agit d’organiser la transformation de résidus, nocifs pour l’environnement ou la santé, en matériaux innovants, utiles et rentables.</p>
+
+        <p class="descrPrincipale">« Ce qui rend Recytiplast unique, c'est sa capacité à rassembler des compétences issues de domaines aussi variés que les sciences des matériaux, les sciences humaines et sociales, ainsi que des acteurs locaux. Cette interdisciplinarité exceptionnelle est rarement observée au sein de projets de recherche. » constate Laetitia Van Schoors, directrice de recherche au laboratoire Comportement Physico-chimique et Durabilité des Matériaux (CPDM), de l’Université Gustave Eiffel, qui copilote le projet avec Lamine Dieng.</p>
+
+        <p class="descrPrincipale">Les deux chercheurs collaborent notamment avec l’IMT Nord Europe, l’Université du Mans et l’ONG le Gret ainsi qu’avec des partenaires sénégalais tels que l’Université Cheikh-Anta-Diop de Dakar (UCAD), des communautés rurales ou encore des mairies…</p>
+
+        <p class="descrPrincipale">Cette présence à Dakar représente une très grande opportunité pour le projet Recityplast. En dehors d’apporter de la visibilité aux travaux de recherche menés par l’Université Gustave Eiffel sur ce domaine, cette aventure a été l’occasion de pouvoir vulgariser la recherche et de transmettre de précieuses connaissances à la population visitant le bateau lors des ateliers organisés par l’équipage.</p>
+
+        <p class="descrPrincipale">« C'était une collaboration mutuellement enrichissante : Simon (ndlr : Simon Bernard, co-fondateur de Plastic Odyssey) avait besoin de notre expertise, tout comme nous avions besoin de lui pour diffuser nos connaissances », explique Lamine.</p>
 
     </section>
 
@@ -86,7 +106,7 @@
             <div class="actuContainer">
                 <a href="actus.php"><img src="./style/img/actus/actu1.jpg" alt="Image Actualité 1" srcset="" class=" actu actu2"></a>
                 <h2>Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
-                <p class="descr">Lundi 13 novembre 2023, les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité) ont été présenté.</p>
+                <p class="descr">Lundi 13 novembre 2023, les résultats de l’enquête REMEDE ont été présentés.</p>
             </div>
 
             <div class="actuContainer">
@@ -97,8 +117,8 @@
 
             <div class="actuContainer">
                 <a href="actu3.php"><img src="./style/img/actus/actu3.jpg" alt="Image Actualité 3" srcset="" class="actu actu4"></a>
-                <h2>L'UEO - Médiation scientifique à destination des scolaires ou du grand public</h2>
-                <p class="descr">Vidéo YouTube disponible sur la chaîne de l’Université.</p>
+                <h2>Gustave Eiffel, inspirateur des jeunes générations</h2>
+                <p class="descr">À l’occasion du colloque Eiffel*, Jean-Paul Mizzi, vice-président Coordination Politiques Campus à l’Université Gustave Eiffel, revient sur la figure de Gustave Eiffel et nous montre en quoi « le magicien du fer » continue d’inspirer les jeunes générations.</p>
             </div>
         </div>
         

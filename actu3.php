@@ -70,9 +70,48 @@
         
         <img src="./style/img/actus/actu3.jpg" alt="Image Actualité de la semaine" srcset="" class="actuPrincipale">
 
-        <h2 class="titleActuPrincipale">L'UEO - Médiation scientifique à destination des scolaires ou du grand public</h2>
+        <h2 class="titleActuPrincipale">Gustave Eiffel, inspirateur des jeunes générations</h2>
 
-        <p class="descrPrincipale">Vidéo YouTube disponible sur la <a href="https://youtu.be/SE-jJlWJL0A?si=bnPk32bLeXF_wp4G" target="_blank">chaîne de l’Université</a>.</p>
+        <p class="descrPrincipale">À l’occasion du colloque Eiffel, Jean-Paul Mizzi, vice-président Coordination Politiques Campus à l’Université Gustave Eiffel, revient sur la figure de Gustave Eiffel et nous montre en quoi « le magicien du fer » continue d’inspirer les jeunes générations.</p>
+
+        <p class="descrPrincipale"><strong>Un nom pour une université nationale atypique</strong></p>
+
+        <p class="descrPrincipale">Le nom de notre université « Université Gustave Eiffel » a été choisi suite à un vote interne des personnels. Gustave Eiffel, son parcours, ses projets illustrent bien l’identité de notre université faite d’un regroupement original d’organismes, à vocation interdisciplinaire, créative, inspirante, innovante, fortement intriquée entre recherche, formation, appui aux politiques publiques et ouverture de la science. Une université consciente des attentes du monde qui l’entoure – citoyens, entreprises, politiques publiques et qui accepte la prise de risques et favorisant le pas de côté.</p>
+
+        <p class="descrPrincipale">Ce qui nous anime au sein de l’université s’inspire aussi de la thèse de l’historien Arnold Toynbee sur les causes de la disparition de la capacité créative, cause du déclin des organisations. Éviter que l’esprit entrepreneurial et sa capacité créative cher à Gustave Eiffel soit étouffé par l’esprit managérial fait de mesure, de prédictibilité et d’une logique de contrôle et élimine peu à peu la capacité d’innovation notamment toute innovation de rupture au profit des seules innovations incrémentales.</p>
+
+        <p class="descrPrincipale">Cela nous exige de réfléchir à non seulement comment nous devons former les jeunes pour qu’ils ne soient pas uniquement des personnels de domination et de contrôle, mais des personnels de création au sein des structures qu’ils rejoignent mais aussi à comment nous devons libérer les énergies innovatrices et créatrices d’entreprises de la recherche.</p>
+
+        <p class="descrPrincipale"><strong>Une figure qui résonne auprès des jeunes générations qu’elles s’approprient et célèbrent</strong></p>
+
+        <p class="descrPrincipale">Tout au long de l’année 2023 au sein de différentes formations de l’Université Gustave Eiffel et en connexion étroite avec des chercheurs et enseignants-chercheurs, des groupes d’étudiants ont développé des projets tels que :</p>
+
+        <p class="descrPrincipale">La création de podcasts autour de la vie et de l’œuvre de Gustave Eiffel, le lancement d’un concours d’architecture visant à proposer des pavillons éphémères au pied de la tour Eiffel pour célébrer le travail de Gustave Eiffel où comment, à l’instar de la tour Eiffel, utiliser le nombre d’or – « Faire penser la main et faire dessiner la tête », l’utilisation de la réalité virtuelle pour valoriser la vie et l’œuvre de Gustave Eiffel… Un documentaire sur les projets des étudiants a été réalisé à cette occasion.</p>
+
+        <p class="descrPrincipale">Au cours de cette année 2023, nous avons également sondé les étudiants de l’université sur leur perception de la figure et de l’œuvre du grand homme. Les mots, les qualificatifs les plus employés pour décrire Gustave Eiffel furent : <strong>Innovant / Ingénieux / Créatif / Curieux / Moderne / Ambitieux / Entreprenant / Bâtisseur/ Magicien.</strong></p>
+
+        <p class="descrPrincipale">La figure de Gustave Eiffel continue dès lors de résonner au sein des jeunes générations.</p>
+
+        <p class="descrPrincipale"><strong>Les différentes facettes de la vie et de l’œuvre de Gustave Eiffel font sens auprès des jeunes générations.</strong></p>
+
+        <p class="descrPrincipale">Gustave Eiffel, dès le début de sa carrière, a construit des ouvrages avec une vision pluridisciplinaire. Ses travaux mixent génie civil (comment je fais avec les moyens du bord), génie industriel (comment je maximise les moyens et procédés de production et j’opère un contrôle systématique de la qualité des produits) et génie urbain (comment je m’inscris dans l’aménagement durable de l’espace en étroite collaboration avec les architectes et les décideurs publics pour s’assurer que les projets répondent aux besoins).</p>
+
+        <p class="descrPrincipale">De plus, il a défendu avec force un concept esthétique dans ses réalisations : « Parce que nous sommes des ingénieurs, croit-on donc que la beauté ne nous préoccupe pas dans nos constructions et qu'en même temps que nous faisons solide et durable, nous ne nous efforçons pas de faire élégant ? »</p>
+
+        <p class="descrPrincipale">Gustave Eiffel incarne dans sa carrière un parcours qui allie réussite technique, réussite commerciale et réussite scientifique : une intelligence créative au service de la modernité inspirant pour les nouvelles générations. Il avait :</p>
+
+        <ul class="descrPrincipale">
+            <li>un souci de l’usage, celui de l’innovation technologique, de l’ouverture de la science, et du beau architectural,</li>
+            <li>une capacité créative et de rêve, un esprit aventureux qui sait prendre des risques,</li>
+            <li>une détermination pour rechercher et développer les compétences – de brillants ingénieurs qu'il a su découvrir ou débaucher,</li>
+            <li>une vraie capacité à se valoriser et à valoriser les autres,</li>
+            <li>une volonté d’être ancré dans la réalité de son époque via l’entrepreneur qu’il était par un sens aigu des relations commerciales, capable de transformer ses conceptions les plus audacieuses en réalité bâtie,</li>
+            <li>une soif d’apprendre à tout âge, de découvrir, de faire progresser une science ouverte,</li>
+            <li>une envie d’utiliser des moyens naissants comme la publicité pour forger une image forte reprise à l’international.</li>
+            <li>Enfin, Gustave Eiffel incarne aussi un homme faillible, qui tâtonne quelquefois, confronté à des échecs et qui peut rebondir.</li>
+        </ul>
+
+        <p class="descrPrincipale">Ce sont certainement toutes ces facettes de la vie et de l’œuvre du « magicien du fer » qui font toujours sens auprès des jeunes générations et au-delà.</p>
 
     </section>
 
@@ -86,7 +125,7 @@
             <div class="actuContainer">
                 <a href="actus.php"><img src="./style/img/actus/actu1.jpg" alt="Image Actualité 1" srcset="" class=" actu actu2"></a>
                 <h2>Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
-                <p class="descr">Lundi 13 novembre 2023, les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité) ont été présenté.</p>
+                <p class="descr">Lundi 13 novembre 2023, les résultats de l’enquête REMEDE ont été présentés.</p>
             </div>
 
             <div class="actuContainer">
