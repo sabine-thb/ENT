@@ -1,0 +1,50 @@
+.titlePage{
+    font-family:"secular", "sans-serif";
+    text-transform: uppercase;
+}
+
+.coursDev, .coursCrea, .coursCom{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:30px;
+}
+
+.categorie{
+    background-color: var(--violetClair);
+    padding:10px 15px 10px 15px;
+    border-radius:5px;
+    text-align: right;
+    width:fit-content;   
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.two, .three{
+    margin-top:100px;
+}
+
+
+.lienRessource{
+    background-size: cover;
+    border-radius:20px;
+    position:relative;
+    width:300px;
+    height:180px;
+    color:white;
+    text-decoration: none;
+
+}
+
+.titreRessource{
+    width:300px;
+    background-color: black;
+    padding:5px 15px 5px 15px;
+    position:absolute;
+    bottom:0;
+    box-sizing: border-box;
+    margin:0;
+    border-radius:0px 0px 20px 20px;
+    text-align: center;
+    font-size:1rem;
+    text-transform: uppercase;
+}
