@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css">   
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
-    <link rel="stylesheet" href="style/styleAccueil.css">
+    <link rel="stylesheet" href="style/styleEDT.css">
     <title>Emploi du Temps</title>
 </head>
 <body>
@@ -58,10 +58,40 @@
         </nav>
         
     </header>
+    
 
     <section class="section1">
+        <div class="titleContainer">
+            <h1 class="titlePage">Emploi du temps</h1>
+            <img src="./style/img/bonhommes/EDT.png" class="img" alt="">
+
+        </div>
+        
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showNav=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&mode=WEEK&src=dW5kNXE3ZDczbW1nbWkybjZra2Vub2RjaTVtbGhqOGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000" style="border:solid 1px #777" width="900" height="600" frameborder="0" scrolling="no"></iframe>
     </section>
+    <footer>
+    <div class="logoFooterContainer">
+        <a href="accueil.php">
+            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
+        </a>
+    </div>
+    <div class="ML">
+        <a href="ML.html" class="lienFooter"><p class="pFooterTitle">Mentions Légales</p></a>
+        <a href="ML.html#editeur" class="lienFooter"><p class="pFooter">éditeur</p></a>
+        <a href="ML.html#contributeurs" class="lienFooter"><p class="pFooter">Contributeurs</p></a>
+        <a href="ML.html#hebergeur" class="lienFooter"><p class="pFooter">Hébergeur</p></a>
+        <a href="ML.html#cookies" class="lienFooter"><p class="pFooter">Cookies</p></a>
+        <a href="ML.html#RGPD" class="lienFooter"><p class="pFooter">RGPD</p></a>
+    </div>
+    <div class="contact">
+        <p class="pFooterTitle">Contact</p>
+        <div class="reseaux">
+            <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
+            <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
+            <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
+        </div>
+    </div>
+</footer>
         
     <script src="./script/burger.js"></script>
 
