@@ -135,6 +135,7 @@ label{
 .secPropositions{
     background: var(--degrade);
     margin-top:50px;
+    padding-bottom:80px;
 }
 
 .actions{
@@ -191,6 +192,10 @@ label{
 select{
     width:200px;
     padding:5px;
+}
+
+footer{
+    margin-top:0;
 }
 
 
