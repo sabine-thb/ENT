@@ -323,11 +323,19 @@ $id_user=$utilisateur['id'];
         }
         ?>
     </div>
+    <div class="baSection">
+        <div>
+            <div class="titlExplication">Comment ça marche ?</div>
+            <p class="expl">Au delàs de 10h d'absences/retards non justifiés, chaque heure supplémentaire vous enlève 0.025 points sur votre moyenne générale.</p>
+            <p class="expl"> En cas de problème, veuillez contacter la secrétaire gérant votre promotion ou formation, ou l’enseignant en chef de votre département.</p>
+        </div>
+        <div class="imgContainer">
+             <img src="./style/img/bonhommes/damePC.png" alt="" class="img">
+        </div>
+        
+    </div>
+   
     
-    <div class="titlExplication">Comment ça marche ?</div>
-    <p class="expl">Au delàs de 10h d'absences/retards non justifiés, chaque heure supplémentaire vous enlève 0.025 points sur votre moyenne générale.</p>
-    <p class="expl"> En cas de problème, veuillez contacter la secrétaire gérant votre promotion ou formation, ou l’enseignant en chef de votre département.</p>
-    <img src="./style/img/bonhommes/damePC.png" alt="" class="img">
    
     
 
@@ -335,7 +343,7 @@ $id_user=$utilisateur['id'];
 </section>
 <?php }?> 
 
-    
+<a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>   
 
     
 <script src="./script/burger.js"></script>

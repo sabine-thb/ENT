@@ -19,10 +19,13 @@ body{
 
 .chat{
     position:fixed;
-    bottom:50px;
-    right:50px;
+    bottom:20px;
+    right:20px;
 
+}
 
+.imgChat{
+    width:50px;
 }
 
 section{

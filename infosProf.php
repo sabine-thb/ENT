@@ -1,7 +1,6 @@
 <?php
 session_start();
 include("connexion.php");
-$utilisateur=$_SESSION['utilisateur'];
 ?>
 
 
@@ -13,13 +12,9 @@ $utilisateur=$_SESSION['utilisateur'];
     <link rel="stylesheet" href="style/style.css">   
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
-   <link rel="stylesheet" href="style/styleAccueil.css">
-   
-    
-    <title>ENT - Accueil</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style/styleProf.css">
+       
+    <title>ENT - Infos profs</title>
 </head>
 <body>
 <header>
@@ -67,15 +62,38 @@ $utilisateur=$_SESSION['utilisateur'];
 </nav>
 	
 </header>
-    <section class="section1">
-        <?php
-        echo"<h1>Bonjour {$utilisateur ['prenom']}.</h1> "
-        ?>
-        <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
+<section>
+    <h1 class="titlePage">Informations sur les professeurs</h1>
 </section>
-    
+<section class="sec1">
+    <div class="gridContainer">
+            <?php 
+             $requete =" SELECT * 
+             FROM utilisateurs
+             JOIN matiere ON utilisateurs.nom = matiere.professeur
+             WHERE utilisateurs.role = 'professeur';";
+             $stmt=$db->query($requete);
+             $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
+             foreach ($result as $row){ ?>  
+             <div class="prof">        
+                <div class="photoContainer"><img src="./style/img/profil/<?php echo $row["id"]?>"  class="photoProf" alt=""></div>
+                <div class="nomPrenom"><?php echo $row["nom"]?> <?php echo $row["prenom"]?></div>
+                <div class="matiere"><?php echo $row["titre_matiere"]?></div>
+                <div class="mail"><?php echo $row["mail"]?></div>
+
+             </div>
+            <?php }?>
+        
+    </div>
+</section>
+
+
+
 <script src="./script/burger.js"></script>
 
-<a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
+
+
+    
 </body>
+
 </html>

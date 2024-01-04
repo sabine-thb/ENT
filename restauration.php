@@ -197,11 +197,13 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
    
 
 </section>
+<a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
 
 
 <script src="./script/compteur.js"></script>
 <script src="./script/burger.js"></script>
 <script src="./script/restauration.js"></script>
+
 
     
 </body>
