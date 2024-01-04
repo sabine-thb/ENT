@@ -72,8 +72,25 @@
 
         <h2 class="titleActuPrincipale">Classement de Shanghai : l’Université Gustave Eiffel se distingue dans le classement par thématique</h2>
 
-        <p class="descrPrincipale">Le classement de Shanghai est un classement annuel des universités du monde entier. Pour la troisième année consécutive, l'Université Gustave Eiffel se distingue sur 9 des 54 classements thématique.</p>
+        <p class="descrPrincipale">Le classement de Shanghai est un classement annuel des universités du monde entier. Pour la troisième année consécutive, l'Université Gustave Eiffel se distingue sur 9 des 54 classements thématique. Il se concentre principalement sur des critères liés à la recherche universitaire et à la performance académique des universités. Il évalue les universités en fonction de plusieurs indicateurs, notamment :</p>
 
+        <p class="descrPrincipale">Publications scientifiques : Le nombre de publications dans des revues prestigieuses, telles que Nature et Science<br>Citations : Le nombre de citations de recherche générées par les publications de l'université.
+        <br>Prix Nobel et médailles Fields : Le nombre d'anciens élèves et de chercheurs affiliés à l'université qui ont remporté ces prestigieux prix.<br>Performance par rapport à la taille : L'efficacité de l'université dans la production de publications et de citations par rapport à sa taille.<br>Collaboration internationale : Le nombre de chercheurs étrangers affiliés à l'université et le nombre de publications en collaboration internationale.</p>
+
+        <p class="descrPrincipale">Le classement par discipline de l'année 2023 classe les établissements du monde entier dans 54 domaines répartis en cinq catégories : sciences naturelles, ingénierie, sciences du vivant, sciences médicales et sciences sociales. <strong>L'Université Gustave Eiffel s'est notamment distinguée sur les thématiques suivantes :</strong></p>
+
+        <ul class="descrPrincipale">
+            <li>Génie Civil : 1er en France</li>
+            <li>Sciences et Technologies des transports : 2ème en France</li>
+            <li>Sciences de la Terre : 7ème en France</li>
+            <li>Science de l'ingénierie et de l'Environnement : 10ème en France</li>
+            <li>Géographie : 11ème en France</li>
+            <li>Sciences de l'atmosphère : 11ème en France</li>
+            <li>Économie: 13ème en France</li>
+            <li>Ingénierie mécanique: 15ème en France</li>
+            <li>Mathématiques: 18ème en France</li>
+        </ul>
+        
     </section>
 
     <section class="section2">
@@ -91,8 +108,8 @@
 
             <div class="actuContainer">
                 <a href="actu3.php"><img src="./style/img/actus/actu3.jpg" alt="Image Actualité 3" srcset="" class=" actu actu3"></a>
-                <h2>L'UEO - Médiation scientifique à destination des scolaires ou du grand public</h2>
-                <p class="descr">Vidéo YouTube disponible sur la chaîne de l’Université.</p>
+                <h2>Gustave Eiffel, inspirateur des jeunes générations</h2>
+                <p class="descr">À l’occasion du colloque Eiffel*, Jean-Paul Mizzi, vice-président Coordination Politiques Campus à l’Université Gustave Eiffel, revient sur la figure de Gustave Eiffel et nous montre en quoi « le magicien du fer » continue d’inspirer les jeunes générations.</p>
             </div>
 
             <div class="actuContainer">

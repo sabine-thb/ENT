@@ -53,6 +53,11 @@
 .descrPrincipale{
     width:65%;
     margin:auto;
+    margin-bottom: 10px;
+}
+
+li {
+    text-align: left;
 }
 
 .actus {
@@ -176,7 +181,7 @@ footer{
 
     }
 
-    .descrPrincipale{
+    .section1{
         padding-bottom:80px;
     }
 

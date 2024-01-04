@@ -74,6 +74,24 @@
 
         <p class="descrPrincipale">Lundi 13 novembre 2023, l'Observatoire National des Discriminations et de l'Égalité dans le Supérieur (ONDES) et la Conférence Permanente des chargé.e.s de mission Égalité et Diversité (CPED) ont présenté les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité), réalisée par Yannick L’Horty (Université Gustave Eiffel Et ONDES), Philippe Liotard (Université Lyon 1 Et CPED), Romane Masternak (CPED) et Aude Stheneur (CPED). Une table ronde s’est tenue suite à la divulgation des résultats de l’enquête afin de commenter et compléter le propos.</p>
 
+        <p class="descrPrincipale">L’enquête, réalisée avec l’appui de France Universités, s’inscrit dans un contexte d’institutionnalisation de la lutte contre les discriminations et les inégalités dans l’enseignement supérieur et la recherche ces dix dernières années. Désormais, chaque établissement d’enseignement supérieur doit élaborer et mettre en oeuvre un plan d'action pluriannuel en faveur de l’égalité professionnelle entre les femmes et les hommes. Les établissements ont également pour obligation de mettre en place un dispositif permettant « de recueillir les signalements des agents qui s'estiment victimes d'un acte de violence, de discrimination, de harcèlement moral ou sexuel ou d'agissements sexistes et de les orienter vers les autorités compétentes en matière d'accompagnement, de soutien et de protection des victimes et de traitement des faits signalés ». L’objectif de l’enquête est de dresser un état des lieux national de ce que font les établissements d’enseignement supérieur et des moyens concrets (humains, structurels, financiers, etc.) consacrés aux politiques d’égalité. L’enquête comporte 60 questions, couvre l’organisation des missions liées à l'égalité ainsi que celle des dispositifs d'écoute et d'accompagnement. Elle a été administrée entre juin et juillet 2023 auprès de l’ensemble des établissements d’enseignement supérieur par la CPED et France Universités. <strong>Au total, 63 établissements ont répondu à l’enquête. Voici les principaux résultats :</strong></p>
+
+        <ul class="descrPrincipale">
+            <li>81% des personnes nommées pour concevoir et mettre en oeuvre les politiques d’égalité-diversité dans les établissements d'enseignement supérieur sont des femmes.</li>
+            <li>Bien qu’il existe une personne en charge de l’égalité dans 100% des établissements répondants, seuls 55% ont une structure dédiée à l'égalité et à la lutte contre les discriminations. Le plus souvent, cette entité est appelée « mission égalité ».</li>
+            <li>69% des missions égalité disposent de personnel dédié (titulaires, contractuel·les, vacataires, stagiaires, services civiques, alternant·es, etc.).</li>
+            <li>La plupart des missions ont un périmètre d’intervention assez large qui ne se limite pas au domaine de l’égalité entre les femmes et les hommes.</li>
+            <li>Les moyens humains et financiers de ces missions égalités sont très variables selon les établissements.</li>
+            <li>Selon les établissements, la composition des équipes en charge du dispositif de signalement est variée, et ne mobilise pas uniquement les personnes en charge de l’égalité.</li>
+            <li>En moyenne, 28 situations ont été signalées en 2022 par les établissements, ce qui correspond à 1543 signalements pour l’ensemble des 63 établissements ayant répondu à l’enquête. Ces signalements concernent à peu près autant les personnels que les étudiant·es.</li>
+            <li>Les principaux motifs de signalements recensés par les cellules d'écoute des établissements sont le harcèlement moral et les violences sexistes et sexuelles.</li>
+            <li>Il existe un fort besoin de formation à destination du personnel et des étudiant·es, sur diverses thématiques : harcèlement moral, LGBTQIAphobies, appréhension des violences sexistes et sexuelles, appréhension des discriminations, etc.</li>
+            <li>Il existe un écart important entre le nombre de signalements recensés par les dispositifs mis en oeuvre par les établissements et le nombre de sanctions qui en découlent. En 2022, en moyenne, 5% des signalements aboutissent à une sanction disciplinaire, et 1,4% à une sanction judiciaire.</li>
+            <li>En 2022, 34,4% des établissements ont déclaré avoir réalisé une enquête de victimation auprès de leurs étudiant·es et 25 % auprès de leur personnel.</li>
+        </ul>
+
+        <p class="descrPrincipale">L’enquête REMEDE met en évidence de nombreux signaux de la montée en puissance des actions pour l’égalité dans les établissements d’enseignement supérieur. Les moyens humains et matériels des missions sont assez hétérogènes d’un établissement à l’autre et sont globalement limités, contrastant avec l’ampleur de leur domaine d’intervention qui cumule l’égalité professionnelle, la lutte contre les violences sexuelles et sexistes et la prévention des discriminations dans tous les domaines et pour tous les critères prohibés, ainsi que les actes et propos haineux. Les dispositifs de signalement qui ont été mis en place permettent de recenser un nombre croissant de situations qui étaient auparavant ignorées par les établissements. Les efforts des acteur·ices de l’égalité pour monter des évènements, des actions de sensibilisation et des actions de formation portent en partie leurs fruits. Pour autant, le pourcentage de sanctions effectives, qu’elle soit judiciaire ou disciplinaire, se situe à un niveau extrêmement faible.</p>
+
     </section>
 
     <section class="section2">
@@ -91,8 +109,8 @@
 
             <div class="actuContainer">
                 <a href="actu3.php"><img src="./style/img/actus/actu3.jpg" alt="Image Actualité 3" srcset="" class=" actu actu3"></a>
-                <h2>L'UEO - Médiation scientifique à destination des scolaires ou du grand public</h2>
-                <p class="descr">Vidéo YouTube disponible sur la chaîne de l’Université.</p>
+                <h2>Gustave Eiffel, inspirateur des jeunes générations</h2>
+                <p class="descr">À l’occasion du colloque Eiffel*, Jean-Paul Mizzi, vice-président Coordination Politiques Campus à l’Université Gustave Eiffel, revient sur la figure de Gustave Eiffel et nous montre en quoi « le magicien du fer » continue d’inspirer les jeunes générations.</p>
             </div>
 
             <div class="actuContainer">
