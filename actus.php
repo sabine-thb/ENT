@@ -61,38 +61,45 @@
     </header>
 
     <section class="section1">
+        
+        
+         <div class="titleContainer">
+            <img src="./style/img/bonhommes/hautParleur.png" class="img1" alt="">
+             <h1 class="titlePage">Actu de la semaine</h1>
+         </div>   
+        
+        
 
-        <h1>Actu de la semaine</h1>
+            <img src="./style/img/actus/actu1.jpg" alt="Image Actualité de la semaine" srcset="" class="actuPrincipale">
 
-        <a href="actu1.php"><img src="./style/img/actus/actu1.jpg" alt="Image Actualité de la semaine" srcset="" class="actu1"></a>
+        <h2 class="titleActuPrincipale">Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
 
-        <h2>Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
-
-        <p>Lundi 13 novembre 2023, l'Observatoire National des Discriminations et de l'Égalité dans le Supérieur (ONDES) et la Conférence Permanente des chargé.e.s de mission Égalité et Diversité (CPED) ont présenté les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité), réalisée par Yannick L’Horty (Université Gustave Eiffel Et ONDES), Philippe Liotard (Université Lyon 1 Et CPED), Romane Masternak (CPED) et Aude Stheneur (CPED). Une table ronde s’est tenue suite à la divulgation des résultats de l’enquête afin de commenter et compléter le propos.</p>
+        <p class="descrPrincipale">Lundi 13 novembre 2023, l'Observatoire National des Discriminations et de l'Égalité dans le Supérieur (ONDES) et la Conférence Permanente des chargé.e.s de mission Égalité et Diversité (CPED) ont présenté les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité), réalisée par Yannick L’Horty (Université Gustave Eiffel Et ONDES), Philippe Liotard (Université Lyon 1 Et CPED), Romane Masternak (CPED) et Aude Stheneur (CPED). Une table ronde s’est tenue suite à la divulgation des résultats de l’enquête afin de commenter et compléter le propos.</p>
 
     </section>
 
     <section class="section2">
+        <img src="./style/img/bonhommes/dameLivre.png" class="img2" alt="">
 
-        <h1>Actualités Gustave Eiffel</h1>
+        <h1 class="title2">Actualités Gustave Eiffel</h1>
 
         <div class="actus">
-            <div class="actu">
-                <a href="actu2.php"><img src="./style/img/actus/actu2.jpg" alt="Image Actualité 2" srcset="" class="actu2"></a>
+            <div class="actuContainer">
+                <a href="actu2.php"><img src="./style/img/actus/actu2.jpg" alt="Image Actualité 2" srcset="" class=" actu actu2"></a>
                 <h2>Classement de Shanghai : l’Université Gustave Eiffel se distingue dans le classement par thématique</h2>
-                <p>Le classement de Shanghai est un classement annuel des universités du monde entier. Pour la troisième année consécutive, l'Université Gustave Eiffel se distingue sur 9 des 54 classements thématique.</p>
+                <p class="descr">Le classement de Shanghai est un classement annuel des universités du monde entier. Pour la troisième année consécutive, l'Université Gustave Eiffel se distingue sur 9 des 54 classements thématique.</p>
             </div>
 
-            <div class="actu">
-                <a href="actu3.php"><img src="./style/img/actus/actu3.jpg" alt="Image Actualité 3" srcset="" class="actu3"></a>
+            <div class="actuContainer">
+                <a href="actu3.php"><img src="./style/img/actus/actu3.jpg" alt="Image Actualité 3" srcset="" class=" actu actu3"></a>
                 <h2>L'UEO - Médiation scientifique à destination des scolaires ou du grand public</h2>
-                <p>Vidéo YouTube disponible sur la chaîne de l’Université.</p>
+                <p class="descr">Vidéo YouTube disponible sur la chaîne de l’Université.</p>
             </div>
 
-            <div class="actu">
-                <a href="actu4.php"><img src="./style/img/actus/actu4.jpg" alt="Image Actualité 4" srcset="" class="actu4"></a>
+            <div class="actuContainer">
+                <a href="actu4.php"><img src="./style/img/actus/actu4.jpg" alt="Image Actualité 4" srcset="" class="actu actu4"></a>
                 <h2>Plastic Odyssey : un tour du monde engagé dans la lutte contre la pollution plastique</h2>
-                <p>Focus sur le projet Recityplast porté par l’Université Gustave Eiffel, présenté à l’occasion de la première escale de l’expédition à Dakar, au Sénégal.</p>
+                <p class="descr">Focus sur le projet Recityplast porté par l’Université Gustave Eiffel, présenté à l’occasion de la première escale de l’expédition à Dakar, au Sénégal.</p>
             </div>
         </div>
         
