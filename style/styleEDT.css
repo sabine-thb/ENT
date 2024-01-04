@@ -24,3 +24,21 @@ section{
 iframe{
     width:80%;
 }
+
+.agenda {
+    display: none;
+}
+
+
+
+@media(max-width:500px){
+    
+    .week {
+        display: none;
+    }
+
+    .agenda {
+        display: block;
+    }
+
+} 
