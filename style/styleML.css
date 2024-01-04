@@ -43,7 +43,7 @@ body {
 }
 
 .contentContainer {
-    width: 40%;
+    width: 60%;
     margin-bottom: 50px;
     text-align: left;
 }
@@ -63,4 +63,36 @@ p {
 .pFooterTitle {
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+@media(max-width:800px){
+
+    .contentContainer {
+        width: 70%;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .contentContainer {
+        width: 80%;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .contentContainer {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .img1{
+        width:75px;
+    }
+
 }
