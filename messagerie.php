@@ -19,7 +19,7 @@ include("connexion.php");
     <link rel="stylesheet" href="style/style.css">   
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
-   <link rel="stylesheet" href="style/styleChat.css">
+   <link rel="stylesheet" href="style/styleMessagerie.css">
     <title>Chat ENT</title>
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
