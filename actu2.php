@@ -86,7 +86,7 @@
             <div class="actuContainer">
                 <a href="actus.php"><img src="./style/img/actus/actu1.jpg" alt="Image Actualité 1" srcset="" class=" actu actu2"></a>
                 <h2>Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
-                <p class="descr">Lundi 13 novembre 2023, les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité) ont été présenté.</p>
+                <p class="descr">Lundi 13 novembre 2023, les résultats de l’enquête REMEDE ont été présentés.</p>
             </div>
 
             <div class="actuContainer">
