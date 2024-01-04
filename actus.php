@@ -65,6 +65,29 @@
         <h2>Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
         <p>Lundi 13 novembre 2023, l'Observatoire National des Discriminations et de l'Égalité dans le Supérieur (ONDES) et la Conférence Permanente des chargé.e.s de mission Égalité et Diversité (CPED) ont présenté les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité), réalisée par Yannick L’Horty (Université Gustave Eiffel Et ONDES), Philippe Liotard (Université Lyon 1 Et CPED), Romane Masternak (CPED) et Aude Stheneur (CPED). Une table ronde s’est tenue suite à la divulgation des résultats de l’enquête afin de commenter et compléter le propos.</p>
     </section>
+    <footer>
+    <div class="logoFooterContainer">
+        <a href="accueil.php">
+            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
+        </a>
+    </div>
+    <div class="ML">
+        <a href="ML.html" class="lienFooter"><p class="pFooterTitle">Mentions Légales</p></a>
+        <a href="ML.html#editeur" class="lienFooter"><p class="pFooter">éditeur</p></a>
+        <a href="ML.html#contributeurs" class="lienFooter"><p class="pFooter">Contributeurs</p></a>
+        <a href="ML.html#hebergeur" class="lienFooter"><p class="pFooter">Hébergeur</p></a>
+        <a href="ML.html#cookies" class="lienFooter"><p class="pFooter">Cookies</p></a>
+        <a href="ML.html#RGPD" class="lienFooter"><p class="pFooter">RGPD</p></a>
+    </div>
+    <div class="contact">
+        <p class="pFooterTitle">Contact</p>
+        <div class="reseaux">
+            <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
+            <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
+            <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
+        </div>
+    </div>
+</footer>
         
     <script src="./script/burger.js"></script>
 

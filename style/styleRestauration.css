@@ -194,6 +194,10 @@ h1,.nomCrous{
     right:-6px; */
 }
 
+footer{
+    margin-top:0;
+}
+
 
 @media(max-width:1140px){
     .compteur{
