@@ -44,7 +44,7 @@
 }
 
 .descr {
-    width: 44rem;
+    width: 44vw;
 }
 
 .flex {
@@ -55,7 +55,7 @@
 .nom, .profs {
     text-align: left;
     margin: 0;
-    max-width: 20rem;
+    max-width: 20vw;
 }
 
 .nom {
@@ -177,7 +177,7 @@ h4 {
 @media(max-width:1140px){
 
     .nom, .profs {
-        max-width: 15rem;
+        max-width: 15vw;
     }
 
 }
@@ -193,7 +193,7 @@ h4 {
     }
 
     .descr {
-        width: 54rem;
+        width: 54vw;
     }
 
     .separation {
@@ -213,7 +213,7 @@ h4 {
     }
 
     .descr {
-        width: 64rem;
+        width: 64vw;
     }
 
     .separation {
@@ -237,7 +237,7 @@ h4 {
     }
 
     .descr {
-        width: 74rem;
+        width: 74vw;
     }
 
     .separation {
@@ -266,7 +266,7 @@ h4 {
     }
 
     .descr {
-        width: 84rem;
+        width: 84vw;
     }
 
     .separation {
@@ -286,7 +286,7 @@ h4 {
     }
 
     .nom, .profs {
-        max-width: 10rem;
+        max-width: 10vw;
     }
 
     .popup {
