@@ -25,18 +25,19 @@
 
 
 .lienRessource{
+    width:250px;
+    height:180px;
     background-size: cover;
     border-radius:20px;
     position:relative;
-    width:300px;
-    height:180px;
     color:white;
     text-decoration: none;
+    place-self: center;
 
 }
 
 .titreRessource{
-    width:300px;
+    width:250px;
     background-color: black;
     padding:5px 15px 5px 15px;
     position:absolute;
@@ -47,4 +48,44 @@
     text-align: center;
     font-size:1rem;
     text-transform: uppercase;
+}
+
+@media(max-width:1200px){
+
+    .lienRessource, .titreRessource{
+        width:200px;
+    }
+
+}
+@media(max-width:945px){
+
+    .coursDev, .coursCrea, .coursCom{
+        grid-template-columns: repeat(3, 1fr);
+ 
+    }
+
+}
+@media(max-width:720px){
+
+    .coursDev, .coursCrea, .coursCom{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+@media(max-width:490px){
+
+    .coursDev, .coursCrea, .coursCom{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .lienRessource{
+        width:100%;
+    }
+
+    .titreRessource{
+        width:100%;
+    }
+
 }
