@@ -126,7 +126,7 @@ h1{
 
 }
 
-.retour
+.retour{
 
 @media(max-width:600px){
     .traiteChat{
@@ -141,4 +141,4 @@ h1{
         width:75px;
         top:-40px;
     }
-}
+}}
