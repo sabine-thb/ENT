@@ -90,8 +90,9 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
     </header>
     <section class="sec1">
+        <a href="cours.php" class="retour">Retour</a>
         <h1 class="titlePage">Ressource :  <?php foreach ($result as $row) echo $row["titre_matiere"];?></h1>
-        <p>Voici les cours que vous pouvez télécharger : </p>
+        <p class="expl">Voici les cours que vous pouvez télécharger : </p>
         <?php 
 
 
@@ -110,7 +111,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <ul>
         <?php foreach ($listeFichiers as $fichier) : ?>
             <li>
-            <a href="telechargerCours.php?id=<?php echo $fichier['id_cours']; ?>" download="cours_<?php echo $fichier['id_cours']; ?>.pdf">
+            <a href="telechargerCours.php?id=<?php echo $fichier['id_cours']; ?>" download="cours_<?php echo $fichier['id_cours']; ?>.pdf" class="lienRessource">
                  <?php echo $fichier['nomCours']; ?>
             </a>
             </li>

@@ -38,6 +38,12 @@ Les fonctionnalités développées sont :
    Ils peuvent également avoir acès à leur nombre de points en moins sur leur moyenne générale. Celui ci est calculé en fonction du nombre total d'heures d'absences et de retards non justifiés.
    En effet, au delàs de 10H cumulées, chaque heure supplémentaire enlèvera 0.025points sur la moyenne.
 
+5. INSERTION DE COURS
+   Les utilisateurs connectés avec le rôle de professeur peuvent dans la page "cours", insérer de nouveaux cours pour leur matière respective.
+   Les élèves pourront ainsi télécharger les cours de chaque matière. Pour cela, ils devront aller sur la page cours et sélectionner la matière dont ils veulent consulter les cours déposés.
+   
+
+
 
    
 
