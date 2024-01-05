@@ -30,8 +30,8 @@ body {
 
 .img1{
     position:absolute;
-    width:125px;
-    top:0px;
+    width:60px;
+    top:15px;
     left:175px;
 }
 
@@ -85,14 +85,6 @@ p {
 
     .contentContainer {
         width: 90%;
-    }
-
-}
-
-@media(max-width:500px){
-
-    .img1{
-        width:75px;
     }
 
 }

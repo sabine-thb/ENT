@@ -292,7 +292,7 @@
             </div>
         </div>
 
-        <script src="./script/devoirs.js"></script>
+        
 
     </section>
     
@@ -320,5 +320,8 @@
     </div>
 </footer>
     <a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
+
+    <script src="./script/devoirs.js"></script>
+    <script src="./script/burger.js"></script>
 </body>
 </html>
