@@ -9,6 +9,9 @@ else{
     $utilisateurDest = "1";
 }
 
+date_default_timezone_set('Europe/Paris');
+
+
 
 
 $utilisateur = $_SESSION['utilisateur'];
@@ -22,9 +25,6 @@ $stmt->bindParam(':userDest', $utilisateurDest, PDO::PARAM_INT);
 $stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        
 $stmt->execute();
 $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-var_dump($utilisateurDest);
-var_dump($idSession);
 ?>
 
 
@@ -99,11 +99,13 @@ var_dump($idSession);
         <!-- Affichage des messages -->
         <?php foreach ($resultat as $message) : ?>
             <div class="msg">
-                <div class="msg-align <?= ($message['login'] === $_SESSION['utilisateur']['login']) ? 'user-msg' : '' ?>">
+                <div class="msg-align <?php if(trim($message['login']) == trim($login)) { echo 'user-msg'; } ?>">
+                
                     <p class="msg-envoie"><strong>@<?= $message['login'] ?>:</strong> <?= $message['message'] ?></p>
-                    <p class="date"><?= $message['date'] ?></p>
+                    <p class="date"><?= date('d/m/y H:i', strtotime($message['date'])) ?></p>
                 </div>
             </div>
+
         <?php endforeach; ?>
 
         <!-- Formulaire pour envoyer les messages -->
@@ -120,6 +122,7 @@ var_dump($idSession);
     </section>
     
     <script src="./script/burger.js"></script>
+    <script src="./script/messagerie.js"></script>
 
 </body>
 </html>
