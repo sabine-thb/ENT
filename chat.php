@@ -16,7 +16,7 @@ $login = $utilisateur['login'];
 $role = $utilisateur['role'];
 $idSession = $utilisateur['id'];
 
-$requete = "SELECT * FROM messages WHERE id_user_dest=:userDest AND id_user_edi=:idSession ORDER BY date ASC";
+$requete = "SELECT * FROM messages WHERE id_user_dest=:idSession OR id_user_edi=:idSession   ORDER BY date ASC ";
 $stmt = $db->prepare($requete);
 $stmt->bindParam(':userDest', $utilisateurDest, PDO::PARAM_INT);        
 $stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        
