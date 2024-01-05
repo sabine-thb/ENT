@@ -9,6 +9,21 @@ $role=$utilisateur['role'];
 $nom=$utilisateur['nom'];
 $prenom=$utilisateur['prenom'];
 $id_user=$utilisateur['id'];
+
+if(isset($_GET["id"])){
+    $id = $_GET["id"];
+}
+else{
+    $id = "1";
+}
+
+$requete = "SELECT * FROM matiere WHERE  id_matiere = :id";
+$stmt = $db->prepare($requete);
+$stmt->bindParam(':id', $id, PDO::PARAM_INT);
+$stmt->execute();
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +36,7 @@ $id_user=$utilisateur['id'];
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleCours.css">
-    <title>ENT - Cours</title>
+    <title>ENT - Ressource</title>
     
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
@@ -74,98 +89,37 @@ $id_user=$utilisateur['id'];
         </nav>
         
     </header>
-    <?php
-     if ($role == "professeur") {
-    ?>
-
-    <?php
-                    
-        $requete =" SELECT * FROM matiere WHERE professeur = '$nom' ";
-        $stmt=$db->query($requete);
-        $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
-    ?>
-               
     <section>
-        <?php if (isset($_GET["insertion"] )){  
-            echo "<p class=\"coursOk txtRouge\">Votre cours a bien été inséré.</p>";
-        } 
-        ?> 
-        <h1 class="titlePage"><?php echo "$prenom" ?>, vous souhaitez déposer un cours ?</h1>
-        <form action="traiteCours.php" method="post" enctype="multipart/form-data">
-            <label for="file">Sélectionnez le fichier du cours :</label>
-            <input type="file" name="file" id="file" accept=".pdf, .doc, .docx">
-            <br>
-            <label for="titre">Nom du Cours : </label>
-            <input id="titre" type="text" name="nomCours">
-            <input type="hidden" name="matiere" value="<?php foreach ($result as $row){  echo $row["id_matiere"]; } ?>">
-        <input type="submit" value="Déposer le fichier">
-    </form>
+        <h1 class="titlePage">Ressource :  <?php foreach ($result as $row) echo $row["titre_matiere"];?></h1>
+        <p>Voici les cours que vous pouvez télécharger : </p>
+        <?php 
 
+
+        // On récupère la liste des fichiers associés à ce cours depuis la base de données
+        $requete = "SELECT * FROM cours WHERE id_mat_ext = :id_cours";
+        $stmt = $db->prepare($requete);
+        $stmt->bindParam(':id_cours', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        $listeFichiers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        
+        ?>
+        
+        <!-- Affichez la liste des fichiers pour le cours -->
+        
+        <ul>
+        <?php foreach ($listeFichiers as $fichier) : ?>
+    <li>
+        <a href="telechargerCours.php?id=<?php echo $fichier['id_cours']; ?>" download="cours_<?php echo $fichier['id_cours']; ?>.pdf">
+                 <?php echo $fichier['nomCours']; ?>
+        </a>
+    </li>
+<?php endforeach; ?>
+        </ul>
     </section>
 
-    <?php } ?>
-
-    <?php
-     if ($role == "élève") {
-    ?>
-    <section>
-        <h1 class="titlePage">Supports de cours</h1>
-        <h2 class="categorie">Développement Web</h2>
-        <div class="coursDev">
-        <?php    
-            $requete =" SELECT * FROM matiere WHERE type = 'Développement web' ";
-            $stmt=$db->query($requete);
-            $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
-            foreach ($result as $row){ ?>
-
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')">
-                <div class="imgCours" >
-                <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
-                </div>
-            </a>
-
-            <?php } ?>
-            
-        </div>
-        <h2 class="categorie two">Création numérique</h2>
-        <div class="coursCrea">
-        <?php    
-            $requete =" SELECT * FROM matiere WHERE type = 'Création numérique' ";
-            $stmt=$db->query($requete);
-            $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
-            foreach ($result as $row){ ?>
-
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')">
-                <div class="imgCours" >
-                <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
-                </div>
-            </a>
-
-            <?php } ?>
-            
-        </div>
-        <h2 class="categorie three">Communication</h2>
-        <div class="coursCrea">
-        <?php    
-            $requete =" SELECT * FROM matiere WHERE type = 'Communication' ";
-            $stmt=$db->query($requete);
-            $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
-            foreach ($result as $row){ ?>
-
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')">
-                <div class="imgCours" >
-                <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
-                </div>
-            </a>
-
-            <?php } ?>
-            
-        </div>
-
-
-    </section>
-
-    <?php } ?>
+    
+    
 
 
 
