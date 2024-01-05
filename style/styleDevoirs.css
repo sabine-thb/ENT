@@ -1,0 +1,317 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.title{
+    font-family:"secular", sans-serif;
+    font-size:1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section1{
+    position: relative;
+}
+
+.devoirs {
+    text-align: center;
+    background-color: #C7EAFD;
+    box-shadow: 25px 25px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.devoir {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+    width: 50vw;
+}
+
+.img {
+    width: 3rem;
+    margin-right: 3rem;
+}
+
+.descr {
+    width: 44rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nom, .profs {
+    text-align: left;
+    margin: 0;
+    max-width: 20rem;
+}
+
+.nom {
+    font-family:"secular", sans-serif;
+    font-size:1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nom:hover {
+    color: #292A4D;
+    text-decoration: underline;
+}
+
+.date, .italic {
+    text-align: right;
+    margin: 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.profs,.italic  {
+    font-size: 0.8rem;
+}
+
+.separation {
+    text-align: center;
+    margin: auto;
+    width: 35vw;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Popups */
+
+.popup-visible-1, .popup-visible-2, .popup-visible-3, .popup-visible-4 {
+    z-index: 1001;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+.fermer1, .fermer2, .fermer3, .fermer4 {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    right: 5%;
+    top: 5%;
+    position: fixed;
+}
+
+.popup {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: 40vw;
+}
+
+h3 {
+    color: #E2E3FB;
+    font-family:"secular", sans-serif;
+    font-size:2rem;
+    margin: 0;
+}
+
+h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.color {
+    color: #E2E3FB;
+
+}
+
+.popup p, .flex p, .popup ul {
+    margin: 5px;
+}
+
+.lienSite {
+    color: #C7EAFD;
+    text-decoration: underline;
+}
+
+.lienSite:hover {
+    color: #E2E3FB;
+    text-decoration: underline;
+}
+
+.lienPleinEcran{
+    text-decoration:none;
+    color:black;
+    background-color: #C7EAFD;
+    padding:5px 10px 5px 10px;
+    border-radius:5px;
+    transition: padding 0.2s ease-in-out;
+}
+
+.lienPleinEcran:hover{
+    padding:5px 15px 5px 15px;
+}
+
+.centre {
+    text-align: center;
+}
+
+
+@media(max-width:1140px){
+
+    .nom, .profs {
+        max-width: 15rem;
+    }
+
+}
+
+@media(max-width:1000px){
+
+    .devoirs {
+        width: 60vw;
+    }
+
+    .devoir {
+        width: 60vw;
+    }
+
+    .descr {
+        width: 54rem;
+    }
+
+    .separation {
+        width: 42vw;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .devoirs {
+        width: 70vw;
+    }
+
+    .devoir {
+        width: 70vw;
+    }
+
+    .descr {
+        width: 64rem;
+    }
+
+    .separation {
+        width: 49vw;
+    }
+
+    .popup {
+        max-width: 50vw;
+    }
+
+}
+
+@media(max-width:800px){
+
+    .devoirs {
+        width: 80vw;
+    }
+
+    .devoir {
+        width: 80vw;
+    }
+
+    .descr {
+        width: 74rem;
+    }
+
+    .separation {
+        width: 56vw;
+    }
+
+    .popup {
+        max-width: 60vw;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .devoirs {
+        width: 90vw;
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .devoir {
+        width: 90vw;
+    }
+
+    .img {
+        margin-right: 1rem;
+    }
+
+    .descr {
+        width: 84rem;
+    }
+
+    .separation {
+        width: 63vw;
+    }
+
+    .popup {
+        max-width: 70vw;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .devoirs {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .nom, .profs {
+        max-width: 10rem;
+    }
+
+    .popup {
+        max-width: 80vw;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .devoirs {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .nom, .profs, .date, .italic {
+        text-align: left;
+        max-width: fit-content;
+    }
+
+    .popup {
+        max-width: 90vw;
+    }
+
+}
