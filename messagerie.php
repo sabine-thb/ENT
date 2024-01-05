@@ -72,7 +72,6 @@ include("connexion.php");
         </nav>
         
     </header>
-
     <section class="section1">
         <h1>Votre messagerie :</h1>
         <br>
@@ -86,7 +85,25 @@ include("connexion.php");
              <p>Rejoingez votre canal privé et consultez votre messagerie privée </p>
                  <a href="chat.php?canal_id=2">Canal 2</a>
          </div>
+         <form action="chat.php" method="get" class="choix-utilisateur">
+    <label for="utilisateur">Sélectionnez un utilisateur :</label>
+    <select name="utilisateur" id="utilisateur" required>
+        <option value="">Sélectionnez un utilisateur</option>
+        <?php
+        // je recup la liste des utilisateurs depuis la bdd
+        $requeteUtilisateurs = "SELECT id, login FROM utilisateurs";
+        $stmtUtilisateurs = $db->prepare($requeteUtilisateurs);
+        $stmtUtilisateurs->execute();
+        $utilisateurs = $stmtUtilisateurs->fetchAll(PDO::FETCH_ASSOC);
 
+        // affichage
+        foreach ($utilisateurs as $utilisateur) {
+            echo "<option value='{$utilisateur['id']}'>{$utilisateur['login']}</option>";
+        }
+        ?>
+    </select>
+    <button type="submit">Accéder à la conversation</button>
+</form>
     </section>
     
 </body>
