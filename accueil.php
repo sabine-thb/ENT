@@ -20,15 +20,20 @@ $stmtDerniersMessages->bindParam(':idSession', $idSession, PDO::PARAM_INT);
 $stmtDerniersMessages->execute();
 $derniersMessages = $stmtDerniersMessages->fetchAll(PDO::FETCH_ASSOC);
 ?>
+<!-- Je crée la requête pour affihcer les 3 derniers cours déposes par les profs -->
 <?php
+$requeteDerniersCours = "
+    SELECT * FROM cours 
+    LIMIT 3;
 
-$requeteMessagesNonLus = "SELECT COUNT(*) AS nb_messages FROM messages WHERE id_user_dest = :idSession";
-$stmtMessagesNonLus = $db->prepare($requeteMessagesNonLus);
-$stmtMessagesNonLus->bindParam(':idSession', $idSession, PDO::PARAM_INT);
-$stmtMessagesNonLus->execute();
-$resultatMessagesNonLus = $stmtMessagesNonLus->fetch(PDO::FETCH_ASSOC);
-$nombreMessagesNonLus = $resultatMessagesNonLus['nb_messages'];
+";
+
+$stmtDerniersCours = $db->prepare($requeteDerniersCours);
+$stmtDerniersCours->execute();
+$derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -99,6 +104,7 @@ $nombreMessagesNonLus = $resultatMessagesNonLus['nb_messages'];
         ?>
         <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
 </section>
+<!-- affichage des 3 derniers mess -->
 <section class="derniersms">
 <h2>Nouveaux messages</h2>
 
@@ -124,6 +130,19 @@ $nombreMessagesNonLus = $resultatMessagesNonLus['nb_messages'];
 </div>
 </div>
     
+</section>
+
+<section class=derniercours>
+        <h2>Les trois derniers cours</h2>
+
+        <?php foreach ($derniersCours as $cours) : ?>
+            <div class="cours-item">
+                <p>Nom du cours : <?php echo $cours['nomCours']; ?></p>
+
+            </div>
+        <?php endforeach; ?>
+    </section>
+
 </section>
 <script src="./script/burger.js"></script>
 
