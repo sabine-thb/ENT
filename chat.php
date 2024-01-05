@@ -2,26 +2,32 @@
 session_start();
 include("connexion.php");
 
-if (!isset($_SESSION['utilisateur'])) {
-    header("Location: index.php");
-    exit();
+if(isset($_GET["utilisateur"])){
+    $utilisateurDest = $_GET["utilisateur"];
+}
+else{
+    $utilisateurDest = "1";
 }
 
-include("connexion.php");
+date_default_timezone_set('Europe/Paris');
+
+
+
 
 $utilisateur = $_SESSION['utilisateur'];
 $login = $utilisateur['login'];
 $role = $utilisateur['role'];
+$idSession = $utilisateur['id'];
 
-// Récupérer l'ID du canal à partir de l'URL
-$canal_id_actuel = isset($_GET['canal_id']) ? intval($_GET['canal_id']) : 0;
-
-$requete = "SELECT * FROM messages WHERE canal_id = :canal_id ORDER BY date ASC";
+$requete = "SELECT * FROM messages WHERE id_user_dest=:idSession OR id_user_edi=:idSession   ORDER BY date ASC ";
 $stmt = $db->prepare($requete);
-$stmt->bindParam(':canal_id', $canal_id_actuel, PDO::PARAM_INT);
+$stmt->bindParam(':userDest', $utilisateurDest, PDO::PARAM_INT);        
+$stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        
 $stmt->execute();
 $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -93,19 +99,22 @@ $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- Affichage des messages -->
         <?php foreach ($resultat as $message) : ?>
             <div class="msg">
-                <div class="msg-align <?= ($message['login'] === $_SESSION['utilisateur']['login']) ? 'user-msg' : '' ?>">
+                <div class="msg-align <?php if(trim($message['login']) == trim($login)) { echo 'user-msg'; } ?>">
+                
                     <p class="msg-envoie"><strong>@<?= $message['login'] ?>:</strong> <?= $message['message'] ?></p>
-                    <p class="date"><?= $message['date'] ?></p>
+                    <p class="date"><?= date('d/m/y H:i', strtotime($message['date'])) ?></p>
                 </div>
             </div>
+
         <?php endforeach; ?>
 
         <!-- Formulaire pour envoyer les messages -->
         <form action="traiteChat.php" method="post" class="traiteChat">
             <textarea type="text" name="message" id="message" class="message" required></textarea>
-            <input type="hidden" name="login" value="<?= isset($_SESSION['utilisateur']['login']) ? $_SESSION['utilisateur']['login'] : '' ?>">
+            <input type="hidden" name="login" value="<?php echo $login; ?> ">
+            <input type="hidden" name="idDest" value="<?php echo $utilisateurDest ;?> ">
+            <input type="hidden" name="idEdi" value="<?php echo $idSession; ?> ">
             <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s') ?>">
-            <input type="hidden" name="canal_id" value="<?= $canal_id_actuel ?>">
             <button type="submit" class="bouton">
                 <img src="./style/img/send.svg" alt="Envoyer">
             </button>
@@ -113,6 +122,7 @@ $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </section>
     
     <script src="./script/burger.js"></script>
+    <script src="./script/messagerie.js"></script>
 
 </body>
 </html>

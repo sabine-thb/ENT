@@ -7,7 +7,10 @@ if (!isset($_SESSION['utilisateur'])) {
     exit();
 }
 
-include("connexion.php");
+$utilisateur = $_SESSION['utilisateur'];
+$login = $utilisateur['login'];
+$role = $utilisateur['role'];
+$idSession = $utilisateur['id'];
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +23,7 @@ include("connexion.php");
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
    <link rel="stylesheet" href="style/styleMessagerie.css">
-    <title>Chat ENT</title>
+    <title>ENT - Messagerie</title>
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 
@@ -72,22 +75,108 @@ include("connexion.php");
         </nav>
         
     </header>
-
     <section class="section1">
-        <h1>Votre messagerie :</h1>
+        <h1 class="titlePage">Ma messagerie </h1>
         <br>
 
-        <div class=canal-description>
-            <p>Rejoingnez votre canal public et discutez avec l'ensemble de votre IUT</p>
-                 <a href="chat.php?canal_id=1">Canal 1</a>
-        </div>
+    
+    <h2>Conversations en cours</h2>
+    <?php 
+    $requete = "SELECT m.*
+    FROM messages m
+    INNER JOIN (
+        SELECT id_user_edi, MAX(date) AS max_date
+        FROM messages
+        WHERE id_user_dest = :idSession
+        GROUP BY id_user_edi
+    ) latest ON m.id_user_edi = latest.id_user_edi AND m.date = latest.max_date
+    ORDER BY m.date ASC;";
+    $stmt = $db->prepare($requete);      
+    $stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        
+    $stmt->execute();
+    $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        <div class=canal-description>
-             <p>Rejoingez votre canal privé et consultez votre messagerie privée </p>
-                 <a href="chat.php?canal_id=2">Canal 2</a>
-         </div>
+    if (empty($resultat)) {
+        echo "<p class=\"txtRouge\">Vous n'avez pas de conversation en cours.</p>";
+    }
 
+
+    ?>
+
+    <div class="allConv">
+
+    
+    <!-- On affiche toutes les conv en cours -->
+    <?php foreach ($resultat as $message) : ?>
+        
+            <div class="conv">
+                <img src="./style/img/profil/<?= $message['id_user_edi'] ?>" class="photoProfil" alt="">
+                <div class="loginMsg">
+                    <div class="edi"><strong>@<?= $message['login'] ?></strong></div>
+                    <div class="msg"><?= $message['message'] ?></div>
+
+                </div>
+                
+                <div class="finMsg">
+                    <div class="date"><?= date('d/m/y H:i', strtotime($message['date'])) ?></div>
+                    <a href="chat.php?utilisateur=<?= $message['id_user_edi'] ?>" class="linkConv">Voir tout</a>
+                    
+                </div>
+                
+               
+            </div>
+            <?php endforeach; ?>
     </section>
+    <section class="sec2">
+        
+        
+        <form action="chat.php" method="get" class="choix-utilisateur">
+        <label for="utilisateur">Nouvelle conversation :</label>
+        <select name="utilisateur" id="utilisateur" required>
+            <option value="">Sélectionnez un utilisateur</option>
+            <?php
+            // je recup la liste des utilisateurs depuis la bdd
+            $requeteUtilisateurs = "SELECT * FROM utilisateurs WHERE role = 'élève' OR role='professeur' ";
+            $stmtUtilisateurs = $db->prepare($requeteUtilisateurs);
+            $stmtUtilisateurs->execute();
+            $utilisateurs = $stmtUtilisateurs->fetchAll(PDO::FETCH_ASSOC);
+
+            // affichage
+            foreach ($utilisateurs as $utilisateur) {
+                echo "<option value='{$utilisateur['id']}' class=\"optionUser\">
+                           {$utilisateur['prenom']} {$utilisateur['nom']}
+                    </option>";
+            }
+            ?>
+        </select>
+        <button type="submit">Valider</button>
+    </form>
+    </div>
+    </section>
+
+    <footer>
+    <div class="logoFooterContainer">
+        <a href="accueil.php">
+            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
+        </a>
+    </div>
+    <div class="ML">
+        <a href="ML.html" class="lienFooter"><p class="pFooterTitle">Mentions Légales</p></a>
+        <a href="ML.html#editeur" class="lienFooter"><p class="pFooter">éditeur</p></a>
+        <a href="ML.html#contributeurs" class="lienFooter"><p class="pFooter">Contributeurs</p></a>
+        <a href="ML.html#hebergeur" class="lienFooter"><p class="pFooter">Hébergeur</p></a>
+        <a href="ML.html#cookies" class="lienFooter"><p class="pFooter">Cookies</p></a>
+        <a href="ML.html#RGPD" class="lienFooter"><p class="pFooter">RGPD</p></a>
+    </div>
+    <div class="contact">
+        <p class="pFooterTitle">Contact</p>
+        <div class="reseaux">
+            <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
+            <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
+            <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
+        </div>
+    </div>
+</footer>
     
 </body>
 </html>

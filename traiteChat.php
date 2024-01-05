@@ -1,26 +1,25 @@
 <?php
 session_start();
 include("connexion.php");
-$db->query('SET NAMES utf8');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $login = $_POST["login"];
     $message = $_POST["message"];
     $date = $_POST["date"];
-    $canal_id = $_POST["canal_id"];
+    $idDest = $_POST["idDest"];
+    $idEdi = $_POST["idEdi"];
+    
 
-    $requete = "INSERT INTO messages (login, message, date, canal_id) VALUES (:login, :message, :date, :canal_id)";
-    $stmt = $db->prepare($requete);
-    $stmt->bindParam(':login', $login, PDO::PARAM_STR);
-    $stmt->bindParam(':message', $message, PDO::PARAM_STR);
-    $stmt->bindParam(':date', $date, PDO::PARAM_STR);
-    $stmt->bindParam(':canal_id', $canal_id, PDO::PARAM_INT);
+    $requete = "INSERT INTO messages VALUES (NULL, :date, :message, :login, :id_user_edi, :id_user_dest)";
+    $stmt = $db->prepare($requete); 
+    $stmt->bindValue(':date', $date, PDO::PARAM_STR);
+    $stmt->bindValue(':message', $message, PDO::PARAM_STR);
+    $stmt->bindValue(':login', $login, PDO::PARAM_STR);  
+    $stmt->bindValue(':id_user_edi', $idEdi, PDO::PARAM_INT);
+    $stmt->bindValue(':id_user_dest', $idDest, PDO::PARAM_INT);
+    $stmt->execute();
 
-    if ($stmt->execute()) {
-        header("Location: chat.php?canal_id=" . $canal_id);
-        exit();
-    } else {
-        echo "Erreur lors de l'envoi du message.";
-    }
+
+    header('Location:./chat.php?utilisateur='.$idDest);
 }
 ?>

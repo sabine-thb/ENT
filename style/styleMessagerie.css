@@ -1,21 +1,116 @@
-.section1{
-    text-align: center;
+.titlePage, label{
+    font-family: "secular", sans-serif;
+    text-transform: uppercase;
 }
-.section1 a{
-    display: inline-block; 
-    margin: 10px; 
-    padding: 20px 30px; 
-    text-decoration: none; 
-    color: #fff; 
-    background-color: var(--violetFonce); 
-    border-radius: 5px; 
-    }
+
+h2{
+    font-family: "secular", sans-serif;
+    text-transform: uppercase;
+    background-color: var(--violetClair);
+    padding:5px 15px 5px 15px;
+    width:fit-content;
+    margin-right:auto;
+    border-radius: 5px;
+    margin-bottom:0;
+}
+.section1{
+    min-height:45vh
+}
+
+#utilisateur{
+    padding:5px;
+}
+
+label{
+    background-color: var(--vert);
+    padding:5px 15px 5px 15px;
+    border-radius:5px;
+}
+
+button{
+    font-family: "inter", sans-serif;
+    background-color:white;
+    color:black;
+    padding:5px 15px 5px 15px;
+    border-radius:5px;
+    transition: padding 0.3s ease-in-out;
+    margin-top:30px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    padding:5px 20px 5px 20px;
+}
+
+.allConv{
+    margin-top:25px;
+}
+
+.conv{
+    width:80%;
+    margin:auto;
+    background-color: var(--bleu);
+    display:flex;
+    align-items: center;
+    gap:20px;
+    padding:20px 30px 20px 20px;
+    border-radius:25px;
+}
+
+.finMsg{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.edi{
+    margin-bottom:5px;
+}
+
+.linkConv{
+    text-decoration: none;
+    color:white;
+    padding:5px 15px 5px 15px;
+    background-color: gray;
+    border-radius:5px;
+
+}
+
+.finMsg{
+    margin-left:auto;
+}
+
+
     
 .section1 a:hover{
      background-color: #8184d2;
     }
     
- .canal-description {
-    text-align: center; 
-    margin-bottom: 20px; 
-    }
+
+
+.photoProfil{
+    width:60px;
+    background-size: cover;
+}
+
+.sec2{
+    background: var(--degrade);
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.choix-utilisateur{
+    text-align: center;
+}
+
+
+footer{
+    margin-top:0;
+
+}
+
+
