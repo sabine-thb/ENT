@@ -63,8 +63,12 @@
     </header>
 
     <section class="section1">
-
-        <h1 class="title">Devoirs à Rendre</h1>
+        
+        
+        <div class="titleContainer">
+            <h1 class="title">Devoirs à Rendre</h1>
+            <img src="./style/img/bonhommes/ordi.png" class="img1" alt="">
+        </div>
 
         <div class="devoirs">
 

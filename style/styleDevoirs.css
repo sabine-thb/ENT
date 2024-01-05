@@ -4,15 +4,29 @@
     box-sizing: border-box;
 }
 
-.title{
-    font-family:"secular", sans-serif;
-    font-size:1.3rem;
+.section1 {
+    position: relative;
+}
+
+.titleContainer{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    margin: auto;
+}
+
+.title {
+    font-family: "secular", sans-serif;
+    font-size: 1.3rem;
     text-transform: uppercase;
     text-align: center;
 }
 
-.section1{
-    position: relative;
+.img1{
+    position: absolute;
+    width: 100px;
+    top: 0px;
+    left: 450px;
 }
 
 .devoirs {
@@ -44,7 +58,7 @@
 }
 
 .descr {
-    width: 44rem;
+    width: 44vw;
 }
 
 .flex {
@@ -55,7 +69,7 @@
 .nom, .profs {
     text-align: left;
     margin: 0;
-    max-width: 20rem;
+    max-width: 20vw;
 }
 
 .nom {
@@ -174,10 +188,38 @@ h4 {
 }
 
 
+@media(max-width:1600px){
+
+    .img1{
+        left: 400px;
+    }
+
+    .nom, .profs {
+        max-width: 15vw;
+    }
+
+}
+
+@media(max-width:1400px){
+
+    .img1{
+        left: 350px;
+    }
+
+}
+
+@media(max-width:1200px){
+
+    .img1{
+        left: 300px;
+    }
+
+}
+
 @media(max-width:1140px){
 
     .nom, .profs {
-        max-width: 15rem;
+        max-width: 15vw;
     }
 
 }
@@ -193,7 +235,7 @@ h4 {
     }
 
     .descr {
-        width: 54rem;
+        width: 54vw;
     }
 
     .separation {
@@ -213,7 +255,7 @@ h4 {
     }
 
     .descr {
-        width: 64rem;
+        width: 64vw;
     }
 
     .separation {
@@ -237,7 +279,7 @@ h4 {
     }
 
     .descr {
-        width: 74rem;
+        width: 74vw;
     }
 
     .separation {
@@ -266,7 +308,7 @@ h4 {
     }
 
     .descr {
-        width: 84rem;
+        width: 84vw;
     }
 
     .separation {
@@ -279,6 +321,14 @@ h4 {
 
 }
 
+@media(max-width:650px){
+
+    .img1{
+        left: 250px;
+    }
+
+}
+
 @media(max-width:600px){
 
     .devoirs {
@@ -286,11 +336,19 @@ h4 {
     }
 
     .nom, .profs {
-        max-width: 10rem;
+        max-width: 10vw;
     }
 
     .popup {
         max-width: 80vw;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .img1{
+        left: 200px;
     }
 
 }
@@ -312,6 +370,23 @@ h4 {
 
     .popup {
         max-width: 90vw;
+    }
+
+}
+
+@media(max-width:450px){
+
+    .img1{
+        width: 75px;
+        left: 175px;
+    }
+
+}
+
+@media(max-width:315px){
+
+    .img1{
+        width: 50px;
     }
 
 }
