@@ -85,23 +85,41 @@ $id_user=$utilisateur['id'];
         $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
     ?>
                
-    <section>
+    <section >
         <?php if (isset($_GET["insertion"] )){  
             echo "<p class=\"coursOk txtRouge\">Votre cours a bien été inséré.</p>";
         } 
-        ?> 
+        ?>
         <h1 class="titlePage"><?php echo "$prenom" ?>, vous souhaitez déposer un cours ?</h1>
-        <form action="traiteCours.php" method="post" enctype="multipart/form-data">
-            <label for="file">Sélectionnez le fichier du cours :</label>
-            <input type="file" name="file" id="file" accept=".pdf, .doc, .docx">
-            <br>
-            <label for="titre">Nom du Cours : </label>
-            <input id="titre" type="text" name="nomCours">
-            <input type="hidden" name="matiere" value="<?php foreach ($result as $row){  echo $row["id_matiere"]; } ?>">
-        <input type="submit" value="Déposer le fichier">
-    </form>
+    </section>
+    <section class="secInsertion">
+        
+            <div class="formContainer">
+                <form action="traiteCours.php" method="post" enctype="multipart/form-data">
+                <div class="selecFile">
+                    <label for="file"  class="label1">Sélectionnez le fichier du cours :</label>
+                    <input type="file" name="file" id="file" accept=".pdf, .doc, .docx">
+                </div>
+                <div class="nomCours">
+                    <label for="titre">Nom du Cours : </label>
+                    <input id="titre" type="text" name="nomCours">
+                    <input type="hidden" name="matiere" value="<?php foreach ($result as $row){  echo $row["id_matiere"]; } ?>">
+                </div>
+                <input type="submit" value="Déposer le fichier" class="valider">
+
+                
+                    
+                    
+                
+                </form>
+
+            </div>
 
     </section>
+        
+        
+
+    
 
     <?php } ?>
 

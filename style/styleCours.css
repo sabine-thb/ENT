@@ -49,6 +49,83 @@
     font-size:1rem;
     text-transform: uppercase;
 }
+/*Je stylise maintenant ce qui apparait sur l'interface des profs*/
+
+.secInsertion{
+    min-height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomCours{
+    display:flex;
+}
+
+.formContainer{
+    width:350px;
+    height:fit-content;
+    background-color: var(--vert);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:25px;
+    padding:30px 30px 80px 30px;
+    box-shadow: 20px 20px 19.4px 1px rgba(0, 0, 0, 0.25);
+    position: relative;
+    
+}
+
+label{
+    margin-right:20px;
+}
+
+#file{
+    font-family: "inter", sans-serif;
+    background-color: white;
+    padding:10px;
+    border-radius:5px;
+}
+
+.valider{
+    color:white;
+    background-color: gray;
+    font-family: "inter", sans-serif;
+    border:none;
+    border-radius:5px;
+    padding:5px 15px 5px 15px;
+    transition: padding, 0.3s ease-in-out;
+    text-transform: uppercase;
+    position: absolute;
+    left:50%;
+    bottom:40px;
+    transform: translate(-50%,0);
+    cursor:pointer;
+}
+
+.valider:hover{
+    padding:5px 20px 5px 20px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+
+}
+
+label{
+    padding: 5px 15px 5px 15px;
+    border-radius:5px;
+    background-color: var(--violetClair);
+}
+
+.selecFile{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
 
 @media(max-width:1200px){
 
@@ -88,4 +165,25 @@
         width:100%;
     }
 
+}
+
+@media(max-width:460px){
+    .nomCours{
+        flex-direction: column;
+        gap:5px;
+    }
+
+    .formContainer{
+        width:85%;
+    }
+
+    
+}
+
+@media(max-width:400px){
+    form{
+        width:90%;
+    }
+
+    
 }
