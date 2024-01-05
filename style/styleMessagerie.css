@@ -1,3 +1,19 @@
+.titleContainer{
+    position:relative;
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    margin-top:60px;
+}
+
+.img{
+    width:100px;
+    position:absolute;
+    left:170px;
+    top:-50px;
+}
+
+
 .titlePage, label{
     font-family: "secular", sans-serif;
     text-transform: uppercase;
@@ -12,6 +28,8 @@ h2{
     margin-right:auto;
     border-radius: 5px;
     margin-bottom:0;
+    margin-top:0;
+    text-align: center;
 }
 .section1{
     min-height:45vh
@@ -56,12 +74,17 @@ button:hover{
     gap:20px;
     padding:20px 30px 20px 20px;
     border-radius:25px;
+    margin-bottom:30px;
 }
 
 .finMsg{
     display:flex;
     flex-direction:column;
     gap:25px;
+}
+
+.msg{
+    max-width:700px;
 }
 
 .edi{
@@ -74,19 +97,20 @@ button:hover{
     padding:5px 15px 5px 15px;
     background-color: gray;
     border-radius:5px;
+    transition: padding 0.3s ease-in-out;
+    text-align: center;
+    width:90px;
 
+}
+
+.linkConv:hover{
+    padding:5px 25px 5px 25px;
 }
 
 .finMsg{
     margin-left:auto;
 }
 
-
-    
-.section1 a:hover{
-     background-color: #8184d2;
-    }
-    
 
 
 .photoProfil{
@@ -111,6 +135,22 @@ button:hover{
 footer{
     margin-top:0;
 
+}
+
+@media(max-width:650px){
+    .conv{
+        flex-direction:column ;
+        gap:20px;
+
+    }
+    
+}
+
+@media(max-width:390px){
+    .img{
+        width:75px;
+        top:-30px
+    }
 }
 
 

@@ -64,6 +64,7 @@ select {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    min-height:60vh;
 }
 
 .form1,

@@ -19,12 +19,7 @@ $login = $utilisateur['login'];
 $role = $utilisateur['role'];
 $idSession = $utilisateur['id'];
 
-$requete = "SELECT * FROM messages WHERE id_user_dest=:idSession OR id_user_edi=:idSession   ORDER BY date ASC ";
-$stmt = $db->prepare($requete);
-$stmt->bindParam(':userDest', $utilisateurDest, PDO::PARAM_INT);        
-$stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        
-$stmt->execute();
-$resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 
@@ -93,20 +88,33 @@ $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </header>
 
     <section class="section1">
-        <h1>Ma messagerie</h1>
+    
+        <div class="titleContainer">
+            <h1 class="titlePage">Ma messagerie </h1>
+            <img src="./style/img/bonhommes/messages.png" alt="" class="img">
+        </div>
         <br>
-
-        <!-- Affichage des messages -->
-        <?php foreach ($resultat as $message) : ?>
-            <div class="msg">
-                <div class="msg-align <?php if(trim($message['login']) == trim($login)) { echo 'user-msg'; } ?>">
-                
-                    <p class="msg-envoie"><strong>@<?= $message['login'] ?>:</strong> <?= $message['message'] ?></p>
+        <div class="allMsg">
+            <!-- Affichage des messages -->
+        <?php 
+        $requete = "SELECT * FROM messages WHERE id_user_dest=:idSession OR id_user_edi=:idSession   ORDER BY date ASC ";
+        $stmt = $db->prepare($requete);
+        $stmt->bindParam(':userDest', $utilisateurDest, PDO::PARAM_INT);        
+        $stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        
+        $stmt->execute();
+        $resultat = $stmt->fetchAll(PDO::FETCH_ASSOC);foreach ($resultat as $message) : ?>
+            <div class="msg " >
+                <div class="msg-align <?php if(trim($message['login']) == trim($login)) { echo 'user-msg'; } ?>">        
+                    <p class="msg-envoie <?php if(trim($message['login']) == trim($login)) { echo 'user-msg'; } ?>"><strong>@<?= $message['login'] ?>:</strong> <?= $message['message'] ?></p>
                     <p class="date"><?= date('d/m/y H:i', strtotime($message['date'])) ?></p>
                 </div>
             </div>
 
         <?php endforeach; ?>
+        
+        </div>
+        
+        
 
         <!-- Formulaire pour envoyer les messages -->
         <form action="traiteChat.php" method="post" class="traiteChat">
