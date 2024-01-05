@@ -88,7 +88,7 @@ $idSession = $utilisateur['id'];
     </header>
 
     <section class="section1">
-    
+        <a href="messagerie.php" class="retour">Retour</a>
         <div class="titleContainer">
             <h1 class="titlePage">Ma messagerie </h1>
             <img src="./style/img/bonhommes/messages.png" alt="" class="img">
