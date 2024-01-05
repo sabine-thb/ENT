@@ -73,3 +73,19 @@
     }
 
 }
+@media(max-width:490px){
+
+    .coursDev, .coursCrea, .coursCom{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .lienRessource{
+        width:100%;
+    }
+
+    .titreRessource{
+        width:100%;
+    }
+
+}
