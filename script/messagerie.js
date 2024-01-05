@@ -13,4 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.traiteChat').submit();
     }
 
+    window.onload = function() {
+        // Fonction pour faire défiler jusqu'au bas de la page
+        function scrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        // Appeler la fonction lors du chargement de la page
+        scrollToBottom();
+    };
+
 });

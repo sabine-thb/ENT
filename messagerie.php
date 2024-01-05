@@ -76,7 +76,12 @@ $idSession = $utilisateur['id'];
         
     </header>
     <section class="section1">
-        <h1 class="titlePage">Ma messagerie </h1>
+        <div class="titleContainer">
+            <h1 class="titlePage">Ma messagerie </h1>
+            <img src="./style/img/bonhommes/messages.png" alt="" class="img">
+
+        </div>
+        
         <br>
 
     
