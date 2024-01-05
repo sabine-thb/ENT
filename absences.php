@@ -74,12 +74,14 @@ $id_user=$utilisateur['id'];
 </header>
 	
 
-<section >
+
         
 <?php
      if ($role == "professeur") {
     ?>
+    <section >
     <h1>Abscences et retards</h1>
+    
         <?php 
         if (isset($_GET['err']) && $_GET['err'] === 'dateAbsence') {
             echo "<p class=\"txtRouge\">Erreur : La date de l'absence que vous avez sélectionnée n'est pas encore passée.</p>";
@@ -207,7 +209,7 @@ $id_user=$utilisateur['id'];
             
         </div>
         
-  
+</section>
 <?php }?>  
 
         

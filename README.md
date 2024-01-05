@@ -32,5 +32,14 @@ Les fonctionnalités développées sont :
    Les matières sont classées par UE.
    La matière générale est calculée en fonction de toutes les notes et de leur coefficient respectif.
 
+4. INSERTION DES ABSENCES ET RETARDS, ET POINTS EN MOINS SUR LA MOYENNE
+   Les professeurs puvent, via leur interface, insérer aux élèves des heures d'absence ou de retard, justifiés ou non.
+   Ainsi, les élèves peuvent observer via leur interface personnelle leurs heures de retards et d'absence justifis ou non. 
+   Ils peuvent également avoir acès à leur nombre de points en moins sur leur moyenne générale. Celui ci est calculé en fonction du nombre total d'heures d'absences et de retards non justifiés.
+   En effet, au delàs de 10H cumulées, chaque heure supplémentaire enlèvera 0.025points sur la moyenne.
+
+
+   
+
 
 

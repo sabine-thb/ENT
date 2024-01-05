@@ -76,34 +76,36 @@ include("connexion.php");
         <h1>Votre messagerie :</h1>
         <br>
 
-        <div class=canal-description>
+        <!-- <div class=canal-description>
             <p>Rejoingnez votre canal public et discutez avec l'ensemble de votre IUT</p>
                  <a href="chat.php?canal_id=1">Canal 1</a>
-        </div>
+        </div> -->
 
-        <div class=canal-description>
+        <!-- <div class=canal-description>
              <p>Rejoingez votre canal privé et consultez votre messagerie privée </p>
                  <a href="chat.php?canal_id=2">Canal 2</a>
-         </div>
-         <form action="chat.php" method="get" class="choix-utilisateur">
-    <label for="utilisateur">Sélectionnez un utilisateur :</label>
-    <select name="utilisateur" id="utilisateur" required>
-        <option value="">Sélectionnez un utilisateur</option>
-        <?php
-        // je recup la liste des utilisateurs depuis la bdd
-        $requeteUtilisateurs = "SELECT id, login FROM utilisateurs";
-        $stmtUtilisateurs = $db->prepare($requeteUtilisateurs);
-        $stmtUtilisateurs->execute();
-        $utilisateurs = $stmtUtilisateurs->fetchAll(PDO::FETCH_ASSOC);
+         </div> -->
+    <form action="chat.php" method="get" class="choix-utilisateur">
+        <label for="utilisateur">Sélectionnez un utilisateur :</label>
+        <select name="utilisateur" id="utilisateur" required>
+            <option value="">Sélectionnez un utilisateur</option>
+            <?php
+            // je recup la liste des utilisateurs depuis la bdd
+            $requeteUtilisateurs = "SELECT * FROM utilisateurs WHERE role = 'élève' OR role='professeur' ";
+            $stmtUtilisateurs = $db->prepare($requeteUtilisateurs);
+            $stmtUtilisateurs->execute();
+            $utilisateurs = $stmtUtilisateurs->fetchAll(PDO::FETCH_ASSOC);
 
-        // affichage
-        foreach ($utilisateurs as $utilisateur) {
-            echo "<option value='{$utilisateur['id']}'>{$utilisateur['login']}</option>";
-        }
-        ?>
-    </select>
-    <button type="submit">Accéder à la conversation</button>
-</form>
+            // affichage
+            foreach ($utilisateurs as $utilisateur) {
+                echo "<option value='{$utilisateur['id']}'>
+                           {$utilisateur['prenom']} {$utilisateur['nom']}
+                    </option>";
+            }
+            ?>
+        </select>
+        <button type="submit">Accéder à la conversation</button>
+    </form>
     </section>
     
 </body>
