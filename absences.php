@@ -216,6 +216,7 @@ $id_user=$utilisateur['id'];
 <?php
      if ($role == "élève") {
     ?>
+<section>
     <div class="allAbsAndRet">
         <div class=" number absJust">
         <h2 class="titleOne">Absences</h2>

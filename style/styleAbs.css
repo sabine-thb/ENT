@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1 {
     font-family: "secular", sans-serif;
     font-size: 1.2rem;
@@ -102,6 +108,7 @@ fieldset {
     font-size:2rem;
     font-family: "interSemiBold",sans-serif;
     padding-bottom:50px;
+    gap:20px;
 }
 
 .titleOne{
@@ -125,7 +132,7 @@ fieldset {
 }
 
 .num{
-    width:100px;
+    width:140px;
     background-color: var(--violetClair);
     padding:20px 25px 20px 25px;
     border-radius: 25px;
@@ -167,7 +174,7 @@ fieldset {
 .nbPtsMoins{   
     font-family: "interSemiBold",sans-serif;
     font-size:2rem;
-    width:100px;
+    width:140px;
     padding:20px 25px 20px 25px;
     border-radius: 25px;
     text-align: center;
@@ -239,7 +246,7 @@ footer{
     }
 }
 
-@media(max-width:600px){
+@media(max-width:670px){
     .allAbsAndRet{
         flex-wrap:wrap;
     }

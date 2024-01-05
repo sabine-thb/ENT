@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.titlePage{
+    font-family: "secular", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+footer{
+    position:absolute;
+    width:100vw;
+    bottom:0;
+}

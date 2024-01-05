@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .titlePage{
     font-family:"secular", "sans-serif";
     text-transform: uppercase;
