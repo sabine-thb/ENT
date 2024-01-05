@@ -97,7 +97,7 @@ $idSession = $utilisateur['id'];
         <div class="allMsg">
             <!-- Affichage des messages -->
         <?php 
-        $requete = "SELECT * FROM messages WHERE id_user_dest=:userDest AND id_user_edi=:idSession   ORDER BY date ASC ";
+        $requete = "SELECT * FROM messages WHERE (id_user_dest=:userDest OR id_user_dest=:idSession) AND (id_user_edi=:idSession OR id_user_edi=:userDest) ORDER BY date ASC";
         $stmt = $db->prepare($requete);
         $stmt->bindParam(':userDest', $utilisateurDest, PDO::PARAM_INT);        
         $stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        

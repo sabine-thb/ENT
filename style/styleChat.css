@@ -3,6 +3,22 @@
 *::before {
     box-sizing: border-box;
 }
+.retour{
+    font-family: "secular", sans-serif;
+    position:fixed;
+    top:120px;
+    text-decoration: none;
+    color:white;
+    background-color: gray;
+    padding:5px 15px 5px 15px;
+    border-radius:5px;
+    transition: padding 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.retour:hover{
+    padding:5px 20px 5px 20px;
+}
 
 h1{
     font-family:"secular", sans-serif;
