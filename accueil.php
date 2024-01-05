@@ -43,7 +43,6 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
    <link rel="stylesheet" href="style/styleAccueil.css">
-   
     
     <title>ENT - Accueil</title>
     
@@ -99,10 +98,35 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 	
 </header>
     <section class="section1">
+        <div class="bjr">
         <?php
         echo"<h1>Bonjour {$utilisateur ['prenom']}.</h1> "
         ?>
         <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
+        </div>
+        <div class="devoirs">
+        <h1 class="titreRendus">Prochains rendus</h1>
+        <div class="rectangles">
+                <div class="rec1">
+                    <div class="rectangle"><a href="devoirs.php">SAÉ 3.01 </a></div>
+                    <div class="rectangle"><a href="#">SAÉ 3.02 </a></div>
+                </div>
+                <div class="rec2">
+                    <div class="rectangle"><a href="#">Portfolio</a></div>
+                    <div class="rectangle"><a href="#">SAÉ 3.02A </a></div>
+                </div>
+
+        </div>
+
+        <div class="lien">
+            
+        <a class="iconn" href="cours.php"><img src="./style/img/cours.svg"> <p>Cours</p></a> 
+        <a class="iconn" href="edt.php"><img src="./style/img/EDT.svg"><p>EDT</p></a> 
+        <a class="iconn" href="notes.php"><img src="./style/img/notes.svg"><p>Notes</p></a> 
+
+
+        </div>
+        </div>
 </section>
 <!-- affichage des 3 derniers mess -->
 <section class="derniersms">
