@@ -34,8 +34,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     width: 50vw;
 }
 
@@ -56,7 +55,7 @@
 .nom, .profs {
     text-align: left;
     margin: 0;
-    max-width: 30rem;
+    max-width: 20rem;
 }
 
 .nom {
@@ -105,7 +104,7 @@
     left: 0;
     right: 0;
     color: white;
-    overflow-y: hidden;
+    overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.92);
 }
 
@@ -119,9 +118,10 @@
 }
 
 .popup {
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     max-width: 40vw;
 }
 
@@ -171,4 +171,147 @@ h4 {
 
 .centre {
     text-align: center;
+}
+
+
+@media(max-width:1140px){
+
+    .nom, .profs {
+        max-width: 15rem;
+    }
+
+}
+
+@media(max-width:1000px){
+
+    .devoirs {
+        width: 60vw;
+    }
+
+    .devoir {
+        width: 60vw;
+    }
+
+    .descr {
+        width: 54rem;
+    }
+
+    .separation {
+        width: 42vw;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .devoirs {
+        width: 70vw;
+    }
+
+    .devoir {
+        width: 70vw;
+    }
+
+    .descr {
+        width: 64rem;
+    }
+
+    .separation {
+        width: 49vw;
+    }
+
+    .popup {
+        max-width: 50vw;
+    }
+
+}
+
+@media(max-width:800px){
+
+    .devoirs {
+        width: 80vw;
+    }
+
+    .devoir {
+        width: 80vw;
+    }
+
+    .descr {
+        width: 74rem;
+    }
+
+    .separation {
+        width: 56vw;
+    }
+
+    .popup {
+        max-width: 60vw;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .devoirs {
+        width: 90vw;
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .devoir {
+        width: 90vw;
+    }
+
+    .img {
+        margin-right: 1rem;
+    }
+
+    .descr {
+        width: 84rem;
+    }
+
+    .separation {
+        width: 63vw;
+    }
+
+    .popup {
+        max-width: 70vw;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .devoirs {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .nom, .profs {
+        max-width: 10rem;
+    }
+
+    .popup {
+        max-width: 80vw;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .devoirs {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .nom, .profs, .date, .italic {
+        text-align: left;
+        max-width: fit-content;
+    }
+
+    .popup {
+        max-width: 90vw;
+    }
+
 }

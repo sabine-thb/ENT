@@ -76,8 +76,8 @@
                         <p class="date">Pour le <strong>12/01</strong> à <strong>23:59</strong></p>
                     </div>
                     <div class="flex">
-                        <p class="profs">Matthieu Berthet, Gaëlle Charpentier, Renaud Eppstein, Philippe Gambette, Fatima Laoufi, Alexandre Leroy & Hervé Lo</p>
-                        <p class="italic">Devoir non rendu</p>
+                        <p class="profs">Matthieu Berthet, Gaëlle Charpentier, Renaud Eppstein...</p>
+                        <p class="italic">Non rendu</p>
                     </div>
                 </div>
             </div>
@@ -92,8 +92,8 @@
                         <p class="date">Pour le <strong>08/01</strong> à <strong>23:59</strong></p>
                     </div>
                     <div class="flex">
-                        <p class="profs">Anne Tasso, Lahcen Soussi, Alexandre Leroy, Leyla Jaoued & Odile Niel</p>
-                        <p class="italic">Devoir rendu</p>
+                        <p class="profs">Anne Tasso, Lahcen Soussi, Alexandre Leroy...</p>
+                        <p class="italic">Rendu</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="flex">
                         <p class="profs">Gaëlle Charpentier</p>
-                        <p class="italic">Devoir rendu</p>
+                        <p class="italic">Rendu</p>
                     </div>
                 </div>
             </div>
@@ -124,8 +124,8 @@
                         <p class="date">Pour le <strong>24/11</strong> à <strong>23:59</strong></p>
                     </div>
                     <div class="flex">
-                        <p class="profs">Tony Houziaux, KPC, Alexandre Leroy & Florence Bister</p>
-                        <p class="italic">Devoir rendu</p>
+                        <p class="profs">Tony Houziaux, KPC, Alexandre Leroy...</p>
+                        <p class="italic">Rendu</p>
                     </div>
                 </div>
             </div>
