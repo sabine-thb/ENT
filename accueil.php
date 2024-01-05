@@ -20,7 +20,15 @@ $stmtDerniersMessages->bindParam(':idSession', $idSession, PDO::PARAM_INT);
 $stmtDerniersMessages->execute();
 $derniersMessages = $stmtDerniersMessages->fetchAll(PDO::FETCH_ASSOC);
 ?>
+<?php
 
+$requeteMessagesNonLus = "SELECT COUNT(*) AS nb_messages FROM messages WHERE id_user_dest = :idSession";
+$stmtMessagesNonLus = $db->prepare($requeteMessagesNonLus);
+$stmtMessagesNonLus->bindParam(':idSession', $idSession, PDO::PARAM_INT);
+$stmtMessagesNonLus->execute();
+$resultatMessagesNonLus = $stmtMessagesNonLus->fetch(PDO::FETCH_ASSOC);
+$nombreMessagesNonLus = $resultatMessagesNonLus['nb_messages'];
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -91,7 +99,7 @@ $derniersMessages = $stmtDerniersMessages->fetchAll(PDO::FETCH_ASSOC);
         ?>
         <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
 </section>
-
+<section class="derniersms">
 <h2>Nouveaux messages</h2>
 
 <div class="derniers-messages">
@@ -116,8 +124,10 @@ $derniersMessages = $stmtDerniersMessages->fetchAll(PDO::FETCH_ASSOC);
 </div>
 </div>
     
+</section>
 <script src="./script/burger.js"></script>
 
 <a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
-</body>
+
+</a></body>
 </html>
