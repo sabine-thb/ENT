@@ -2,8 +2,24 @@
 session_start();
 include("connexion.php");
 $utilisateur=$_SESSION['utilisateur'];
-?>
 
+$idSession = $utilisateur['id'];
+
+// Je crée ma requête pour récupérer les trois derniers messages reçus par l'utilisateur connecté Idsession
+$requeteDerniersMessages = "
+    SELECT m.*, u.prenom, u.nom
+    FROM messages m
+    INNER JOIN utilisateurs u ON m.id_user_edi = u.id
+    WHERE m.id_user_dest = :idSession
+    ORDER BY m.date DESC
+    LIMIT 3;
+";
+
+$stmtDerniersMessages = $db->prepare($requeteDerniersMessages);
+$stmtDerniersMessages->bindParam(':idSession', $idSession, PDO::PARAM_INT);
+$stmtDerniersMessages->execute();
+$derniersMessages = $stmtDerniersMessages->fetchAll(PDO::FETCH_ASSOC);
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -75,6 +91,30 @@ $utilisateur=$_SESSION['utilisateur'];
         ?>
         <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
 </section>
+
+<h2>Nouveaux messages</h2>
+
+<div class="derniers-messages">
+    <ul>
+        <?php foreach ($derniersMessages as $message) : ?>
+            <div class="message-item">
+                <div class="message-contenu">
+                    <?= $message['message'] ?>
+                    <div class="expediteur">
+                        <i><?= $message['prenom'] . ' ' . $message['nom'] ?></i>
+                    </div>
+                </div>
+                <div class="date-heure">
+                    <span class="date"><?= date('d/m/y', strtotime($message['date'])) ?></span>
+                    <br>
+                    <span class="heure"><?= date('H:i', strtotime($message['date'])) ?></span>
+                </div>
+                <div style="clear: both;"></div>
+        </div>
+        <?php endforeach; ?>
+    </ul>
+</div>
+</div>
     
 <script src="./script/burger.js"></script>
 
