@@ -89,7 +89,7 @@
             <div class="separation"></div>
             
             <div class="devoir">
-                <img src="./style/img/logoENT.svg" alt="devoir 2" srcset="" class="img">
+                <img src="./style/img/devoirs/cv-video.svg" alt="devoir 2" srcset="" class="img">
                 <div class="descr">
                     <div class="flex">
                         <h2 class="nom nom2">SAÉ 3.02-B CV Vidéo</h2>
@@ -105,7 +105,7 @@
             <div class="separation"></div>
 
             <div class="devoir">
-                <img src="./style/img/logoENT.svg" alt="devoir 3" srcset="" class="img">
+                <img src="./style/img/devoirs/portfolio.svg" alt="devoir 3" srcset="" class="img">
                 <div class="descr">
                     <div class="flex">
                         <h2 class="nom nom3">Portfolio</h2>
@@ -121,7 +121,7 @@
             <div class="separation"></div>
 
             <div class="devoir">
-                <img src="./style/img/logoENT.svg" alt="devoir 4" srcset="" class="img">
+                <img src="./style/img/devoirs/podcast.svg" alt="devoir 4" srcset="" class="img">
                 <div class="descr">
                     <div class="flex">
                         <h2 class="nom nom4">SAÉ 3.02-A Podcast</h2>
