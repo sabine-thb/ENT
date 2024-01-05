@@ -99,11 +99,16 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 </header>
     <section class="section1">
         <div class="bjr">
-        <?php
-        echo"<h1>Bonjour {$utilisateur ['prenom']}.</h1> "
-        ?>
-        <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
+            <?php
+                echo"<h1>Bonjour {$utilisateur ['prenom']}.</h1> "
+            ?>
+                <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
+                    <h3 class="titlepc"> Prochains cours </h3>
+                     <div class="pcs">
+                        
+                    </div>
         </div>
+        
         <div class="devoirs">
         <h1 class="titreRendus">Prochains rendus</h1>
         <div class="rectangles">
@@ -118,6 +123,7 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 
         </div>
 
+
         <div class="lien">
             
         <a class="iconn" href="cours.php"><img src="./style/img/cours.svg"> <p>Cours</p></a> 
@@ -127,10 +133,12 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 
         </div>
         </div>
+        
 </section>
 <!-- affichage des 3 derniers mess -->
+<section class="sec2">
 <section class="derniersms">
-<h2>Nouveaux messages</h2>
+<h2 class="titreNM">Nouveaux messages</h2>
 
 <div class="derniers-messages">
     <ul>
@@ -155,7 +163,6 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 </div>
     
 </section>
-
 <section class=derniercours>
         <h2>Les trois derniers cours</h2>
 
@@ -168,6 +175,8 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
     </section>
 
 </section>
+</section>
+
 <script src="./script/burger.js"></script>
 
 <a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
