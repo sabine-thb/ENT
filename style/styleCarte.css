@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .title{
     font-family:"secular", sans-serif;
     font-size:1.3rem;

@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.titlePage{
+    font-family: "secular", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.retour{
+    font-family: "secular", sans-serif;
+    text-decoration: none;
+    width:white;
+    background-color: gray;
+    padding:5px 15px 5px 15px;
+    color:white;
+    border-radius:5px;
+    position:absolute;
+    margin-top:20px;
+    transition:padding 0.3s ease-in-out;
+    text-transform: uppercase;
+
+}
+
+.retour:hover{
+    padding:5px 20px 5px 20px;
+}
+
+.sec1{
+    min-height:70vh;
+}
+
+.expl{
+    padding:5px 15px 5px;
+    background-color: var(--vert);
+    width:fit-content;
+    border-radius:5px;
+}
+
+.lienRessource{
+    color:black;
+    font-size:1.3rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .titlePage{
     font-family:"secular", "sans-serif";
     text-transform: uppercase;
@@ -33,6 +39,7 @@
     color:white;
     text-decoration: none;
     place-self: center;
+    box-shadow: 20px 20px 19.5px 0px rgba(0, 0, 0, 0.15);
 
 }
 

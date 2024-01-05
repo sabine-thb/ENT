@@ -1,4 +1,9 @@
 /*Je définis ici les couleurs principales que je vais utiliser dans mon site*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
     --violetFonce: #7175D4; 

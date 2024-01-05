@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /*Je mets en place la section du formulaire de réservation*/
 .titleResa{
     margin-bottom:0;

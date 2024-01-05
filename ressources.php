@@ -35,7 +35,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style/style.css">   
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
-    <link rel="stylesheet" href="style/styleCours.css">
+    <link rel="stylesheet" href="style/styleRessource.css">
     <title>ENT - Ressource</title>
     
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
@@ -89,9 +89,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </nav>
         
     </header>
-    <section>
+    <section class="sec1">
+        <a href="cours.php" class="retour">Retour</a>
         <h1 class="titlePage">Ressource :  <?php foreach ($result as $row) echo $row["titre_matiere"];?></h1>
-        <p>Voici les cours que vous pouvez télécharger : </p>
+        <p class="expl">Voici les cours que vous pouvez télécharger : </p>
         <?php 
 
 
@@ -109,12 +110,16 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         <ul>
         <?php foreach ($listeFichiers as $fichier) : ?>
-    <li>
-        <a href="telechargerCours.php?id=<?php echo $fichier['id_cours']; ?>" download="cours_<?php echo $fichier['id_cours']; ?>.pdf">
+            <li>
+            <a href="telechargerCours.php?id=<?php echo $fichier['id_cours']; ?>" download="cours_<?php echo $fichier['id_cours']; ?>.pdf" class="lienRessource">
                  <?php echo $fichier['nomCours']; ?>
-        </a>
-    </li>
-<?php endforeach; ?>
+            </a>
+            </li>
+    <?php endforeach; ?>
+    <?php if ($stmt->rowCount() == 0) { 
+       echo"<p class=\"txtRouge\">Il n'y a rien à télécharger pour cette ressource actuellement.</p>" ;
+    }
+    ?>
         </ul>
     </section>
 
