@@ -114,11 +114,11 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
         <div class="rectangles">
                 <div class="rec1">
                     <div class="rectangle"><a href="devoirs.php">SAÉ 3.01 </a></div>
-                    <div class="rectangle"><a href="devoirs.php">SAÉ 3.02 </a></div>
+                    <div class="rectangle"><a href="#">SAÉ 3.02 </a></div>
                 </div>
                 <div class="rec2">
-                    <div class="rectangle"><a href="devoirs.php">Portfolio</a></div>
-                    <div class="rectangle"><a href="devoirs.php">SAÉ 3.02A </a></div>
+                    <div class="rectangle"><a href="#">Portfolio</a></div>
+                    <div class="rectangle"><a href="#">SAÉ 3.02A </a></div>
                 </div>
 
         </div>
