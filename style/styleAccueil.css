@@ -293,7 +293,7 @@ ul{
 .restaurationContainer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap:50px;
 }
 
@@ -328,7 +328,7 @@ ul{
 
 .imgPlat{
     width:500px;
-    height:250px;
+    height:275px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -347,6 +347,12 @@ ul{
     filter: drop-shadow(20px 20px 19.5px rgba(0, 0, 0, 0.15));
     width: fit-content;
     
+}
+
+.nomCrous{
+    text-transform: uppercase;
+    font-family: "secular", sans-serif;
+
 }
 
 
@@ -373,6 +379,11 @@ ul{
         padding:70px 70px 70px 70px;
         gap:70px;
     }
+
+    .compteur{
+        font-size:3rem;
+    }
+
 }
 
 @media(max-width:1090px){
@@ -382,6 +393,15 @@ ul{
 
     .pcs{
         width:fit-content;
+    }
+
+    .imgPlat{
+        width:380px;
+        height:180px;
+    }
+
+    .compteur{
+        padding: 15px 50px 15px 50px;
     }
 }
 
@@ -403,6 +423,10 @@ ul{
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .attentes{
+        align-items: flex-end;
+    }
 }
 @media(max-width:900px){
     .section1{
@@ -419,6 +443,16 @@ ul{
 
     .pcs{
         margin: auto;
+    }
+
+    .restaurationContainer{
+        flex-direction: column;
+    }
+
+    .menuJour, .attentes{
+        margin: auto;
+        align-items: center;
+        width:100%;
     }
 }
 @media(max-width:850px){
@@ -465,6 +499,15 @@ ul{
     }
     .pcs{
         padding:10px;
+    }
+
+    .imgPlat{
+        width:250px;
+    }
+
+    .compteur{
+        font-size: 2.5rem;
+        width:250px;
     }
 
 
