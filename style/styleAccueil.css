@@ -1,5 +1,22 @@
+.bjr{
+    padding-bottom:20px;
+}
+
+.firstTitle{
+    font-size: 1.5rem;
+}
+
 .section1{
-    padding:20px;
+    padding:90px 120px 90px 90px;
+}
+
+.section2{
+    padding:25px 90px 25px 90px;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between;
 }
 
 h1{
@@ -8,34 +25,59 @@ h1{
     text-transform: uppercase;
 }
 
-.derniers-messages {
-    background-color: #e0f2e9;
-    border: 1px solid var(--bleu);
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    width:50%;
-    box-shadow:24px 25px 19.4px 0px rgba(0, 0, 0, 0.15);
-}
-.titreNM{
+.titleSection{
     font-family:"secular", sans-serif;
     font-size:1.2rem;
     text-transform: uppercase;
-    color:white;
 }
+
+.titleSection.blanc{
+    color:white;
+    font-size:1.5rem;
+}
+
+.section2{
+    display:flex;
+    justify-content: space-between;
+}
+
+.derniersCours{
+    background-color: var(--rose);
+    border-radius: 30px;
+    box-shadow: 25px 25px 19.4px -1px rgba(0, 0, 0, 0.15);
+}
+
+.derniers-messages {
+    background-color: var(--bleu);
+    border: 1px solid var(--bleu);
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    width:700px;
+    box-shadow: 25px 25px 19.4px -1px rgba(0, 0, 0, 0.15);
+}
+
+.titleMsg{
+    width:fit-content;
+}
+
 
 .message-item {
     padding: 30px;
-    border-bottom: 0.5px solid #666;
+    border-bottom: 0.5px solid #0e0e0e;
+    display:flex;
+    gap:30px;
+}
+
+.message-photo{
+    width:60px;
 }
 
 .message-contenu {
-    float: left;
-    width: 60%;
+    margin-right:auto;
 }
 
 .date-heure {
-    float: right;
     text-align: right;
     color: #666;
 }
@@ -47,11 +89,12 @@ h1{
    color: #666
 }
 
-.sec2{
+.section2{
     background:var(--degrade)
 }
+
 .pcs{
-    width:600px;
+    width:700px;
     height:190px;
     background-color: var(--vert);
     border-radius:20px;
@@ -59,30 +102,17 @@ h1{
    
     }
 
-.titlepc{
-    font-family:"secular", sans-serif;
-    font-size:1.2rem;
-    text-transform: uppercase;
-}
 
 /* devoirs à rendre: + 3 icones */
-.titreRendus {
-    font-family: "secular", sans-serif;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
+
+
 .devoirs {
-    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.section1 {
-    display: flex;
-    justify-content: space-between;
-    padding: 70px;
-}
+
 .rectangles {
     margin-top:10px;
     display: flex;
@@ -99,7 +129,9 @@ h1{
     cursor: pointer;
     margin-bottom: 12px; 
     border-radius:15px;
-    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .rectangle a{

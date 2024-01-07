@@ -98,27 +98,32 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 	
 </header>
     <section class="section1">
-        <div class="bjr">
-            <?php
-                echo"<h1>Bonjour {$utilisateur ['prenom']}.</h1> "
-            ?>
+        <div>
+            <div class="bjr">
+                <?php
+                    echo"<h1 class=\"firstTitle\">Bonjour {$utilisateur ['prenom']}.</h1> "
+                ?>
+                    
                 <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
-                    <h3 class="titlepc"> Prochains cours </h3>
+
+            </div>
+            
+                    <h3 class="titleSection"> Prochains cours </h3>
                      <div class="pcs">
                         
                     </div>
         </div>
         
         <div class="devoirs">
-        <h1 class="titreRendus">Prochains rendus</h1>
+        <h1 class="titleSection">Prochains rendus</h1>
         <div class="rectangles">
                 <div class="rec1">
                     <div class="rectangle"><a href="devoirs.php">SAÉ 3.01 </a></div>
-                    <div class="rectangle"><a href="#">SAÉ 3.02 </a></div>
+                    <div class="rectangle"><a href="devoirs.php">SAÉ 3.02 </a></div>
                 </div>
                 <div class="rec2">
-                    <div class="rectangle"><a href="#">Portfolio</a></div>
-                    <div class="rectangle"><a href="#">SAÉ 3.02A </a></div>
+                    <div class="rectangle"><a href="devoirs.php">Portfolio</a></div>
+                    <div class="rectangle"><a href="devoirs.php">SAÉ 3.02A </a></div>
                 </div>
 
         </div>
@@ -136,46 +141,56 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
         
 </section>
 <!-- affichage des 3 derniers mess -->
-<section class="sec2">
-<section class="derniersms">
-<h2 class="titreNM">Nouveaux messages</h2>
+<section class="section2">
 
-<div class="derniers-messages">
-    <ul>
-        <?php foreach ($derniersMessages as $message) : ?>
-            <div class="message-item">
-                <div class="message-contenu">
-                    <?= $message['message'] ?>
-                    <div class="expediteur">
-                        <i><?= $message['prenom'] . ' ' . $message['nom'] ?></i>
+    <div class=derniersCours>
+                <h2 class="titleSection blanc">Les trois derniers cours</h2>
+
+                <?php foreach ($derniersCours as $cours) : ?>
+                    <div class="cours-item">
+                        <p>Nom du cours : <?php echo $cours['nomCours']; ?></p>
+
                     </div>
-                </div>
-                <div class="date-heure">
-                    <span class="date"><?= date('d/m/y', strtotime($message['date'])) ?></span>
-                    <br>
-                    <span class="heure"><?= date('H:i', strtotime($message['date'])) ?></span>
-                </div>
-                <div style="clear: both;"></div>
+                <?php endforeach; ?>
         </div>
-        <?php endforeach; ?>
-    </ul>
-</div>
-</div>
+
     
-</section>
-<section class=derniercours>
-        <h2>Les trois derniers cours</h2>
 
-        <?php foreach ($derniersCours as $cours) : ?>
-            <div class="cours-item">
-                <p>Nom du cours : <?php echo $cours['nomCours']; ?></p>
-
+    <div class="msgContainer">
+        <h2 class="titleSection titleMsg blanc">Nouveaux messages</h2>
+        <div class="derniers-messages">
+        <ul>
+            <?php foreach ($derniersMessages as $message) : ?>
+                <div class="message-item">
+                    <div class="photoContainer">
+                        <img src="./style/img/profil/<?= $message['id_user_edi'] ?>.svg" class="message-photo" alt="">
+                    </div>
+                    <div class="message-contenu">
+                        <?= $message['message'] ?>
+                        <div class="expediteur">
+                            <i><?= $message['prenom'] . ' ' . $message['nom'] ?></i>
+                        </div>
+                    </div>
+                    <div class="date-heure">
+                        <span class="date"><?= date('d/m/y', strtotime($message['date'])) ?></span>
+                        <br>
+                        <span class="heure"><?= date('H:i', strtotime($message['date'])) ?></span>
+                    </div>
+                    <div style="clear: both;"></div>
             </div>
-        <?php endforeach; ?>
-    </section>
+            <?php endforeach; ?>
+        </ul>
+
+        </div>
+        
+    </div>
+        
+    
+    
 
 </section>
-</section>
+
+    
 
 <script src="./script/burger.js"></script>
 
