@@ -172,7 +172,7 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
         
     </div>
 </section>
-<section class="sec2">
+<section class="sec2" id="platJour">
     <h1>Le plat que vous avez voté pour aujourd'hui : </h1>
     <div class="flex">
         <?php $requete =" SELECT * FROM choix WHERE choixEnTete = 1";

@@ -196,7 +196,11 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
         <h2 class="titleSection titleMsg blanc">Derniers messages</h2>
         <div class="derniers-messages">
         <ul>
-            <?php foreach ($derniersMessages as $message) : 
+            <?php 
+            if (empty($derniersMessages)) {
+                echo "<p class=\"txtRouge\">Vous n'avez pas de derniers messages.</p>";
+            }
+            foreach ($derniersMessages as $message) : 
                 $messageLimite = substr($message['message'], 0, 50);
                 if (strlen($message['message']) > 100) {
                     $messageLimite .= '...';
@@ -224,15 +228,46 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
         </div>
         
     </div>
-        
-    
-    
 
+</section>
+<section class="section3">
+    <h1 class="firstTitle restauration">Restauration de l'université</h1>
+    <div class="restaurationContainer">
+        <a href="restauration.php#platJour" class="menuJour">
+            <h1 class="firstTitle second">Menu cantine du jour</h1>
+        <?php $requete =" SELECT * FROM choix WHERE choixEnTete = 1";
+        $stmt=$db->query($requete);
+        $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
+        foreach ($result as $row){ ?>
+            <div class="platJour">
+                <div class="imgPlat" style="background-image:url(<?php echo $row["image"] ?>);"></div>
+                <div class="titrePlat">           
+                    <div class="nomPlatJour"><?php echo $row["nom"] ?></div>
+                </div>        
+                
+            <?php } ?>
+            </div>
+        </a>
+        <div class="attentes">
+            <h1 class="firstTitle second">Temps d'attente CROUS</h1>
+            <div class="compteurs">
+            <div class="temps">
+                <p class="nomCrous">ESSIE</p>
+                <div class="compteur c1">25 mn</div>
+            </div>
+            <div class="temps">
+                <p class="nomCrous">Copernic</p>
+                <div class="compteur c2">14 mn</div>
+            </div>
+        </div>   
+        </div>
+    </div>
 </section>
 
     
 
 <script src="./script/burger.js"></script>
+<script src="./script/compteur.js"></script>
 
 <a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
 

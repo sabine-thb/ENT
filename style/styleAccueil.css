@@ -19,7 +19,16 @@
     font-size: 1.5rem;
 }
 
-.section2{
+.firstTitle.restauration{
+    text-align: center;
+}
+
+.firstTitle.second{
+    font-size:1.1rem;
+    text-align: center;
+}
+
+.section2, .section3{
     padding:25px 90px 25px 90px;
 }
 
@@ -277,6 +286,67 @@ ul{
 
 .section2{
     background:var(--degrade)
+}
+
+/*Je stylise le menu du jour*/
+
+.restaurationContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+}
+
+.menuJour, .attentes{
+    width:50%;
+}
+
+.menuJour, .attentes{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.platJour{ 
+    border-radius:15px;
+    background-color: rgb(237, 237, 237);
+    padding:15px;
+    width:fit-content;
+    box-shadow: 20px 20px 17px 1px rgba(0, 0, 0, 0.20);
+}
+
+.nomPlatJour{
+    font-size:1.5rem;
+    font-weight:600;
+    text-align: center;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.imgPlat{
+    width:500px;
+    height:250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+
+}
+
+/*Je stylise le temps d'attente de la cantine*/
+
+.compteur{
+    font-family:"interSemiBold", sans-serif;
+    font-size:5rem;
+    background-color: var(--violetClair);
+    padding:20px 50px 20px 50px;
+    border-radius: 30px;
+    filter: drop-shadow(20px 20px 19.5px rgba(0, 0, 0, 0.15));
+    width: fit-content;
+    
 }
 
 
