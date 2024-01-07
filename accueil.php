@@ -263,6 +263,24 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 </section>
+<section class="section4">
+        <div class="titleContainer">
+            <img src="./style/img/bonhommes/hautParleur.png" class="img1" alt="">
+            <h1 class="titleActu">Actu de la semaine</h1>
+        </div>    
+        <div class="actuContainer">
+            <img src="./style/img/actus/actu1.jpg" alt="Image Actualité de la semaine" srcset="" class="actuPrincipale">
+
+            <h2 class="titleActuPrincipale">Enquête REMEDE : Résultats de l'état des lieux des actions pour l'égalité dans les établissements d'enseignement supérieur</h2>
+
+            <p class="descrPrincipale">Lundi 13 novembre 2023, l'Observatoire National des Discriminations et de l'Égalité dans le Supérieur (ONDES) et la Conférence Permanente des chargé.e.s de mission Égalité et Diversité (CPED) ont présenté les résultats de l’enquête REMEDE (Recueil Extensif des Mesures des Établissements contre les Discriminations et pour l’Égalité), réalisée par Yannick L’Horty (Université Gustave Eiffel Et ONDES), Philippe Liotard (Université Lyon 1 Et CPED), Romane Masternak (CPED) et Aude Stheneur (CPED). Une table ronde s’est tenue suite à la divulgation des résultats de l’enquête afin de commenter et compléter le propos.</p>
+
+            <a href="actus.php" class="lienActu">Voir tout</a>
+
+        </div>       
+        
+
+</section>
 
 <footer>
     <div class="logoFooterContainer">
