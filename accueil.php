@@ -23,7 +23,7 @@ $derniersMessages = $stmtDerniersMessages->fetchAll(PDO::FETCH_ASSOC);
 <!-- Je crée la requête pour affihcer les 3 derniers cours déposes par les profs -->
 <?php
 $requeteDerniersCours = "
-    SELECT * FROM cours 
+    SELECT * FROM cours, matiere, utilisateurs WHERE id_mat_ext=id_matiere AND professeur = nom; 
     LIMIT 3;
 
 ";
@@ -143,15 +143,20 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 <!-- affichage des 3 derniers mess -->
 <section class="section2">
 
-    <div class=derniersCours>
-                <h2 class="titleSection blanc">Les trois derniers cours</h2>
-
+    <div class=derniersCoursContainer>
+        <h2 class="titleSection blanc">Les trois derniers cours</h2>
+                <div class="derniersCours">
                 <?php foreach ($derniersCours as $cours) : ?>
                     <div class="cours-item">
                         <p>Nom du cours : <?php echo $cours['nomCours']; ?></p>
+                        <p>Matière : <?php echo $cours['titre_matiere']; ?> </p>
+                        <p>Professeur : <?php echo $cours['prenom']; ?> <?php echo $cours['nom']; ?></p>
 
                     </div>
                 <?php endforeach; ?>
+
+                </div>
+                
         </div>
 
     
