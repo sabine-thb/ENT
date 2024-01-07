@@ -23,8 +23,8 @@ $derniersMessages = $stmtDerniersMessages->fetchAll(PDO::FETCH_ASSOC);
 <!-- Je crée la requête pour affihcer les 3 derniers cours déposes par les profs -->
 <?php
 $requeteDerniersCours = "
-    SELECT * FROM cours, matiere, utilisateurs WHERE id_mat_ext=id_matiere AND professeur = nom; 
-    LIMIT 3;
+    SELECT * FROM cours, matiere, utilisateurs WHERE id_mat_ext=id_matiere AND professeur = nom LIMIT 2; 
+    
 
 ";
 
@@ -110,7 +110,7 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
                 </div>
                 
                         <h3 class="titleSection">Prochains cours</h3>
-                        <div class="pcs">
+                        <a href="edt.php" class="pcs">
                             <div class="horaires">
                                 <div class="titleHoraires">Horaires</div>
                                 <div class="contenu">
@@ -128,7 +128,7 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
                             
                         
                             
-                        </div>
+                        </a>
             </div>
 
         </div>
@@ -172,11 +172,14 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 <section class="section2">
 
     <div class=derniersCoursContainer>
-        <h2 class="titleSection blanc">Les trois derniers cours</h2>
+        <h2 class="titleSection blanc">Les deux derniers cours</h2>
                 <div class="derniersCours">
                 <?php foreach ($derniersCours as $cours) : ?>
                     <div class="cours-item">
-                        <p class="pCours">Cours : <a href="ressources.php?id=<?php echo $cours['id_mat_ext']; ?>"><?php echo $cours['nomCours']; ?></a></p>
+                        <div class="cours">
+                            <p  class="pCours">Cours :</p>
+                            <a href="ressources.php?id=<?php echo $cours['id_mat_ext']; ?>" class="lienCours"><?php echo $cours['nomCours']; ?></a>
+                        </div>
                         <p class="pCours">Matière : <?php echo $cours['titre_matiere']; ?> </p>
                         <i class="pCours">Par <?php echo $cours['prenom']; ?> <?php echo $cours['nom']; ?></i>
 
@@ -190,16 +193,20 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
     
 
     <div class="msgContainer">
-        <h2 class="titleSection titleMsg blanc">Nouveaux messages</h2>
+        <h2 class="titleSection titleMsg blanc">Derniers messages</h2>
         <div class="derniers-messages">
         <ul>
-            <?php foreach ($derniersMessages as $message) : ?>
-                <div class="message-item">
+            <?php foreach ($derniersMessages as $message) : 
+                $messageLimite = substr($message['message'], 0, 50);
+                if (strlen($message['message']) > 100) {
+                    $messageLimite .= '...';
+                }?>
+                <a href="chat.php?utilisateur=<?= $message['id_user_edi'] ?>"class="message-item">
                     <div class="photoContainer">
                         <img src="./style/img/profil/<?= $message['id_user_edi'] ?>.svg" class="message-photo" alt="">
                     </div>
                     <div class="message-contenu">
-                        <?= $message['message'] ?>
+                        <?= $messageLimite ?>
                         <div class="expediteur">
                             <i><?= $message['prenom'] . ' ' . $message['nom'] ?></i>
                         </div>
@@ -210,7 +217,7 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
                         <span class="heure"><?= date('H:i', strtotime($message['date'])) ?></span>
                     </div>
                     <div style="clear: both;"></div>
-            </div>
+                </a>
             <?php endforeach; ?>
         </ul>
 
