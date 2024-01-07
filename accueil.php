@@ -98,46 +98,74 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 	
 </header>
     <section class="section1">
-        <div>
-            <div class="bjr">
-                <?php
-                    echo"<h1 class=\"firstTitle\">Bonjour {$utilisateur ['prenom']}.</h1> "
-                ?>
+        <div class="container">
+            <div class="pt1">
+                <div class="bjr">
+                    <?php
+                        echo"<h1 class=\"firstTitle\">Bonjour {$utilisateur ['prenom']}.</h1> "
+                    ?>
+                        
+                    <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
+
+                </div>
+                
+                        <h3 class="titleSection">Prochains cours</h3>
+                        <div class="pcs">
+                            <div class="horaires">
+                                <div class="titleHoraires">Horaires</div>
+                                <div class="contenu">
+                                    <div class="h">8:15 à 10:15</div>
+                                    <div class="h">10:30 à 12:30</div>
+                                </div>
+                            </div>
+                            <div class="matieres">
+                                <div class="titleMatieres">Matières</div>
+                                <div class="contenu">
+                                    <div class="mat">Anglais <i class="prof">Leroy</i> 126</div>
+                                    <div class="mat">Dev <i class="prof">Gambette</i> 123</div>
+                                </div>
+                            </div>
+                            
+                        
+                            
+                        </div>
+            </div>
+
+        </div>
+       
+        <div class="container">
+            <div class="pt2">
+                <div class="devoirs">
+                    <h1 class="titleSection">Prochains rendus</h1>
+                    <div class="rectangles">
+                            <div class="rec1">
+                                <div class="rectangle"><a href="devoirs.php">SAÉ 3.01 </a></div>
+                                <div class="rectangle"><a href="devoirs.php">SAÉ 3.02 </a></div>
+                            </div>
+                            <div class="rec2">
+                                <div class="rectangle"><a href="devoirs.php">Portfolio</a></div>
+                                <div class="rectangle"><a href="devoirs.php">SAÉ 3.02A </a></div>
+                            </div>
+                    </div>
+
+                </div>
+            
+
+                <div class="lien">
                     
-                <p>Bienvenue sur l’espace numérique de travail de l’université Gustave Eiffel.</p>
+                    <a class="iconn" href="cours.php"><img src="./style/img/cours.svg"> <p>Cours</p></a> 
+                    <a class="iconn" href="edt.php"><img src="./style/img/EDT.svg"><p>EDT</p></a> 
+                    <a class="iconn" href="notes.php"><img src="./style/img/notes.svg"><p>Notes</p></a> 
+
+
+                </div>
 
             </div>
-            
-                    <h3 class="titleSection"> Prochains cours </h3>
-                     <div class="pcs">
-                        
-                    </div>
+
         </div>
         
-        <div class="devoirs">
-        <h1 class="titleSection">Prochains rendus</h1>
-        <div class="rectangles">
-                <div class="rec1">
-                    <div class="rectangle"><a href="devoirs.php">SAÉ 3.01 </a></div>
-                    <div class="rectangle"><a href="devoirs.php">SAÉ 3.02 </a></div>
-                </div>
-                <div class="rec2">
-                    <div class="rectangle"><a href="devoirs.php">Portfolio</a></div>
-                    <div class="rectangle"><a href="devoirs.php">SAÉ 3.02A </a></div>
-                </div>
-
-        </div>
-
-
-        <div class="lien">
-            
-        <a class="iconn" href="cours.php"><img src="./style/img/cours.svg"> <p>Cours</p></a> 
-        <a class="iconn" href="edt.php"><img src="./style/img/EDT.svg"><p>EDT</p></a> 
-        <a class="iconn" href="notes.php"><img src="./style/img/notes.svg"><p>Notes</p></a> 
-
-
-        </div>
-        </div>
+        
+        
         
 </section>
 <!-- affichage des 3 derniers mess -->
@@ -148,9 +176,9 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
                 <div class="derniersCours">
                 <?php foreach ($derniersCours as $cours) : ?>
                     <div class="cours-item">
-                        <p>Nom du cours : <?php echo $cours['nomCours']; ?></p>
-                        <p>Matière : <?php echo $cours['titre_matiere']; ?> </p>
-                        <p>Professeur : <?php echo $cours['prenom']; ?> <?php echo $cours['nom']; ?></p>
+                        <p class="pCours">Cours : <a href="ressources.php?id=<?php echo $cours['id_mat_ext']; ?>"><?php echo $cours['nomCours']; ?></a></p>
+                        <p class="pCours">Matière : <?php echo $cours['titre_matiere']; ?> </p>
+                        <i class="pCours">Par <?php echo $cours['prenom']; ?> <?php echo $cours['nom']; ?></i>
 
                     </div>
                 <?php endforeach; ?>

@@ -1,3 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bjr{
     padding-bottom:20px;
 }
@@ -7,7 +20,7 @@
 }
 
 .section1{
-    padding:90px 120px 90px 90px;
+    padding:60px 120px 90px 90px;
 }
 
 .section2{
@@ -39,78 +52,60 @@ h1{
 .section2{
     display:flex;
     justify-content: space-between;
+    gap:100px;
 }
 
-.derniersCours{
-    background-color: var(--rose);
-    border-radius: 30px;
-    box-shadow: 25px 25px 19.4px -1px rgba(0, 0, 0, 0.15);
-    width:450px;
-    padding:50px;
-    height:318px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.derniers-messages {
-    background-color: var(--bleu);
-    border: 1px solid var(--bleu);
-    border-radius: 30px;
-    padding: 10px;
-    margin-top: 20px;
-    width:700px;
-    box-shadow: 25px 25px 19.4px -1px rgba(0, 0, 0, 0.15);
-}
-
-.titleMsg{
-    width:fit-content;
-}
-
-
-.message-item {
-    padding: 30px;
-    border-bottom: 0.5px solid #0e0e0e;
-    display:flex;
-    gap:30px;
-}
-
-.message-photo{
-    width:60px;
-}
-
-.message-contenu {
-    margin-right:auto;
-}
-
-.date-heure {
-    text-align: right;
-    color: #666;
-}
-
-.expediteur {
-    font-size: smaller; 
-    font-style: italic;
-    margin-top: 5px; 
-   color: #666
-}
-
-.section2{
-    background:var(--degrade)
-}
+/*Je stylise le faux emploi du temps*/
 
 .pcs{
-    width:700px;
-    height:190px;
+    /* height:190px; */
     background-color: var(--vert);
     border-radius:20px;
     box-shadow: 20px 20px 19.4px 1px rgba(0, 0, 0, 0.25);
-   
-    }
+    display:flex;
+    justify-content: center;
+    padding:25px;
+}
 
+.horaires, .matieres{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-/* devoirs à rendre: + 3 icones */
+.matieres{
+    border-left:1px solid gray;
+}
+
+.titleHoraires, .titleMatieres{
+    font-family: "secular", sans-serif;
+    font-size:1.1rem;
+    text-transform: uppercase;
+    border-bottom:1px solid gray;
+    padding:20px;
+}
+.contenu{
+    padding:20px;
+}
+
+.prof{
+    margin-right:30px;
+}
+
+.mat{
+    padding: 5px 15px 5px 15px;
+    background-color: #73D9B4;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+
+.h{
+    padding: 5px 15px 5px 15px;
+    margin-bottom:10px;
+    font-weight:600;
+}
+/* Je stylise les devoirs à rendre: + les 3 icones en dessous*/
 
 
 .devoirs {
@@ -124,17 +119,17 @@ h1{
     margin-top:10px;
     display: flex;
     flex-wrap: wrap;
-    gap:9px;
+    gap:20px;
     justify-content: center;
     text-align: center;
 
 }
 .rectangle {
-    width: 175px; 
+    width: 200px; 
     height: 39px; 
     background-color: #3FBAFD; 
     cursor: pointer;
-    margin-bottom: 12px; 
+    margin-bottom: 20px; 
     border-radius:15px;
     display:flex;
     justify-content: center;
@@ -169,11 +164,99 @@ h1{
     color: #3d3d5e; 
 }
 .iconn img {
-    width: 80px; 
-    height: 80px; 
+    width: 100px; 
+    height:100px;
     display: block;
     margin: 0 auto; 
 }
+
+/*Je stylise la section des derniers cours*/
+
+.pCours{
+    margin:0;
+}
+
+.derniersCours{
+    background-color: var(--rose);
+    border-radius: 30px;
+    box-shadow: 25px 25px 19.4px -1px rgba(0, 0, 0, 0.15);
+    width:450px;
+    padding:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cours-item{
+    background-color: #FAFFFF;
+    padding:20px;
+    width:100%;
+    border-radius:20px;
+}
+
+i.pCours{
+    color:#666;
+    float:right;
+    font-size:0.8rem;
+}
+
+/*Je stylise les derniers messages*/
+
+.derniers-messages {
+    background-color: var(--bleu);
+    border: 1px solid var(--bleu);
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 25px 25px 19.4px -1px rgba(0, 0, 0, 0.15);
+}
+
+.titleMsg{
+    width:fit-content;
+}
+
+ul{
+    padding:0;
+}
+
+
+.message-item {
+    padding: 30px 10px 30px 10px;
+    border-bottom: 0.5px solid #0e0e0e;
+    display:flex;
+    gap:30px;
+}
+
+.message-photo{
+    width:60px;
+}
+
+.message-contenu {
+    margin-right:auto;
+}
+
+.date-heure {
+    text-align: right;
+    color: #666;
+}
+
+.expediteur {
+    font-size: smaller; 
+    font-style: italic;
+    margin-top: 5px; 
+   color: #666
+}
+
+.section2{
+    background:var(--degrade)
+}
+
+
+
+
+
 
 @media(max-width:750px){
     .lien{
