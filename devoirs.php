@@ -14,44 +14,43 @@
 </head>
 
 <body>
-
     <header>
-
-        <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
+        
+        <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
         <nav class="responsive-menu">
-            <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
+            <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this" aria-label="Accès au menu"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
             
             <ul class="main-menu">
                 <li><div class="navFirstLevel"><span>Mon profil</span></div> 
                     <ul class="sub-menu">
-                        <li><a href="absences.php"><span>Absences et retards</span></a></li>
-                        <li><a href="notes.php"><span>Notes</span></a></li>
+                        <li><a href="absences.php" aria-label="Lien vers la page des abscences et retards"><span>Absences et retards</span></a></li>
+                        <li><a href="notes.php" aria-label="Lien vers la page des notes"><span>Notes</span></a></li>
                     </ul>
                 </li>
                 <li><div class="navFirstLevel"><span>Scolarité</span></div>
                     <ul class="sub-menu">
-                        <li><a href="edt.php"><span>Emploi du temps</span></a></li>
-                        <li><a href="devoirs.php"><span>Devoirs à rendre</span></a></li>
-                        <li><a href="cours.php"><span>Cours</span></a></li>
+                        <li><a href="edt.php" aria-label="Lien vers la page de l'emploi du temps'"><span>Emploi du temps</span></a></li>
+                        <li><a href="devoirs.php" aria-label="Lien vers la page des devoirs à rendre"><span>Devoirs à rendre</span></a></li>
+                        <li><a href="cours.php" aria-label="Lien vers la page des cours"><span>Cours</span></a></li>
                     </ul>
                 </li>
                 <li><div class="navFirstLevel"><span>Services</span></div>
                     <ul class="sub-menu">
-                        <li><a href="restauration.php"><span>Restauration</span></a></li>
-                        <li><a href="resa.php"><span>Réservation de matériel</span></a></li>
+                        <li><a href="restauration.php" aria-label="Lien vers la page de restauration"><span>Restauration</span></a></li>
+                        <li><a href="resa.php" aria-label="Lien vers la page de réservation de matériel"><span>Réservation de matériel</span></a></li>
                     </ul>
                 </li>
                 <li><div class="navFirstLevel"><span>Informations</span></div>
                     <ul class="sub-menu">
-                        <li><a href="infosProf.php"><span>Informations sur les professeurs</span></a></li>
-                        <li><a href="actus.php"><span>Actualités étudiantes</span></a></li>
-                        <li><a href="carte.php"><span>Carte du campus</span></a></li>
+                        <li><a href="infosProf.php" aria-label="Lien vers la page d'informations sur les professeurs"><span>Informations sur les professeurs</span></a></li>
+                        <li><a href="actus.php" aria-label="Lien vers la page d'actualités"><span>Actualités étudiantes</span></a></li>
+                        <li><a href="carte.php" aria-label="Lien vers la page de la carte du campus"><span>Carte du campus</span></a></li>
                     </ul>
                 </li>
                 <li>
                     <div class="navFirstLevel">
-                        <a href="deconnexion.php" class="navItem">
+                        <a href="deconnexion.php" class="navItem" aria-label="Lien vers la page de connexion">
                         <img src="./style/img/deco.svg"  class="deco" alt="se déconnecter">
                         </a> 
                 </div>
@@ -59,7 +58,7 @@
                 </li>
             </ul>
         </nav>
-        
+	
     </header>
 
     <section class="section1">
@@ -76,7 +75,7 @@
                 <img src="./style/img/logoENT.svg" alt="devoir 1" srcset="" class="img">
                 <div class="descr">
                     <div class="flex">
-                        <h2 class="nom nom1">SAÉ 3.01 ENT</h2>
+                        <h2 class="nom nom1" aria-label="Lien vers un popup pour plus de précisions">SAÉ 3.01 ENT</h2>
                         <p class="date">Pour le <strong>12/01</strong> à <strong>23:59</strong></p>
                     </div>
                     <div class="flex">
@@ -92,7 +91,7 @@
                 <img src="./style/img/devoirs/cv-video.svg" alt="devoir 2" srcset="" class="img">
                 <div class="descr">
                     <div class="flex">
-                        <h2 class="nom nom2">SAÉ 3.02-B CV Vidéo</h2>
+                        <h2 class="nom nom2" aria-label="Lien vers un popup pour plus de précisions">SAÉ 3.02-B CV Vidéo</h2>
                         <p class="date">Pour le <strong>08/01</strong> à <strong>23:59</strong></p>
                     </div>
                     <div class="flex">
@@ -108,7 +107,7 @@
                 <img src="./style/img/devoirs/portfolio.svg" alt="devoir 3" srcset="" class="img">
                 <div class="descr">
                     <div class="flex">
-                        <h2 class="nom nom3">Portfolio</h2>
+                        <h2 class="nom nom3" aria-label="Lien vers un popup pour plus de précisions">Portfolio</h2>
                         <p class="date">Pour le <strong>18/12</strong> à <strong>01:00</strong></p>
                     </div>
                     <div class="flex">
@@ -124,7 +123,7 @@
                 <img src="./style/img/devoirs/podcast.svg" alt="devoir 4" srcset="" class="img">
                 <div class="descr">
                     <div class="flex">
-                        <h2 class="nom nom4">SAÉ 3.02-A Podcast</h2>
+                        <h2 class="nom nom4" aria-label="Lien vers un popup pour plus de précisions">SAÉ 3.02-A Podcast</h2>
                         <p class="date">Pour le <strong>24/11</strong> à <strong>23:59</strong></p>
                     </div>
                     <div class="flex">
@@ -164,7 +163,7 @@
                     <p>Commentaires :</p>
                     <p>0</p>
                 </div>
-                <p class="centre"><a href="#" target="_blank" class="lienPleinEcran"><strong>Ajouter un travail</strong></a></p>
+                <p class="centre"><a href="#" target="_blank" class="lienPleinEcran" aria-label="Lien non fonctionnel pour ajouter un travail"><strong>Ajouter un travail</strong></a></p>
                 <p class="color centre">Vous n'avez pas encore remis de travail.</p>
             </div>
         </div>
@@ -190,7 +189,7 @@
                     <li>Un gros plan</li>
                     <li>Un plan panoramique</li>
                     <li>Un champ contre champ</li>
-                    <li>Deux mouvements parmi ceux proposés sur la page d'Anne Tasso que vous retrouverez <a href="https://www.annetasso.fr/ProductionAudiovisuelle/analyse-filmique/les-mouvements-de-camera/" target="_blank" alt="Lien vers le site d'Anne Tasso" class="lienSite">ici</a>.</li>
+                    <li>Deux mouvements parmi ceux proposés sur la page d'Anne Tasso que vous retrouverez <a href="https://www.annetasso.fr/ProductionAudiovisuelle/analyse-filmique/les-mouvements-de-camera/" target="_blank" aria-label="Lien vers le site d'Anne Tasso" class="lienSite">ici</a>.</li>
                 </ul>
                 <h4>Zone de dépôt :</h4>
                 <div class="flex">
@@ -209,7 +208,7 @@
                     <p>Commentaires :</p>
                     <p>0</p>
                 </div>
-                <p class="centre"><a href="#" target="_blank" class="lienPleinEcran"><strong>Ajouter un travail</strong></a></p>
+                <p class="centre"><a href="#" target="_blank" class="lienPleinEcran" aria-label="Lien non fonctionnel pour ajouter un travail"><strong>Ajouter un travail</strong></a></p>
                 <p class="color centre">Vous avez déjà remis un travail.</p>
             </div>
         </div>
@@ -252,7 +251,7 @@
                     <p>Commentaires :</p>
                     <p>0</p>
                 </div>
-                <p class="centre"><a href="#" target="_blank" class="lienPleinEcran"><strong>Ajouter un travail</strong></a></p>
+                <p class="centre"><a href="#" target="_blank" class="lienPleinEcran" aria-label="Lien non fonctionnel pour ajouter un travail"><strong>Ajouter un travail</strong></a></p>
                 <p class="color centre">Vous avez déjà remis un travail.</p>
             </div>
         </div>
@@ -287,7 +286,7 @@
                     <p>Commentaires :</p>
                     <p>0</p>
                 </div>
-                <p class="centre"><a href="#" target="_blank" class="lienPleinEcran"><strong>Ajouter un travail</strong></a></p>
+                <p class="centre"><a href="#" target="_blank" class="lienPleinEcran" aria-label="Lien non fonctionnel pour ajouter un travail"><strong>Ajouter un travail</strong></a></p>
                 <p class="color centre">Vous avez déjà remis un travail.</p>
             </div>
         </div>
@@ -295,31 +294,32 @@
         
 
     </section>
-    
+
     <footer>
-    <div class="logoFooterContainer">
-        <a href="accueil.php">
-            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
-        </a>
-    </div>
-    <div class="ML">
-        <a href="ML.html" class="lienFooter"><p class="pFooterTitle">Mentions Légales</p></a>
-        <a href="ML.html#editeur" class="lienFooter"><p class="pFooter">éditeur</p></a>
-        <a href="ML.html#contributeurs" class="lienFooter"><p class="pFooter">Contributeurs</p></a>
-        <a href="ML.html#hebergeur" class="lienFooter"><p class="pFooter">Hébergeur</p></a>
-        <a href="ML.html#cookies" class="lienFooter"><p class="pFooter">Cookies</p></a>
-        <a href="ML.html#RGPD" class="lienFooter"><p class="pFooter">RGPD</p></a>
-    </div>
-    <div class="contact">
-        <p class="pFooterTitle">Contact</p>
-        <div class="reseaux">
-            <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
-            <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
-            <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
+        <div class="logoFooterContainer">
+            <a href="accueil.php" aria-label="Lien vers l'accueil">
+                <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
+            </a>
         </div>
-    </div>
-</footer>
-    <a href="messagerie.php" class="chat"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
+        <div class="ML">
+            <a href="ML.html" class="lienFooter" aria-label="Lien vers les mentions légales"><p class="pFooterTitle">Mentions Légales</p></a>
+            <a href="ML.html#editeur" class="lienFooter" aria-label="Lien vers la section éditeur des mentions légales"><p class="pFooter">éditeur</p></a>
+            <a href="ML.html#contributeurs" class="lienFooter" aria-label="Lien vers la section contributeurs des mentions légales"><p class="pFooter">Contributeurs</p></a>
+            <a href="ML.html#hebergeur" class="lienFooter" aria-label="Lien vers la section hébergeur des mentions légales"><p class="pFooter">Hébergeur</p></a>
+            <a href="ML.html#cookies" class="lienFooter" aria-label="Lien vers la section cookies des mentions légales"><p class="pFooter">Cookies</p></a>
+            <a href="ML.html#RGPD" class="lienFooter" aria-label="Lien vers la section RGPD des mentions légales"><p class="pFooter">RGPD</p></a>
+        </div>
+        <div class="contact">
+            <p class="pFooterTitle">Contact</p>
+            <div class="reseaux">
+                <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
+                <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
+                <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
+            </div>
+        </div>
+    </footer>
+
+    <a href="messagerie.php" class="chat" aria-label="Lien vers la messagerie"><img src="./style/img/chat.png" alt="Bouton vers la messagerie" srcset="" class="imgChat"></a>
 
     <script src="./script/devoirs.js"></script>
     <script src="./script/burger.js"></script>

@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav>
-        <a href="index.php" class="logo" alt="Logo et lien vers la page de connexion"></a>
+        <a href="index.php" class="logo" aria-label="Logo et lien vers la page de connexion"></a>
 
     </nav>
     <?php
@@ -40,7 +40,7 @@
                 <input name="mdp" type="password" class="inputIdMdp">
                 <br>
                 <br>
-                <input type="submit" value="connexion" class="connexionButton">
+                <input type="submit" value="connexion" class="connexionButton" aria-label="Validation de la connection">
 
             </div>
         

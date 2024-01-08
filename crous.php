@@ -14,8 +14,8 @@
 <body>
     <nav>
 
-        <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
-        <a href="deconnexion.php" class="navItem">
+        <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
+        <a href="deconnexion.php" class="navItem" aria-label="Lien vers la page de connexion">
             <img src="./style/img/deco.svg"  class="deco" alt="se déconnecter">
         </a> 
     </nav>
@@ -57,7 +57,7 @@
                 <textarea class="textArea" type="text" id="descr" name="descr" required> </textarea>            
                 
                 <input type="hidden" name="date">
-                <input class="envoyer" type="submit" value="Valider">
+                <input class="envoyer" type="submit" value="Valider" aria-label="Valider l'envoie des propositions du vote">
             </form>
 
         </div>
@@ -78,7 +78,7 @@
         <div class="reinit">
             <div class="caseReinit">
                 <div class="explReinit">Avant de faire de nouvelles propositions de choix pour le menu de demain, veuillez réinitialiser les votes en cliquant sur le bouton ci-dessous.</div>
-                <a href="reinitVote.php" class="lienReinit">Réinitialisation</a>
+                <a href="reinitVote.php" class="lienReinit" aria-label="Réinitialiser le vote précédent">Réinitialisation</a>
             </div>
             
         </div>
@@ -112,49 +112,38 @@
                     </select>
 
                 </p>
-                <input type="submit" value="Valider" class="envoyer second">
+                <input type="submit" value="Valider" class="envoyer second" aria-label="Valider l'envoie des propositions du vote">
                 
             </form>
 
         </div>
     </div>
-    
-   
 
     </section>
-    <footer>
-        <div class="logoFooterContainer">
-            <a href="accueil.php">
-                <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
-            </a>
+
+<footer>
+    <div class="logoFooterContainer">
+        <a href="accueil.php" aria-label="Lien vers l'accueil">
+            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
+        </a>
+    </div>
+    <div class="ML">
+        <a href="ML.html" class="lienFooter" aria-label="Lien vers les mentions légales"><p class="pFooterTitle">Mentions Légales</p></a>
+        <a href="ML.html#editeur" class="lienFooter" aria-label="Lien vers la section éditeur des mentions légales"><p class="pFooter">éditeur</p></a>
+        <a href="ML.html#contributeurs" class="lienFooter" aria-label="Lien vers la section contributeurs des mentions légales"><p class="pFooter">Contributeurs</p></a>
+        <a href="ML.html#hebergeur" class="lienFooter" aria-label="Lien vers la section hébergeur des mentions légales"><p class="pFooter">Hébergeur</p></a>
+        <a href="ML.html#cookies" class="lienFooter" aria-label="Lien vers la section cookies des mentions légales"><p class="pFooter">Cookies</p></a>
+        <a href="ML.html#RGPD" class="lienFooter" aria-label="Lien vers la section RGPD des mentions légales"><p class="pFooter">RGPD</p></a>
+    </div>
+    <div class="contact">
+        <p class="pFooterTitle">Contact</p>
+        <div class="reseaux">
+            <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
+            <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
+            <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
         </div>
-        <div class="ML">
-            <a href="ML.html" class="lienFooter"><p class="pFooterTitle">Mentions Légales</p></a>
-            <a href="ML.html#editeur" class="lienFooter"><p class="pFooter">éditeur</p></a>
-            <a href="ML.html#contributeurs" class="lienFooter"><p class="pFooter">Contributeurs</p></a>
-            <a href="ML.html#hebergeur" class="lienFooter"><p class="pFooter">Hébergeur</p></a>
-            <a href="ML.html#cookies" class="lienFooter"><p class="pFooter">Cookies</p></a>
-            <a href="ML.html#RGPD" class="lienFooter"><p class="pFooter">RGPD</p></a>
-        </div>
-        <div class="contact">
-            <p class="pFooterTitle">Contact</p>
-            <div class="reseaux">
-                <img src="./style/img/instagram.svg" class ="reseau" alt="instagram">
-                <img src="./style/img/twitter.svg"  class ="reseau"alt="twitter">
-                <img src="./style/img/facebook.svg" class ="reseau" alt="facebook">
-            </div>
-        </div>
-    </footer>
-        
-        
-
-        
-
-    
-        
-
-    
-
+    </div>
+</footer>
 
 </body>
 </html>
