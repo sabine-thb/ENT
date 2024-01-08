@@ -14,16 +14,34 @@
     --degrade:linear-gradient(180deg, #CDC4FD 0%, #A6CDF4 100%);
 }
 
-.sr-only-focusable:focus,
-.sr-only-focusable:active {
-	clip: auto !important;
-	-webkit-clip-path: none !important;
-			clip-path: none !important;
-	height: auto !important;
-	margin: auto !important;
-	overflow: visible !important;
-	width: auto !important;
-	white-space: normal !important;
+/*Je mets en place mes classes pour l'accessibilité*/
+
+.skip-link {
+    background-color: #fff;
+    border: solid 3px #000;
+    color: #000;
+    padding: 0.4em 0.5em;
+    text-decoration: none;
+}
+
+.skip-link:not(:focus):not(:active) {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.skip-link:focus {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 999;
 }
 
 
