@@ -13,6 +13,7 @@
 
 <body>
     <header>
+        <a href="#contenu" class="skip-link">Aller au contenu</a>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -59,7 +60,7 @@
 	
     </header>
 
-    <section class="section1">
+    <section class="section1" id="contenu">
         
         
         <div class="titleContainer">

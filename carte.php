@@ -15,6 +15,7 @@
 
 <body>
     <header>
+        <a href="#contenu" class="skip-link">Aller au contenu</a>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -61,7 +62,8 @@
 	
     </header>
 
-    <section class="section1">
+    <section class="section1" id="contenu">
+        
         <h1 class="title">Carte du Campus</h1>
         <div class="cardContainer">
         <iframe  title="Carte interactive du campus Universitaire" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/carte-du-campus-de-luniversite-gustave-eiifel_1005155?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe>

@@ -32,6 +32,7 @@ $id_user=$utilisateur['id'];
 
 <body class="body">
     <header>
+        <a href="#contenu" class="skip-link">Aller au contenu</a>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -81,7 +82,7 @@ $id_user=$utilisateur['id'];
 <?php
      if ($role == "professeur") {
     ?>
-    <section>
+    <section id="contenu">
         <h1 class="titre"><?php echo "$prenom" ?>, vous souhaitez déposer une note ?</h1>
         <?php if (isset($_GET["insertion"] )){  
             echo "<p class=\"noteOk\">Votre note a bien été insérée.</p>";

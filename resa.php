@@ -24,6 +24,7 @@ $id_user=$utilisateur['id'];
 </head>
 <body>
     <header>
+        <a href="#contenu" class="skip-link">Aller au contenu</a>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -73,7 +74,7 @@ $id_user=$utilisateur['id'];
     <?php
      if ($role == "professeur") {
     ?>
-    <section class="sec1">
+    <section class="sec1" id="contenu">
 
         <h1>Suivi des réservations étudiantes</h1>
         <p class="pProf">Ici, vous avez accès à toutes les réservations effectuées par les élèves.</p>

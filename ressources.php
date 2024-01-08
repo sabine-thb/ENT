@@ -43,6 +43,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
     <header>
+        <a href="#contenu" class="skip-link">Aller au contenu</a>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -88,7 +89,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </nav>
 	
     </header>
-    <section class="sec1">
+    <section class="sec1" id="contenu">
         <a href="cours.php" class="retour" aria-label="Lien retour vers la page des cours">Retour</a>
         <h1 class="titlePage">Ressource :  <?php foreach ($result as $row) echo $row["titre_matiere"];?></h1>
         <p class="expl">Voici les cours que vous pouvez télécharger : </p>

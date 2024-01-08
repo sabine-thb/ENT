@@ -40,6 +40,7 @@ $idSession = $utilisateur['id'];
 
 <body>
     <header>
+        <a href="#contenu" class="skip-link">Aller au contenu</a>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -86,7 +87,7 @@ $idSession = $utilisateur['id'];
 	
     </header>
 
-    <section class="section1">
+    <section class="section1" id="contenu">
         <a href="messagerie.php" class="retour">Retour</a>
         <div class="titleContainer">
             <h1 class="titlePage">Ma messagerie </h1>

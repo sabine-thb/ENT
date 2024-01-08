@@ -19,6 +19,7 @@ include("connexion.php");
 </head>
 <body>
     <header>
+        <a href="#contenu" class="skip-link">Aller au contenu</a>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -79,7 +80,7 @@ $stmt=$db->query($requete);
 $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
 ?>
 
-<section class="sec1">
+<section class="sec1" id="contenu">
     <div class="vote">
         <h1>Votez pour votre repas de demain.</h1>
         <p class="descrVote">Pour cela, cliquez sur votre plat favori.</p> 
