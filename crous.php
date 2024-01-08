@@ -13,7 +13,8 @@
 </head>
 <body>
     <nav>
-        <a href="index.php" class="logo"></a>
+
+        <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
         <a href="deconnexion.php" class="navItem">
             <img src="./style/img/deco.svg"  class="deco" alt="se déconnecter">
         </a> 

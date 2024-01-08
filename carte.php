@@ -17,7 +17,7 @@
 
     <header>
 
-        <a href="accueil.php" class="logo"></a>
+        <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
 
         <nav class="responsive-menu">
             <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
@@ -65,7 +65,7 @@
     <section class="section1">
         <h1 class="title">Carte du Campus</h1>
         <div class="cardContainer">
-        <iframe frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/carte-du-campus-de-luniversite-gustave-eiifel_1005155?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe>
+        <iframe  title="Carte interactive du campus Universitaire" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/carte-du-campus-de-luniversite-gustave-eiifel_1005155?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true"></iframe>
 
         </div>
         <p><a href="//umap.openstreetmap.fr/fr/map/carte-du-campus-de-luniversite-gustave-eiifel_1005155?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true" target="_blank" class="lienPleinEcran">Voir en plein écran</a></p>

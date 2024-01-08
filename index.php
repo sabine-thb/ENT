@@ -13,7 +13,8 @@
 </head>
 <body>
     <nav>
-        <a href="index.php" class="logo"></a>
+        <a href="index.php" class="logo" alt="Logo et lien vers la page de connexion"></a>
+
     </nav>
     <?php
         if (isset($_GET["err"] )){  

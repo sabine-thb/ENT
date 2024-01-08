@@ -53,7 +53,7 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 <header>
-	<a href="accueil.php" class="logo"></a>
+	<a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
 
 <nav class="responsive-menu">
 	<a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
@@ -153,9 +153,9 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="lien">
                     
-                    <a class="iconn" href="cours.php"><img src="./style/img/cours.svg"> <p>Cours</p></a> 
-                    <a class="iconn" href="edt.php"><img src="./style/img/EDT.svg"><p>EDT</p></a> 
-                    <a class="iconn" href="notes.php"><img src="./style/img/notes.svg"><p>Notes</p></a> 
+                    <a class="iconn" href="cours.php"><img src="./style/img/cours.svg" alt="Icône et lien vers la page des cours"> <p>Cours</p></a> 
+                    <a class="iconn" href="edt.php"><img src="./style/img/EDT.svg" alt="Icône et lien vers la page de l'emploi du temps"><p>EDT</p></a> 
+                    <a class="iconn" href="notes.php"><img src="./style/img/notes.svg" alt="Icône et lien vers la page des notes"><p>Notes</p></a> 
 
 
                 </div>
@@ -285,7 +285,7 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 <footer>
     <div class="logoFooterContainer">
         <a href="accueil.php">
-            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="retour à l'accueil">
+            <img src="./style/img/logoFooter.svg" class="logoFooter" alt="Retour à l'accueil">
         </a>
     </div>
     <div class="ML">

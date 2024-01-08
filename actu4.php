@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <a href="accueil.php" class="logo"></a>
+	    <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
 
         <nav class="responsive-menu">
             <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
@@ -68,7 +68,7 @@
             <h1 class="titlePage">Actu de la semaine</h1>
         </div>   
         
-        <img src="./style/img/actus/actu4.jpg" alt="Image Actualité de la semaine" srcset="" class="actuPrincipale">
+        <img src="./style/img/actus/actu4.jpg" alt="Image Actualité" srcset="" class="actuPrincipale">
 
         <h2 class="titleActuPrincipale">Plastic Odyssey : un tour du monde engagé dans la lutte contre la pollution plastique</h2>
 

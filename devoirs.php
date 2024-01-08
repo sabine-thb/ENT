@@ -17,7 +17,7 @@
 
     <header>
 
-        <a href="accueil.php" class="logo"></a>
+        <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
 
         <nav class="responsive-menu">
             <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
@@ -138,7 +138,7 @@
 
         <!-- Popups -->
         <div class="popup-visible-1">
-            <img src="./style/img/croix.png" alt="fermer1" class="fermer1">
+            <img src="./style/img/croix.png" alt="fermer" class="fermer1">
             <div class="popup">
                 <h3>SAÉ 3.01 ENT</h3>
                 <h4>Date de rendu :</h4>
@@ -170,7 +170,7 @@
         </div>
 
         <div class="popup-visible-2">
-            <img src="./style/img/croix.png" alt="fermer2" class="fermer2">
+            <img src="./style/img/croix.png" alt="fermer" class="fermer2">
             <div class="popup">
                 <h3>SAÉ 3.02-B CV Vidéo</h3>
                 <h4>Date de rendu :</h4>
@@ -215,7 +215,7 @@
         </div>
 
         <div class="popup-visible-3">
-            <img src="./style/img/croix.png" alt="fermer3" class="fermer3">
+            <img src="./style/img/croix.png" alt="fermer" class="fermer3">
             <div class="popup">
                 <h3>Portfolio</h3>
                 <h4>Date de rendu :</h4>
@@ -258,7 +258,7 @@
         </div>
 
         <div class="popup-visible-4">
-            <img src="./style/img/croix.png" alt="fermer4" class="fermer4">
+            <img src="./style/img/croix.png" alt="fermer" class="fermer4">
             <div class="popup">
                 <h3>SAÉ 3.02-A Podcast</h3>
                 <h4>Date de rendu :</h4>

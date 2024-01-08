@@ -18,51 +18,53 @@ include("connexion.php");
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
-<header>
-	<a href="accueil.php" class="logo"></a>
+    <header>
+        
+        <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
 
-<nav class="responsive-menu">
-	<a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
-	
-    <ul class="main-menu">
-        <li><div class="navFirstLevel"><span>Mon profil</span></div> 
-            <ul class="sub-menu">
-                <li><a href="absences.php"><span>Absences et retards</span></a></li>
-                <li><a href="notes.php"><span>Notes</span></a></li>
-            </ul>
-        </li>
-        <li><div class="navFirstLevel"><span>Scolarité</span></div>
-            <ul class="sub-menu">
-                <li><a href="edt.php"><span>Emploi du temps</span></a></li>
-                <li><a href="devoirs.php"><span>Devoirs à rendre</span></a></li>
-                <li><a href="cours.php"><span>Cours</span></a></li>
-            </ul>
-        </li>
-        <li><div class="navFirstLevel"><span>Services</span></div>
-            <ul class="sub-menu">
-                <li><a href="restauration.php"><span>Restauration</span></a></li>
-                <li><a href="resa.php"><span>Réservation de matériel</span></a></li>
-            </ul>
-        </li>
-        <li><div class="navFirstLevel"><span>Informations</span></div>
-            <ul class="sub-menu">
-                <li><a href="infosProf.php"><span>Informations sur les professeurs</span></a></li>
-                <li><a href="actus.php"><span>Actualités étudiantes</span></a></li>
-                <li><a href="carte.php"><span>Carte du campus</span></a></li>
-            </ul>
-        </li>
-        <li>
-            <div class="navFirstLevel">
-                <a href="deconnexion.php" class="navItem">
-                <img src="./style/img/deco.svg"  class="deco" alt="se déconnecter">
-                </a> 
-           </div>
+        <nav class="responsive-menu">
+            <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
             
-        </li>
-    </ul>
-</nav>
+            <ul class="main-menu">
+                <li><div class="navFirstLevel"><span>Mon profil</span></div> 
+                    <ul class="sub-menu">
+                        <li><a href="absences.php"><span>Absences et retards</span></a></li>
+                        <li><a href="notes.php"><span>Notes</span></a></li>
+                    </ul>
+                </li>
+                <li><div class="navFirstLevel"><span>Scolarité</span></div>
+                    <ul class="sub-menu">
+                        <li><a href="edt.php"><span>Emploi du temps</span></a></li>
+                        <li><a href="devoirs.php"><span>Devoirs à rendre</span></a></li>
+                        <li><a href="cours.php"><span>Cours</span></a></li>
+                    </ul>
+                </li>
+                <li><div class="navFirstLevel"><span>Services</span></div>
+                    <ul class="sub-menu">
+                        <li><a href="restauration.php"><span>Restauration</span></a></li>
+                        <li><a href="resa.php"><span>Réservation de matériel</span></a></li>
+                    </ul>
+                </li>
+                <li><div class="navFirstLevel"><span>Informations</span></div>
+                    <ul class="sub-menu">
+                        <li><a href="infosProf.php"><span>Informations sur les professeurs</span></a></li>
+                        <li><a href="actus.php"><span>Actualités étudiantes</span></a></li>
+                        <li><a href="carte.php"><span>Carte du campus</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="navFirstLevel">
+                        <a href="deconnexion.php" class="navItem">
+                        <img src="./style/img/deco.svg"  class="deco" alt="se déconnecter">
+                        </a> 
+                </div>
+                    
+                </li>
+            </ul>
+        </nav>
 	
-</header>
+    </header>
+
 <?php
 $requete =" SELECT * FROM repas  ORDER BY date_repas DESC LIMIT 1";
     $stmt=$db->prepare($requete);
@@ -95,7 +97,7 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
         <?php foreach ($result as $row){ ?>
             <img src="./style/img/bonhommes/vote.png" class="imgDeco" alt="">
             <a href="traiteVote.php?id=<?php echo $row["id_choix"] ?>" class="linkVote two">
-                <div style="background-image:url(<?php echo $row["image"] ?>);" class="imgPlat"></div>
+                <div style="background-image:url(<?php echo $row["image"] ?>);" class="imgPlat" alt="Image du plat vote"></div>
                 <p class="nomPlat"><?php echo $row["nom"] ?></p>
             </a>
             <?php } ?>
@@ -180,7 +182,7 @@ $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
         $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
         foreach ($result as $row){ ?>
         <div class="platJour">
-            <div class="imgPlatJour" style="background-image:url(<?php echo $row["image"] ?>);"></div>
+            <div class="imgPlatJour" style="background-image:url(<?php echo $row["image"] ?>);" alt="Image du plat du jour"></div>
             <div class="titreEtDescr">           
                 <div class="nomPlatJour"><?php echo $row["nom"] ?></div>
                 <div class="descrPlatJour"><?php echo $row["description"] ?></div>

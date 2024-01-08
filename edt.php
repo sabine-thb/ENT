@@ -15,7 +15,8 @@
 </head>
 <body>
     <header>
-        <a href="accueil.php" class="logo"></a>
+
+        <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
 
         <nav class="responsive-menu">
             <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
@@ -68,9 +69,9 @@
 
         </div>
         
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showPrint=0&showCalendars=0&showTz=0&mode=WEEK&src=dW5kNXE3ZDczbW1nbWkybjZra2Vub2RjaTVtbGhqOGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237a7cc8" height="600" frameborder="0" scrolling="no" class="week"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showPrint=0&showCalendars=0&showTz=0&mode=WEEK&src=dW5kNXE3ZDczbW1nbWkybjZra2Vub2RjaTVtbGhqOGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237a7cc8" height="600" frameborder="0" scrolling="no" class="week" title="Emploi du temps de la semaine"></iframe>
 
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showPrint=0&showCalendars=0&showTz=0&mode=AGENDA&src=dW5kNXE3ZDczbW1nbWkybjZra2Vub2RjaTVtbGhqOGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237a7cc8" height="600" frameborder="0" scrolling="no" class="agenda"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showPrint=0&showCalendars=0&showTz=0&mode=AGENDA&src=dW5kNXE3ZDczbW1nbWkybjZra2Vub2RjaTVtbGhqOGpAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237a7cc8" height="600" frameborder="0" scrolling="no" class="agenda" title="Emploi du temps"></iframe>
     </section>
 
     <footer>

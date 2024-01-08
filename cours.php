@@ -30,7 +30,7 @@ $id_user=$utilisateur['id'];
 
     <header>
 
-        <a href="accueil.php" class="logo"></a>
+        <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
 
         <nav class="responsive-menu">
             <a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this"><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff"/></svg></a>
@@ -136,7 +136,7 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
             foreach ($result as $row){ ?>
 
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')">
+            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')" alt="Image et lien vers cours">
                 <div class="imgCours" >
                 <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
                 </div>
@@ -153,7 +153,7 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
             foreach ($result as $row){ ?>
 
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')">
+            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')" alt="Image et lien vers cours">
                 <div class="imgCours" >
                 <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
                 </div>
@@ -170,7 +170,7 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
             foreach ($result as $row){ ?>
 
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')">
+            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>')" alt="Image et lien vers cours">
                 <div class="imgCours" >
                 <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
                 </div>
