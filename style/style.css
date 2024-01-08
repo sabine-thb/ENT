@@ -14,6 +14,18 @@
     --degrade:linear-gradient(180deg, #CDC4FD 0%, #A6CDF4 100%);
 }
 
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+	clip: auto !important;
+	-webkit-clip-path: none !important;
+			clip-path: none !important;
+	height: auto !important;
+	margin: auto !important;
+	overflow: visible !important;
+	width: auto !important;
+	white-space: normal !important;
+}
+
 
 body{
     padding-top:80px;
