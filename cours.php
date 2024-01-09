@@ -107,8 +107,7 @@ $id_user=$utilisateur['id'];
                 <input type="submit" value="Déposer le fichier" class="valider" aria-label="Valider l'envoie du fichier">
 
                 
-                    
-                    
+                                    
                 
                 </form>
 
@@ -164,7 +163,7 @@ $id_user=$utilisateur['id'];
         <h2 class="categorie three">Communication</h2>
         <div class="coursCrea">
         <?php    
-            $requete =" SELECT * FROM matiere WHERE type = 'Communication' ";
+            $requete =" SELECT * FROM matiere WHERE type = 'Communication'";
             $stmt=$db->query($requete);
             $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
             foreach ($result as $row){ ?>

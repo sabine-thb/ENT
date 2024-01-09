@@ -70,7 +70,6 @@
 }
 
 .formContainer{
-    width:350px;
     height:fit-content;
     background-color: var(--vert);
     display: flex;

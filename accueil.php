@@ -12,7 +12,7 @@ $requeteDerniersMessages = "
     INNER JOIN utilisateurs u ON m.id_user_edi = u.id
     WHERE m.id_user_dest = :idSession
     ORDER BY m.date DESC
-    LIMIT 3;
+    LIMIT 2;
 ";
 
 $stmtDerniersMessages = $db->prepare($requeteDerniersMessages);
@@ -23,7 +23,7 @@ $derniersMessages = $stmtDerniersMessages->fetchAll(PDO::FETCH_ASSOC);
 <!-- Je crée la requête pour affihcer les 3 derniers cours déposes par les profs -->
 <?php
 $requeteDerniersCours = "
-    SELECT * FROM cours, matiere, utilisateurs WHERE id_mat_ext=id_matiere AND professeur = nom LIMIT 2; 
+    SELECT * FROM cours, matiere, utilisateurs WHERE id_mat_ext=id_matiere AND professeur = nom ORDER BY date DESC LIMIT 2; 
     
 
 ";

@@ -7,6 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $file = $_FILES["file"];
     $id_mat_ext = $_POST["matiere"];
 
+    var_dump($nomCours);
+
     // Vérifier s'il y a un fichier téléchargé
     if ($file["error"] == UPLOAD_ERR_OK) {
         // Déplacer le fichier téléchargé vers un emplacement permanent
@@ -17,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $contenuFichier = file_get_contents($destination);
 
         // Insérer les informations dans la table cours
-        $requete = "INSERT INTO cours  VALUES (NULL, :nomCours, :fichier, :id_matiere)";
+        $requete = "INSERT INTO cours  VALUES (NULL, :nomCours, :fichier, NOW(),:id_matiere)";
         $stmt = $db->prepare($requete);
         $stmt->bindParam(':nomCours', $nomCours, PDO::PARAM_STR);
         $stmt->bindParam(':fichier', $contenuFichier, PDO::PARAM_LOB);
