@@ -27,15 +27,7 @@ h1 {
     font-family: "inter", sans-serif;
     position: relative;
 }
-/* champs obligatoires */
-.legendoblige{
-    font-size: 0.8rem;
-    color:rgb(84, 87, 90)
-}
-.asterisque{
-    color:rgb(84, 87, 90)
 
-}
 
 label,
 legend {

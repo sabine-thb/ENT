@@ -119,7 +119,15 @@ footer{
 .reseau{
     width:50px;
 }
+/* champs obligatoires des form*/
+.legendoblige{
+    font-size: 0.8rem;
+    color:rgb(84, 87, 90)
+}
+.asterisque{
+    color:rgb(84, 87, 90)
 
+}
 @media(max-width:980px){
 footer{
     gap:50px;
