@@ -44,15 +44,17 @@
         <div class="formulaire">
             <form action="traiteNvPlat.php" class="ajtPlat">
                 <img src="./style/img/bonhommes/vote.png" class="img" alt="">
-                <label for="plat" class="lab1">Nom du plat : </label>
+                <p class="legendoblige">* Tous les champs sont obligatoires</p>
+
+                <label for="plat" class="lab1">Nom du plat<span class="asterisque">*</span>: </label>
                 <input class="inputForm" type="text" id="plat" name="nom" required>
                 <br>
                 <br>
-                <label for="img" class="lab1">Lien d'une image : </label>
+                <label for="img" class="lab1">Lien d'une image<span class="asterisque">*</span>: </label>
                 <input class="inputForm" type="text" id="img" name="image" required>
                 <br>
                 <br>  
-                <label for="descr" class="lab1">Description : </label>
+                <label for="descr" class="lab1">Description<span class="asterisque">*</span>: </label>
                 <br><br>
                 <textarea class="textArea" type="text" id="descr" name="descr" required> </textarea>            
                 

@@ -87,7 +87,15 @@ h1{
     position: relative;
     filter: drop-shadow(25px 24px 19.5px rgba(0, 0, 0, 0.15));
 }
+/* champs obligatoires */
+.legendoblige{
+    font-size: 0.8rem;
+    color:rgb(84, 87, 90)
+}
+.asterisque{
+    color:rgb(84, 87, 90)
 
+}
 
 label{
     margin-right:20px;
