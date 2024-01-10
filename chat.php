@@ -123,7 +123,7 @@ $idSession = $utilisateur['id'];
             <input type="hidden" name="idDest" value="<?php echo $utilisateurDest ;?> ">
             <input type="hidden" name="idEdi" value="<?php echo $idSession; ?> ">
             <input type="hidden" name="date" value="<?= date('Y-m-d H:i:s') ?>">
-            <button type="submit" class="bouton"><img src="./style/img/send.svg" alt="Envoyer" aria-label="Valider l'envoie du message"></button>
+            <button type="submit" class="bouton" aria-describedby="button-envoie-msg"><img src="./style/img/send.svg" alt="Envoyer" aria-label="Valider l'envoie du message"></button>
         </form>
     </section>
     

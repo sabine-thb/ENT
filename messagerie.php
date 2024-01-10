@@ -138,7 +138,7 @@ $idSession = $utilisateur['id'];
         
         <form action="chat.php" method="get" class="choix-utilisateur">
         <label for="utilisateur">Nouvelle conversation :</label>
-        <select name="utilisateur" id="utilisateur" required>
+        <select name="utilisateur" id="utilisateur" required aria-describedby="form-nouvelle-discussion">
             <option value="">Sélectionnez un utilisateur</option>
             <?php
             // je recup la liste des utilisateurs depuis la bdd
@@ -155,7 +155,7 @@ $idSession = $utilisateur['id'];
             }
             ?>
         </select>
-        <button type="submit" aria-label="Validation de la sélection d'un nouvel utilisateur avec lequel parler par message">Valider</button>
+        <button type="submit" aria-label="Validation de la sélection d'un nouvel utilisateur avec lequel parler par message" aria-describedby="button-nouvelle-discussion">Valider</button>
     </form>
     </div>
     </section>

@@ -112,7 +112,7 @@ $id_user=$utilisateur['id'];
                 <form action="traiteAbsence.php" class=" form formAbs">
                     <p>
                         <label for="eleve" class="label1">Nom de l'élève : </label>
-                        <select name="eleve" id="eleve" required>
+                        <select name="eleve" id="eleve" required aria-describedby="form-inserer-abscence">
                                 <?php
                                 $requete =" SELECT * FROM utilisateurs WHERE role = 'élève' ";
                                 $stmt=$db->query($requete);
@@ -160,7 +160,7 @@ $id_user=$utilisateur['id'];
                 <form action="traiteRetard.php" class=" form formRet">
                     <p>
                         <label for="eleve2" class="label2">Nom de l'élève : </label>
-                        <select name="eleve" id="eleve2" required>
+                        <select name="eleve" id="eleve2" required aria-describedby="form-inserer-retard">
                                 <?php
                                 $requete =" SELECT * FROM utilisateurs WHERE role = 'élève' ";
                                 $stmt=$db->query($requete);

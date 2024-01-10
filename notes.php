@@ -105,7 +105,7 @@ $id_user=$utilisateur['id'];
 
                 <p class="pForm">
                     <label for="eleve">Élève : </label>
-                    <select name="eleve" id="eleve">
+                    <select name="eleve" id="eleve" aria-describedby="form-note-élève">
                         <?php
                         $requete =" SELECT * FROM utilisateurs WHERE role = 'élève' ";
                         $stmt=$db->query($requete);
@@ -175,7 +175,7 @@ $id_user=$utilisateur['id'];
             <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" aria-label="Lien vers notes de l'UE Comprendre">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" aria-label="Lien vers notes de l'UE Comprendre" aria-describedby="button-note-élève-comprendre">
                     Comprendre
                 </button>
                 </h2>
@@ -202,7 +202,7 @@ $id_user=$utilisateur['id'];
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" aria-label="Lien vers notes de l'UE Exprimer">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" aria-label="Lien vers notes de l'UE Exprimer"aria-describedby="button-note-élève-exprimer">
                     Exprimer
                 </button>
                 </h2>
@@ -229,7 +229,7 @@ $id_user=$utilisateur['id'];
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" aria-label="Lien vers notes de l'UE Développer">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" aria-label="Lien vers notes de l'UE Développer"aria-describedby="button-note-élève-développer">
                     Développer
                 </button>
                 </h2>
@@ -257,7 +257,7 @@ $id_user=$utilisateur['id'];
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" aria-label="Lien vers notes de l'UE Concevoir">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" aria-label="Lien vers notes de l'UE Concevoir"aria-describedby="button-note-élève-concevoir">
                     Concevoir
                 </button>
                 </h2>
@@ -286,7 +286,7 @@ $id_user=$utilisateur['id'];
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" aria-label="Lien vers notes de l'UE Entreprendre">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" aria-label="Lien vers notes de l'UE Entreprendre"aria-describedby="button-note-élève-entreprendre">
                     Entreprendre
                 </button>
                 </h2>

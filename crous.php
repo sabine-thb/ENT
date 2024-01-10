@@ -87,7 +87,7 @@
             <form action="traitePropositionsChoix.php" class="formPropositions">
                 <p>
                     <label for="choix1" class="lab2">Proposition 1 :</label>
-                    <select name="choix1" id="choix1">
+                    <select name="choix1" id="choix1" aria-describedby="form-choix1">
                         <?php
                         include("connexion.php");
                         $requete =" SELECT * FROM choix  ORDER BY date DESC ";
@@ -103,7 +103,7 @@
                 </p>
                 <p>
                     <label for="choix2" class="lab2">Proposition 2 :</label>
-                    <select name="choix2" id="choix2">
+                    <select name="choix2" id="choix2" aria-describedby="form-choix2">
                         <?php
                         foreach ($result as $row): ?>
                         <option value="<?php echo $row["id_choix"] ?>"><?php echo $row["nom"] ?></option>

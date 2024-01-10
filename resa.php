@@ -100,7 +100,7 @@ $id_user=$utilisateur['id'];
             
             
         </div>
-        <button class="button">Voir les anciennes réservations</button>
+        <button class="button" aria-describedby="button-anciennes-réservation">Voir les anciennes réservations</button>
         
 
 
@@ -157,7 +157,7 @@ $id_user=$utilisateur['id'];
         
         <form action="traiteResa.php" method="get" class="formResa">
             <label for="matos">Matériel à réserver : </label>
-            <select name="matos" id="matos" class="matos">
+            <select name="matos" id="matos" class="matos" aria-describedby="form-matériel">
                 <?php
                 $requete =" SELECT * FROM materiel ";
                 $stmt=$db->query($requete);
