@@ -331,7 +331,7 @@ $id_user=$utilisateur['id'];
     <div class="baSection">
         <div>
             <div class="titlExplication">Comment ça marche ?</div>
-            <p class="expl">Au delàs de 10h d'absences/retards non justifiés, chaque heure supplémentaire vous enlève 0.025 points sur votre moyenne générale.</p>
+            <p class="expl">Au-delà de 10h d'absences/retards non justifiés, chaque heure supplémentaire vous enlève 0.025 points sur votre moyenne générale.</p>
             <p class="expl"> En cas de problème, veuillez contacter la secrétaire gérant votre promotion ou formation, ou l’enseignant en chef de votre département.</p>
         </div>
         <div class="imgContainer">
