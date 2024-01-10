@@ -103,9 +103,10 @@ $id_user=$utilisateur['id'];
                     <h2 class="votreMat">Votre matière : <?php echo $row["titre_matiere"]?></h2>
                     <?php } ?>
                 <input type="hidden" value="<?php echo $row["id_matiere"]?>" name="id_matiere">
+                <p class="legendoblige">* Tous les champs sont obligatoires</p>
 
                 <p class="pForm">
-                    <label for="eleve">Élève : </label>
+                    <label for="eleve">Élève<span class="asterisque">*</span>: </label>
                     <select name="eleve" id="eleve" aria-describedby="form-note-élève">
                         <?php
                         $requete =" SELECT * FROM utilisateurs WHERE role = 'élève' ";
@@ -119,17 +120,17 @@ $id_user=$utilisateur['id'];
                 </p>
                 
                 <p class="pForm">
-                    <label for="title">Titre de la note : </label>
+                    <label for="title">Titre de la note<span class="asterisque">*</span>: </label>
                     <input type="text" id="title" name="titleNote" required>
                 </p>
                 
                 <p class="pForm">   
-                    <label for="value">Valeur de la note sur 20 : </label>
+                    <label for="value">Valeur de la note sur 20<span class="asterisque">*</span>: </label>
                     <input type="text" id="value" name="valueNote" required>
                 </p>
 
                 <p class="pForm">
-                    <label for="coeff">Coefficient : </label>
+                    <label for="coeff">Coefficient<span class="asterisque">*</span>: </label>
                     <input type="text" id="coeff" name="coeffNote" required>
                 </p>
                 <p>

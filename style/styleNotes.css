@@ -156,7 +156,15 @@ label{
     bottom:-30px;
     left:-80px;
 }
+/* champs obligatoires */
+.legendoblige{
+    font-size: 0.8rem;
+    color:rgb(84, 87, 90)
+}
+.asterisque{
+    color:rgb(84, 87, 90)
 
+}
 
 @media(max-width:900px){
     .accordeonContainer{
