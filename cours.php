@@ -135,7 +135,7 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
             foreach ($result as $row){ ?>
 
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere'].jpg; ?>')" alt="Image et lien vers cours" aria-label="Lien vers la page du cours">
+            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>.jpg')" alt="Image et lien vers cours" aria-label="Lien vers la page du cours">
                 <div class="imgCours" >
                 <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
                 </div>
@@ -152,7 +152,7 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
             foreach ($result as $row){ ?>
 
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere'].jpg; ?>')" alt="Image et lien vers cours" aria-label="Lien vers la page du cours">
+            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>.jpg')" alt="Image et lien vers cours" aria-label="Lien vers la page du cours">
                 <div class="imgCours" >
                 <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
                 </div>
@@ -169,7 +169,7 @@ $id_user=$utilisateur['id'];
             $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
             foreach ($result as $row){ ?>
 
-            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere'].jpg; ?>')" alt="Image et lien vers cours" aria-label="Lien vers la page du cours">
+            <a href="ressources.php?id=<?php echo $row['id_matiere']; ?>" class="lienRessource" style="background-image: url('./style/img/cours/<?php echo $row['id_matiere']; ?>.jpg')" alt="Image et lien vers cours" aria-label="Lien vers la page du cours">
                 <div class="imgCours" >
                 <h2 class="titreRessource"><?php echo $row["titre_matiere"]; ?></h2>
                 </div>
