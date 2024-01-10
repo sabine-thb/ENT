@@ -117,7 +117,7 @@ $idSession = $utilisateur['id'];
         <?php foreach ($resultat as $message) : ?>
             
             <div class="conv">
-                <img src="./style/img/profil/<?= $message['id_user_edi'] ?>" class="photoProfil" alt="">
+                <img src="./style/img/profil/<?= $message['id_user_edi'] ?>.svg" class="photoProfil" alt="">
                 <div class="loginMsg">
                     <div class="edi"><strong>@<?= $message['login'] ?></strong></div>
                     <div class="msg"><?= $message['message'] ?></div>
