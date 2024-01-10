@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     }else{
     //j'insère les infos dans ma table notes pour pouvoir les afficher ensuite
 
-    $requete ="INSERT INTO note VALUES ( NULL, :titreNote, :valueNote, :coeffNote, NOW(), :id_matiere_ext, 1, :id_user_ext)";
+    $requete ="INSERT INTO note VALUES ( NULL, :titreNote, :valueNote, :coeffNote, NOW(), :id_matiere_ext, :id_user_ext)";
     $stmt=$db->prepare($requete);
 
     $stmt->bindValue(':titreNote',$titreNote,PDO::PARAM_STR);
