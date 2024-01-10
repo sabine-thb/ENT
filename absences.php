@@ -360,6 +360,7 @@ $id_user=$utilisateur['id'];
         <a href="ML.html#hebergeur" class="lienFooter"><p class="pFooter">Hébergeur</p></a>
         <a href="ML.html#cookies" class="lienFooter"><p class="pFooter">Cookies</p></a>
         <a href="ML.html#RGPD" class="lienFooter"><p class="pFooter">RGPD</p></a>
+        <a href="ML.html#sources" class="lienFooter" aria-label="Lien vers la section sources des mentions légales"><p class="pFooter">Sources</p></a>
     </div>
     <div class="contact">
         <p class="pFooterTitle">Contact</p>

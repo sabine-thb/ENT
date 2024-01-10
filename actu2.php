@@ -133,6 +133,7 @@
             <a href="ML.html#hebergeur" class="lienFooter" aria-label="Lien vers la section hébergeur des mentions légales"><p class="pFooter">Hébergeur</p></a>
             <a href="ML.html#cookies" class="lienFooter" aria-label="Lien vers la section cookies des mentions légales"><p class="pFooter">Cookies</p></a>
             <a href="ML.html#RGPD" class="lienFooter" aria-label="Lien vers la section RGPD des mentions légales"><p class="pFooter">RGPD</p></a>
+            <a href="ML.html#sources" class="lienFooter" aria-label="Lien vers la section sources des mentions légales"><p class="pFooter">Sources</p></a>
         </div>
         <div class="contact">
             <p class="pFooterTitle">Contact</p>
