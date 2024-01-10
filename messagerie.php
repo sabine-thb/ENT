@@ -97,7 +97,7 @@ $idSession = $utilisateur['id'];
             WHERE id_user_dest = :idSession
             GROUP BY id_user_edi
         ) latest ON m.id_user_edi = latest.id_user_edi AND m.date = latest.max_date
-        ORDER BY m.date ASC;";
+        ORDER BY m.date DESC;";
         $stmt = $db->prepare($requete);      
         $stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        
         $stmt->execute();
