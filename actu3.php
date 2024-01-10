@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleActus.css">
-    <title>Actualités</title>
+    <title>ENT - Actualités</title>
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 

@@ -20,7 +20,7 @@ $id_user=$utilisateur['id'];
    <link rel="stylesheet" href="style/styleAbs.css">
    
     
-    <title>ENT - Absences/retards</title>
+    <title>ENT - Absences / retards</title>
     
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>

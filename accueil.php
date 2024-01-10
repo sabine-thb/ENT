@@ -113,7 +113,7 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 
                 </div>
                 
-                        <h3 class="titleSection">Prochains cours</h3>
+                        <h2 class="titleSection">Prochains cours</h2>
                         <a href="edt.php" class="pcs">
                             <div class="horaires">
                                 <div class="titleHoraires">Horaires</div>

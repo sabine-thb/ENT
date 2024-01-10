@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleEDT.css">
-    <title>Emploi du Temps</title>
+    <title>ENT - EDT</title>
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
