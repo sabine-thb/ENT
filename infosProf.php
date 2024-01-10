@@ -18,6 +18,7 @@ include("connexion.php");
 </head>
 
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
@@ -65,7 +66,7 @@ include("connexion.php");
 	
     </header>
 
-    <section>
+    <section id="contenu">
         <h1 class="titlePage">Informations sur les professeurs</h1>
     </section>
 
@@ -80,7 +81,7 @@ include("connexion.php");
                 $result=$stmt -> fetchall(PDO::FETCH_ASSOC);
                 foreach ($result as $row){ ?>  
                 <div class="prof">        
-                    <div class="photoContainer"><img src="./style/img/profil/<?php echo $row["id"]?>"  class="photoProf" alt=""></div>
+                    <div class="photoContainer"><img src="./style/img/profil/<?php echo $row["id"]?>.svg"  class="photoProf" alt=""></div>
                     <div class="nomPrenom"><?php echo $row["prenom"]?> <?php echo $row["nom"]?></div>
                     <div class="matiere"><?php echo $row["titre_matiere"]?></div>
                     <div class="mail"><?php echo $row["mail"]?></div>

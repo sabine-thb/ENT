@@ -14,8 +14,8 @@
     
 </head>
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
-        <a href="#contenu" class="skip-link">Aller au contenu</a>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 

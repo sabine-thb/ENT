@@ -1,3 +1,13 @@
+# Comment installer le site web sur son serveur local ?
+Lancez WAMPP sur votre ordinateur personnel.
+
+Ensuite, aller dans vos fichiers, et rendez vous dans c:\wamp64\www et déposez y le dossier complet de l'ENT.
+N'oubliez pas d'importer la base de données ent.sql dans votre phpMyAdmin.
+Tapez ensuite dans votre navigateur http://localhost/ent. Vous aurez ainsi accès directement à notre ENT sur votre propre serveur local WAMP.
+
+
+
+
 # ENT
 En tant qu'élèves, les profils insérés sont ceux de Jade Célestine, Rihab Bouazzaoui et Sabine Thibout. 
 Les professeurs de la formation sont également insérés en tant que profs.
@@ -5,7 +15,7 @@ Pour tous les profils, pour se connecter:
 login = prenom.nom (sans accent ni maj)
 mdp = nom (sans accent ni maj)
 
-Les fonctionnalités développées sont : 
+# LES FONCTIONNALITÉS DEVLOPPÉES : 
 
 1. VOTE REPAS DU CROUS
    Les utilisateurs avec le rôle "personnel du CROUS" ont accès à une interface spécifique.
@@ -41,3 +51,8 @@ Les fonctionnalités développées sont :
 5. INSERTION DE COURS
    Les utilisateurs connectés avec le rôle de professeur peuvent dans la page "cours", insérer de nouveaux cours pour leur matière respective.
    Les élèves pourront ainsi télécharger les cours de chaque matière. Pour cela, ils devront aller sur la page cours et sélectionner la matière dont ils veulent consulter les cours déposés.
+
+   Attention, nous n'avons jamais vu en cours comment gérer le transfert de fichier sur un site. On s'est débrouillé pour que celui-ci marche au mieux, mais il est parfois possible que le téléversement de fichier ne soit pas opérationnel si le fichier est trop volumineux.
+
+6. Messagerie
+   Les utilisateurs peuvent communiquer entre eux via la messagerie. Ils y ont accès par l'icône positionné en fixed en bas de l'écran sur toutes les pages.

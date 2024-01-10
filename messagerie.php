@@ -28,6 +28,7 @@ $idSession = $utilisateur['id'];
 </head>
 
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
@@ -75,7 +76,7 @@ $idSession = $utilisateur['id'];
 	
     </header>
     
-    <section class="section1">
+    <section class="section1" id="contenu">
 
         <div class="titleContainer">
             <h1 class="titlePage">Ma messagerie </h1>
@@ -96,7 +97,7 @@ $idSession = $utilisateur['id'];
             WHERE id_user_dest = :idSession
             GROUP BY id_user_edi
         ) latest ON m.id_user_edi = latest.id_user_edi AND m.date = latest.max_date
-        ORDER BY m.date ASC;";
+        ORDER BY m.date DESC;";
         $stmt = $db->prepare($requete);      
         $stmt->bindParam(':idSession', $idSession, PDO::PARAM_INT);        
         $stmt->execute();
@@ -116,7 +117,7 @@ $idSession = $utilisateur['id'];
         <?php foreach ($resultat as $message) : ?>
             
             <div class="conv">
-                <img src="./style/img/profil/<?= $message['id_user_edi'] ?>" class="photoProfil" alt="">
+                <img src="./style/img/profil/<?= $message['id_user_edi'] ?>.svg" class="photoProfil" alt="">
                 <div class="loginMsg">
                     <div class="edi"><strong>@<?= $message['login'] ?></strong></div>
                     <div class="msg"><?= $message['message'] ?></div>

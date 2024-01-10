@@ -28,9 +28,10 @@ $id_user=$utilisateur['id'];
     
 </head>
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
 
-        <a href="#contenu" class="skip-link">Aller au contenu</a>
+        
 	    <a href="accueil.php" class="logo" alt="Logo et lien vers la page d'accueil"></a>
 
         <nav class="responsive-menu">
@@ -215,7 +216,7 @@ $id_user=$utilisateur['id'];
 <?php
      if ($role == "élève") {
     ?>
-<section>
+<section id="contenu">
     <div class="allAbsAndRet">
         <div class=" number absJust">
         <h2 class="titleOne">Absences</h2>
@@ -330,7 +331,7 @@ $id_user=$utilisateur['id'];
     <div class="baSection">
         <div>
             <div class="titlExplication">Comment ça marche ?</div>
-            <p class="expl">Au delàs de 10h d'absences/retards non justifiés, chaque heure supplémentaire vous enlève 0.025 points sur votre moyenne générale.</p>
+            <p class="expl">Au-delà de 10h d'absences/retards non justifiés, chaque heure supplémentaire vous enlève 0.025 points sur votre moyenne générale.</p>
             <p class="expl"> En cas de problème, veuillez contacter la secrétaire gérant votre promotion ou formation, ou l’enseignant en chef de votre département.</p>
         </div>
         <div class="imgContainer">

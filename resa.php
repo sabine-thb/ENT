@@ -23,8 +23,9 @@ $id_user=$utilisateur['id'];
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
 </head>
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
-        <a href="#contenu" class="skip-link">Aller au contenu</a>
+        
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -142,7 +143,7 @@ $id_user=$utilisateur['id'];
     <?php 
     if ($role == "élève") { 
     ?>
-    <section class="sec1">
+    <section class="sec1" id="contenu">
         <h1 class="titleResa">Réservations</h1>
         <p>Ci-dessous le formulaire pour réserver du matériel dans le cadre de vos projets tutorés.</p>
         <?php if (isset($_GET["resa"] )){  

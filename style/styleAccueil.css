@@ -320,6 +320,11 @@ ul{
     padding:15px;
     width:fit-content;
     box-shadow: 20px 20px 17px 1px rgba(0, 0, 0, 0.20);
+    transition: 0.3s ease-in-out;
+}
+
+.platJour:hover{
+    transform: scale(1.075);
 }
 
 .nomPlatJour{

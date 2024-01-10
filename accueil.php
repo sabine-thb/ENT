@@ -157,8 +157,8 @@ $derniersCours = $stmtDerniersCours->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="lien">
                     
-                    <a class="iconn" href="cours.php" aria-label="Lien vers la page des cours"><img src="./style/img/cours.svg" alt="Icône et lien vers la page des cours"> <p>Cours</p></a> 
-                    <a class="iconn" href="edt.php" aria-label="Lien vers la page de l'emploi du temps"><img src="./style/img/EDT.svg" alt="Icône et lien vers la page de l'emploi du temps"><p>EDT</p></a> 
+                    <a class="iconn" href="cours.php" aria-label="Lien vers la page des cours"><img src="./style/img/cours.svg" alt="lien vers la page des cours"> <p>Cours</p></a> 
+                    <a class="iconn" href="edt.php" aria-label="Lien vers la page de l'emploi du temps"><img src="./style/img/EDT.svg" alt="lien vers la page de l'emploi du temps"><p>EDT</p></a> 
                     <a class="iconn" href="notes.php" aria-label="Lien vers la page des notes"><img src="./style/img/notes.svg" alt="Icône et lien vers la page des notes"><p>Notes</p></a> 
 
 

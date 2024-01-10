@@ -31,8 +31,9 @@ $id_user=$utilisateur['id'];
 </head>
 
 <body class="body">
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
-        <a href="#contenu" class="skip-link">Aller au contenu</a>
+        
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
 
@@ -152,7 +153,7 @@ $id_user=$utilisateur['id'];
      if ($role == "élève") {
     ?>
     
-    <section class="secNotes">
+    <section class="secNotes" id="contenu">
         <h1 class="titre">Mon relevé de notes par UE</h1>
         <div class="accordeonContainer">
             <div class="moyG">      

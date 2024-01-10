@@ -83,6 +83,11 @@ li {
     padding:20px;
     border-radius:20px;
     box-shadow: 24px 25px 19.4px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease-in-out;
+}
+
+.actuContainer:hover{
+    transform: scale(1.075);
 }
 
 
@@ -123,7 +128,7 @@ footer{
 @media(max-width:1080px){
     .actuContainer{
         width:250px;
-        height:460px;
+        height:480px;
     }
 
     .img2{
