@@ -113,7 +113,7 @@ $id_user=$utilisateur['id'];
                 <form action="traiteAbsence.php" class=" form formAbs">
                 <p class="legendoblige">* Tous les champs sont obligatoires</p>
                     <p>
-                        <label for="eleve" class="label1">Nom de l'élève<span class="asterisque">*</span>: </label>
+                        <label for="eleve" class="label1">Nom de l'élève<span class="asterisque">*</span> : </label>
                         <select name="eleve" id="eleve" required aria-describedby="form-inserer-abscence">
                                 <?php
                                 $requete =" SELECT * FROM utilisateurs WHERE role = 'élève' ";
@@ -126,17 +126,17 @@ $id_user=$utilisateur['id'];
                         </select>
                     </p>
                     <p>
-                        <label for="date" class="label1">Date de l'absence<span class="asterisque">*</span>: </label>
+                        <label for="date" class="label1">Date de l'absence<span class="asterisque">*</span> : </label>
                         <input type="date" id="date" name="date" required>
 
                     </p>
                     <p>
-                        <label for="duree" class="label1">Durée de l'absence<span class="asterisque">*</span>: </label>
+                        <label for="duree" class="label1">Durée de l'absence<span class="asterisque">*</span> : </label>
                         <input type="number" id="duree" step="0.25" min="0.25" max="100" name="duree" required>
                     </p>
                     <p>
                         <fieldset required>
-                            <legend class="label1">Statut de l'absence<span class="asterisque">*</span>: </legend>
+                            <legend class="label1">Statut de l'absence<span class="asterisque">*</span> : </legend>
                             <div>
                                 <input type="radio" id="justNon" name="justification" value="oui" />
                                 <label for="justNon">Absence justifiée</label>
@@ -163,7 +163,7 @@ $id_user=$utilisateur['id'];
                 <p class="legendoblige">* Tous les champs sont obligatoires</p>
 
                     <p>
-                        <label for="eleve2" class="label2">Nom de l'élève<span class="asterisque">*</span>: </label>
+                        <label for="eleve2" class="label2">Nom de l'élève<span class="asterisque">*</span> : </label>
                         <select name="eleve" id="eleve2" required aria-describedby="form-inserer-retard">
                                 <?php
                                 $requete =" SELECT * FROM utilisateurs WHERE role = 'élève' ";
@@ -176,18 +176,18 @@ $id_user=$utilisateur['id'];
                         </select>
                     </p>
                     <p>
-                        <label for="date2" class="label2">Date du retard<span class="asterisque">*</span>: </label>
+                        <label for="date2" class="label2">Date du retard<span class="asterisque">*</span> : </label>
                         <input type="date" id="date2" name="date"required >
 
                     </p>
                     
                     <p>
-                        <label for="duree2" class="label2">Durée du retard<span class="asterisque">*</span>: </label>
+                        <label for="duree2" class="label2">Durée du retard<span class="asterisque">*</span> : </label>
                         <input type="number" id="duree2" step="0.25" min="0.25" max="100" name="duree" required>
                     </p>
                     <p>
                         <fieldset>
-                            <legend class="label2">Statut du retard<span class="asterisque">*</span>:</legend>
+                            <legend class="label2">Statut du retard<span class="asterisque">*</span> :</legend>
                             <div>
                                 <input type="radio" id="justNon2" name="justification" value="oui" />
                                 <label for="justNon2">Retard justifié</label>
