@@ -15,7 +15,7 @@ Pour tous les profils, pour se connecter:
 login = prenom.nom (sans accent ni maj)
 mdp = nom (sans accent ni maj)
 
-Les fonctionnalités développées sont : 
+# LES FONCTIONNALITÉS DEVLOPPÉES : 
 
 1. VOTE REPAS DU CROUS
    Les utilisateurs avec le rôle "personnel du CROUS" ont accès à une interface spécifique.
@@ -51,3 +51,5 @@ Les fonctionnalités développées sont :
 5. INSERTION DE COURS
    Les utilisateurs connectés avec le rôle de professeur peuvent dans la page "cours", insérer de nouveaux cours pour leur matière respective.
    Les élèves pourront ainsi télécharger les cours de chaque matière. Pour cela, ils devront aller sur la page cours et sélectionner la matière dont ils veulent consulter les cours déposés.
+
+   Attention, nous n'avons jamais vu en cours comment gérer le transfert de fichier sur un site. On s'est débrouillé pour que celui-ci marche au mieux, mais il est parfois possible que le téléversement de fichier ne soit pas opérationnel si le fichier est trop volumineux.
