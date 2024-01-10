@@ -27,6 +27,7 @@ $id_user=$utilisateur['id'];
 </head>
 
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
@@ -84,7 +85,7 @@ $id_user=$utilisateur['id'];
         $result=$stmt -> fetchall(PDO::FETCH_ASSOC); 
     ?>
                
-    <section >
+    <section id="contenu">
         <?php if (isset($_GET["insertion"] )){  
             echo "<p class=\"coursOk txtRouge\">Votre cours a bien été inséré.</p>";
         } 
@@ -124,7 +125,7 @@ $id_user=$utilisateur['id'];
     <?php
      if ($role == "élève") {
     ?>
-    <section>
+    <section id="contenu">
         <h1 class="titlePage">Supports de cours</h1>
         <h2 class="categorie">Développement Web</h2>
         <div class="coursDev">

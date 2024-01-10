@@ -14,6 +14,7 @@
     
 </head>
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
@@ -62,7 +63,7 @@
     </header>
     
 
-    <section class="section1">
+    <section class="section1" id="contenu">
         <div class="titleContainer">
             <h1 class="titlePage">Emploi du temps</h1>
             <img src="./style/img/bonhommes/EDT.png" class="img" alt="">

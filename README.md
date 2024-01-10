@@ -1,3 +1,13 @@
+# Comment installer le site web sur son serveur local ?
+Lancez WAMPP sur votre ordinateur personnel.
+
+Ensuite, aller dans vos fichiers, et rendez vous dans c:\wamp64\www et déposez y le dossier complet de l'ENT.
+N'oubliez pas d'importer la base de données ent.sql dans votre phpMyAdmin.
+Tapez ensuite dans votre navigateur http://localhost/ent. Vous aurez ainsi accès directement à notre ENT sur votre propre serveur local WAMP.
+
+
+
+
 # ENT
 En tant qu'élèves, les profils insérés sont ceux de Jade Célestine, Rihab Bouazzaoui et Sabine Thibout. 
 Les professeurs de la formation sont également insérés en tant que profs.

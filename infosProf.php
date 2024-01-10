@@ -18,6 +18,7 @@ include("connexion.php");
 </head>
 
 <body>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <header>
         
         <a href="accueil.php" class="logo" aria-label="Logo et lien vers la page d'accueil"></a>
@@ -65,7 +66,7 @@ include("connexion.php");
 	
     </header>
 
-    <section>
+    <section id="contenu">
         <h1 class="titlePage">Informations sur les professeurs</h1>
     </section>
 
