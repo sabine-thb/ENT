@@ -31,7 +31,7 @@
         <p>Bienvenue sur l'interface CROUS de l'ENT.</p>
     </section>
     <section class="secForm">
-        <h1 class="titreForm">Restauration de l'université</h1>
+        <h2 class="titreForm">Restauration de l'université</h2>
         <p class="descrForm">Si vous souhaitez ajouter de nouveaux plats à la liste des propositions, veuillez les ajouter ici.</p>
 
         <?php

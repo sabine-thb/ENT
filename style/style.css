@@ -62,6 +62,7 @@ body{
 
 .imgChat{
     width:50px;
+    z-index:2000;
 }
 
 section{

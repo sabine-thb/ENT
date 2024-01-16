@@ -24,7 +24,7 @@ $id_user=$utilisateur['id'];
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/burger.css">
     <link rel="stylesheet" href="style/styleNotes.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
        
     <title>ENT - Notes</title>
     <link rel="icon" type="image/svg" href="./style/img/logoENT.svg">
@@ -90,7 +90,7 @@ $id_user=$utilisateur['id'];
         } 
         ?> 
         <?php if (isset($_GET["err"] )){  
-            echo "<p class=\"noteOk\">Votre valeur de note doit être supérieure ou égale à 20.</p>";
+            echo "<p class=\"noteOk\">Votre valeur de note doit être inférieure ou égale à 20.</p>";
         } 
         ?> 
         <div class="formContainer">
@@ -353,5 +353,5 @@ $id_user=$utilisateur['id'];
 
 
 <script src="./script/burger.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./bootstrap/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

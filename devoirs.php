@@ -143,7 +143,7 @@
                 <h3>SAÉ 3.01 ENT</h3>
                 <h4>Date de rendu :</h4>
                 <p>Pour le <strong class="color">12/01</strong> à <strong class="color">23:59</strong></p>
-                <h4>Professeurs en chargent :</h4>
+                <h4>Professeurs en charge :</h4>
                 <p>Matthieu Berthet, Gaëlle Charpentier, Renaud Eppstein, Philippe Gambette, Fatima Laoufi, Alexandre Leroy & Hervé Lo</p>
                 <h4>Présentation du travail à rendre :</h4>
                 <p>Vous êtes chargé de réaliser un ENT en appliquant l'ensemble des étapes de la méthodologie UX (eXperience Utilisateur). Puis vous réaliserez le design de votre interface une fois celle-ci testée. Vous mettrez en œuvre vos compétences de développement pour produire un site sécurisé avec un accès aux ressources différencié en fonction des profils identifiés, ainsi que des possibilités pour certains profils d’administrer, au travers d’un back-office, certaines fonctionnalités du site.</p>
@@ -175,7 +175,7 @@
                 <h3>SAÉ 3.02-B CV Vidéo</h3>
                 <h4>Date de rendu :</h4>
                 <p>Pour le <strong class="color">08/01</strong> à <strong class="color">23:59</strong></p>
-                <h4>Professeurs en chargent :</h4>
+                <h4>Professeurs en charge :</h4>
                 <p>Anne Tasso, Lahcen Soussi, Alexandre Leroy, Leyla Jaoued & Odile Niel</p>
                 <h4>Présentation du travail à rendre :</h4>
                 <p>Vous devez réaliser un CV Vidéo sous forme de tournage, montage et post-production en TP. Celui-ci doit durer de 2mn à 2mn 30 maximum. La vidéo sera déposée au format mp4 sur l’espace dédié du e-learning, avec une résolution Full HD (1920x1080) et compressée portant vos noms et prénoms. Pour filmer ce CV, il faut du matériel. La réservation ce fait via l'ENT dans la page de réservation. Le CV Vidéo doit comporter au moins :</p>
@@ -220,7 +220,7 @@
                 <h3>Portfolio</h3>
                 <h4>Date de rendu :</h4>
                 <p>Pour le <strong class="color">18/12</strong> à <strong class="color">01:00</strong></p>
-                <h4>Professeurs en chargent :</h4>
+                <h4>Professeurs en charge :</h4>
                 <p>Gaëlle Charpentier</p>
                 <h4>Présentation du travail à rendre :</h4>
                 <p>Site web avec un nom de domaine adapté et professionnel. Il peut s’agir d’un one page. Ce site contient au minimum :</p>
@@ -263,7 +263,7 @@
                 <h3>SAÉ 3.02-A Podcast</h3>
                 <h4>Date de rendu :</h4>
                 <p>Pour le <strong class="color">24/11</strong> à <strong class="color">23:59</strong></p>
-                <h4>Professeurs en chargent :</h4>
+                <h4>Professeurs en charge :</h4>
                 <p>Tony Houziaux, KPC, Alexandre Leroy & Florence Bister</p>
                 <h4>Présentation du travail à rendre :</h4>
                 <p>Il s'agit de rédiger, enregistrer et monter un podcast sur le thème d'une page de BD d'horreur ou d'une couverture de roman, sur laquelle vous avez travailler avec M.KPC.</p>
@@ -273,7 +273,7 @@
                 <h4>Zone de dépôt :</h4>
                 <div class="flex">
                     <p>Statut des travaux remis :</p>
-                    <p>1 Tentatives</p>
+                    <p>1 Tentative</p>
                 </div>
                 <div class="flex">
                     <p>Statut d’évaluation :</p>

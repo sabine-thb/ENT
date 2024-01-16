@@ -583,6 +583,7 @@ footer{
 
     i.pCours{
         float:right;
+        margin-top:10px;
     }
 
     .actuContainer{

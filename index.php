@@ -18,7 +18,7 @@
     </nav>
     <?php
         if (isset($_GET["err"] )){  
-            echo "Vous n'avez pas entré le bon login/mdp.";
+            echo "<p class=\"err\">Vous n'avez pas entré le bon login/mdp.</p>";
         }
         //SCRIPT POUR ASHER LE MDP POUR LE RETRER ENSUITE DANS LA BDD
         // $mot_de_passe="than-long";
@@ -31,15 +31,16 @@
         <form action="traiteLogin.php" method="get" class="formulaire">
             
             <div class="idMdp">
-                <label for="login" class="labelForm">Identifiant :</label>
-                <input id="login" type="text" name="login" class="inputIdMdp">
-                <br>
-                <br>
+                <p class="formFlex">
+                    <label for="login" class="labelForm">Identifiant :</label>
+                    <input id="login" type="text" name="login" class="inputIdMdp">
 
-                <label for="mdp" class="labelForm">Mot de passe :</label>
-                <input name="mdp" type="password" class="inputIdMdp">
-                <br>
-                <br>
+                </p>
+                <p class="formFlex">
+                    <label for="mdp" class="labelForm">Mot de passe :</label>
+                    <input name="mdp" type="password" class="inputIdMdp">
+                </p>
+
                 <input type="submit" value="connexion" class="connexionButton" aria-label="Validation de la connection">
 
             </div>

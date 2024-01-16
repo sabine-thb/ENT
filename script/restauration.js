@@ -1,13 +1,15 @@
-// document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-//     var linkVoteElements = document.querySelectorAll('.linkVote');
-//     var descrVote = document.querySelector('.descrVote');
+    function updateBorderRadius() {
+        var maDiv = document.querySelector('.choix');
+        var computedStyle = window.getComputedStyle(maDiv);
+        var widthValue = computedStyle.getPropertyValue('width');
+  
+        if (widthValue === '100.0%') {
+          maDiv.style.borderRadius = '20px 20px 20px';
+        }
+      }
 
-//     // Ajoutez un écouteur d'événements à chaque élément linkVote
-//     linkVoteElements.forEach(function(element) {
-//         element.addEventListener('click', function() {
-//         descrVote.style.display = 'none';
-//         });
-//     });
+    updateBorderRadius();
 
-// });
+});

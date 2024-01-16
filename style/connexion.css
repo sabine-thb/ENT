@@ -6,6 +6,10 @@ body{
     padding:0;
 }
 
+.err{
+    margin-left:25px;
+}
+
 
 section{
     width:100%;
@@ -16,7 +20,7 @@ section{
     flex-direction:column;
     justify-content: flex-start;
     align-items:center;
-    padding-top:150px;
+    padding-top:25px;
     box-sizing: border-box; /*Pourquoi je dois le mettre alors que mis au dessus*/
     overflow: hidden;
     position: absolute;
@@ -49,10 +53,17 @@ nav{
     width:fit-content;
     color:white;
     background-color: var(--violetFonce);
-    padding:20px 20px 50px 20px;
+    padding:20px 40px 60px 40px;
     margin:20px;
     border-radius:20px;
     position:relative;
+    text-align: center;
+}
+
+.formFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .labelStatut{
@@ -92,15 +103,30 @@ nav{
 .imgConnexion{
     width:250px;
     position:relative;
-    bottom:-50px;
+    bottom:10px;
+    right:-70px;
 }
 
-@media(min-width:500px){
-    .imgConnexion{
-        right:-140px;
-        bottom:-60px;
+
+
+@media(min-width:400px){
+    section{
+        padding-top:50px;
     }
 }
+
+@media(min-width:450px){
+    .formFlex{
+        flex-direction: row;
+    }
+
+    .idMdp{
+        padding:20px 20px 60px 20px;
+    }
+
+   
+}
+
 
 @media(min-width:600px){
     body{
@@ -113,7 +139,7 @@ nav{
 
     .imgConnexion{
         width:300px;
-        right:-180px;
+        right:-185px;
         bottom:35px;
     }
 }
@@ -130,5 +156,9 @@ nav{
     .imgConnexion{
         right:-270px;
 
+    }
+
+    section{
+        padding-top:100px;
     }
 }

@@ -300,8 +300,9 @@ footer{
         gap:15px;
     }
 
-    .compteur{
-        width:100px;
+
+    .imgVote{
+        margin-top:35px;
     }
 }
 
@@ -318,5 +319,13 @@ footer{
 
     .imgDeco{
         top:-30px;
+    }
+}
+
+@media(max-width:400px){
+     .compteur{
+        width:130px;
+        font-size:1.5rem;
+
     }
 }
