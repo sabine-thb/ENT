@@ -15,7 +15,7 @@ Pour tous les profils, pour se connecter:
 login = prenom.nom (sans accent ni maj)
 mdp = nom (sans accent ni maj)
 
-# LES FONCTIONNALITÉS DEVLOPPÉES : 
+# LES FONCTIONNALITÉS DEVELOPPÉES : 
 
 1. VOTE REPAS DU CROUS
    Les utilisateurs avec le rôle "personnel du CROUS" ont accès à une interface spécifique.
